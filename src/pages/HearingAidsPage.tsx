@@ -132,7 +132,7 @@ export function HearingAidsPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-800 via-red-700 to-red-800">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">
-            Aftercare You Can Rely On
+            Hearing Aids Aftercare You Can Rely On
           </h2>
           <p className="text-xl text-white mb-4 leading-relaxed">
             Enjoy <span className="font-bold">lifetime aftercare</span> with professional fine-tuning, adjustments, and regular hearing checks to keep you hearing your best.

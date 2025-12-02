@@ -28,7 +28,7 @@ export function AftercarePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Aftercare You Can Rely On
+                Hearing Aids Aftercare You Can Rely On
               </h1>
               <p className="text-xl text-gray-100 mb-10 leading-relaxed">
                 Enjoy lifetime aftercare with professional fine-tuning, adjustments, and regular hearing checks to keep you hearing your best.
@@ -102,7 +102,7 @@ export function AftercarePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">
-                What's Included in Your Aftercare
+                What's Included in Your Hearing aids Aftercare
               </h2>
 
               <div className="space-y-6">
@@ -180,7 +180,7 @@ export function AftercarePage() {
 
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl p-8">
               <h3 className="text-3xl font-bold text-white mb-6">
-                Walk-In Cleaning & Maintenance
+                Walk-In Hearing Aids Cleaning & Maintenance
               </h3>
               <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                 Open <span className="font-bold text-white">6 days a week</span> — no appointment needed. Pop in for quick cleaning, filter changes, tube checks and comfort adjustments.
