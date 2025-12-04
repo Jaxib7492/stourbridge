@@ -50,6 +50,22 @@ export function HomeVisitsPage() {
             </div>
           </div>
 
+          <div className="mt-10 mb-12 flex justify-center">
+            <div className="w-full max-w-2xl bg-black rounded-2xl overflow-hidden shadow-xl border border-red-700">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/byKbXJViT_k?rel=0&modestbranding=1&showinfo=0&controls=1"
+                  title="Home Visit Hearing Care"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <div id="services" className="bg-black text-white rounded-2xl p-8">
               <h2 className="text-3xl font-bold mb-8">Our Home Visit Services</h2>
