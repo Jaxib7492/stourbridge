@@ -8,26 +8,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Track scrolling for header shadow effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      sessionStorage.setItem('scrollPosition', window.scrollY.toString());
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu on navigation
   useEffect(() => {
     setIsMobileMenuOpen(false);
-
-    const savedPosition = sessionStorage.getItem('scrollPosition');
-    if (savedPosition) {
-      setTimeout(() => {
-        window.scrollTo({ top: parseInt(savedPosition), behavior: 'auto' });
-      }, 0);
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
   }, [location]);
 
   const menuItems = [
@@ -43,11 +35,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-white shadow-sm'
-      }`}>
+      <nav
+        className={`fixed w-full z-50 transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-lg'
+            : 'bg-white shadow-sm'
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex justify-between items-center gap-2">
             <button
@@ -87,8 +81,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             </button>
           </div>
@@ -118,6 +122,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           )}
         </div>
       </nav>
+
       <main className="pt-16">{children}</main>
       <Footer />
     </>

@@ -9,10 +9,12 @@ import { FinancingPage } from './pages/FinancingPage';
 import { HomeVisitsPage } from './pages/HomeVisitsPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
+import ScrollToTop from './components/ScrollToTop'; // 👈 Import ScrollToTop
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* 👈 Add this here, outside Layout */}
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
