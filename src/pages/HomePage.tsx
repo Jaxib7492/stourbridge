@@ -91,7 +91,7 @@ export function HomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
-            Safe microsuction, advanced private hearing aids, and caring local service.
+            Safe microsuction, advanced private hearing aids, and caring local service in Stourbridge — trusted by patients visiting from Dudley, Halesowen, Brierley Hill, and surrounding areas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
@@ -301,6 +301,26 @@ export function HomePage() {
       </section>
 
       {/* Why Choose Stourbridge Section */}
+      {/* Areas We Serve Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Patients Visit Us From Nearby Areas
+          </h2>
+
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+            Our hearing clinic in Stourbridge welcomes patients from surrounding areas. 
+            Many people travel to us from Dudley, Halesowen, Brierley Hill, Wolverhampton, 
+            Birmingham, and nearby locations for professional earwax removal and hearing care.
+          </p>
+
+          <p className="text-gray-400 max-w-3xl mx-auto">
+            We are conveniently located in Stourbridge High Street, making it easy to access 
+            from nearby towns including Kingswinford, Cradley Heath, Kidderminster, 
+            Hagley, and Stourport-on-Severn.
+          </p>
+        </div>
+      </section>
       <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
         <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-br from-red-900/20 to-red-800/20 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="max-w-7xl mx-auto relative z-10">
@@ -437,6 +457,9 @@ export function HomePage() {
                       59 High St,<br />
                       Stourbridge<br />
                       DY8 1DE
+                    </p>
+                    <p className="text-gray-400 mt-2">
+                      Easily accessible for patients travelling from Dudley, Halesowen, Birmingham and nearby areas.
                     </p>
                   </div>
                 </div>
