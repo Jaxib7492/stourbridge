@@ -184,37 +184,219 @@ export function HomeVisitsPage() {
             <h2 className="text-3xl font-bold text-white mb-8">Frequently asked questions</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-black text-white rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">Do you charge extra for a home visit?</h3>
+                <h3 className="text-2xl font-bold mb-4">Do you offer hearing tests in Stourbridge and nearby areas?</h3>
                 <p className="text-gray-300 mb-4">
-                  Yes — there is a home visit fee to cover travel and time. Exact pricing depends on distance and service required; please call us for a quote.
+                  Yes, we provide professional hearing tests in Stourbridge for patients across the local area.
+                  This includes those looking for a hearing test in Dudley, Halesowen, and Brierley Hill. Each
+                  assessment is carried out by an experienced hearing care professional and tailored to your
+                  individual needs.
                 </p>
+
+                <h3 className="text-2xl font-bold mb-4">Which areas do you cover around Stourbridge?</h3>
+                <p className="text-gray-300 mb-4">
+                  We are based in Stourbridge and regularly welcome patients from:<br />
+                  ✅ Dudley<br />
+                  ✅ Halesowen<br />
+                  ✅ Brierley Hill<br />
+                  ✅ Kingswinford<br />
+                  ✅ Hagley<br />
+                  ✅ Bromsgrove<br />
+                  ✅ Kidderminster<br />
+                  ✅ Wolverhampton<br /><br />
+                  We also provide:<br />
+                  ✅ Hearing tests in Dudley<br />
+                  ✅ Ear wax removal in Halesowen<br />
+                  ✅ Microsuction ear wax removal in Brierley Hill<br />
+                  ✅ Hearing care services in Kingswinford and surrounding areas<br />
+                  Our clinic serves patients within approximately a 20-mile radius.<br />
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">Why choose Stourbridge Hearing Centre?</h3>
+                <p className="text-gray-300 mb-4">
+                We are a local, independent hearing care provider focused on delivering personalised care.<br /><br />
+                Our patients value:<br /><br />
+                ✅ Professional and honest advice<br />
+                ✅ Longer appointment times<br />
+                ✅ Ongoing support and aftercare<br />
+                ✅ A friendly and approachable service<br /><br />
+                All assessments and treatments are carried out with care and attention to ensure safe,
+                professional hearing care.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">Do you offer services in nearby towns like Dudley or Halesowen?</h3>
+                <p className="text-gray-300 mb-4">
+                Yes, many of our patients visit us from Dudley, Halesowen, and Brierley Hill.<br /><br />
+                We also support patients searching for:<br /><br />
+                ✅ Hearing tests in Dudley<br />
+                ✅ Ear wax removal in Halesowen<br />
+                ✅ Microsuction in Brierley Hill<br /><br />
+                Home visits are also available in these areas where appropriate.
+                </p><br />
+
+
                 <p className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold inline-block">
                   If you purchase a pair of hearing aids, we refund the cost of the home visit service.
                 </p>
               </div>
 
               <div className="bg-black text-white rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">Is microsuction safe at home?</h3>
+                <h3 className="text-2xl font-bold mb-4">Can I get a hearing test or ear wax removal near me?</h3>
                 <p className="text-gray-300">
-                  Microsuction is a safe, clinic-standard procedure performed with portable equipment. We follow the same infection-control and safety procedures as in the clinic.
+                  Yes. If you are searching for a hearing test near you or ear wax removal near you, our
+                  Stourbridge clinic is conveniently located for patients across the local area.<br /><br />
+                  We provide:<br />
+                  ✅ Hearing tests<br />
+                  ✅ Ear wax removal (microsuction)<br />
+                  ✅ Hearing aid support<br />
+                  We also offer home visits where appropriate, making it easier to access professional hearing
+                  care.
                 </p>
+                  <br />
+                <h3 className="text-2xl font-bold mb-4">Do you offer home visits for hearing services?</h3>
+                <p className="text-gray-300">
+                  Yes, we provide a reliable home visit service for patients who are unable to attend our clinic.
+                  Our qualified hearing care professional can carry out hearing assessments, provide advice,
+                  and support hearing aid users in the comfort of their own home.
+                </p>
+                <br />
+                <h3 className="text-2xl font-bold mb-4">Who are home visits suitable for?</h3>
+                <p className="text-gray-300">
+                  Home visits are particularly suitable for:<br /><br />
+                  ✅ Elderly patients<br />
+                  ✅ Individuals with limited mobility<br />
+                  ✅ Care home residents<br />
+                  ✅ Anyone who prefers a private, convenient appointment<br /><br />
+                  We aim to make hearing care accessible, respectful, and stress-free.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">How do I book an appointment?</h3>
+                <p className="text-gray-300">
+                  You can book an appointment by contacting our Stourbridge clinic directly. Our team will be
+                  happy to help you arrange a convenient time.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">Free Hearing Aid Check – No Appointment Needed</h3>
+                <p className="text-gray-300">
+                We offer a free, no-obligation hearing aid check at our Stourbridge clinic. If your hearing aids
+                are not performing as they should, our experienced team can carry out a quick assessment
+                and provide clear, honest advice.<br /><br />
+                This includes:<br /><br />
+                ✅ Checking overall performance<br />
+                ✅ Identifying common issues such as blockages or wear<br />
+                ✅ Simple adjustments where appropriate<br />
+                </p><br />
+                
+                <h3 className="text-2xl font-bold mb-4">Local Hearing Care in Stourbridge and Surrounding Areas</h3>
+                <p className="text-gray-300">
+                Stourbridge Hearing Centre is ideally located to serve patients across Stourbridge, Dudley,
+                Halesowen, Brierley Hill, Kingswinford, Hagley, and surrounding West Midlands areas.<br /><br />
+                We are a trusted local provider of:<br /><br />
+                ✅ Hearing tests<br />
+                ✅ Ear wax removal (microsuction)<br />
+                ✅ Hearing aids and aftercare<br />
+                ✅ Home visit hearing services<br />
+                </p><br />
+                
+
               </div>
 
               <div className="bg-black text-white rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">Do you service all hearing aid makes?</h3>
-                <p className="text-gray-300">
-                  Yes — we provide general servicing and many manufacturer-specific adjustments. For warranty repair or advanced diagnostics we may liaise with the manufacturer if needed.
+                <h3 className="text-2xl font-bold mb-4">Do you provide ear wax removal (microsuction) in Stourbridge?</h3>
+                <p className="text-gray-300"><br />
+                  Yes, we offer professional ear wax removal in Stourbridge using microsuction, one of the
+                  safest and most effective methods available.<br />
+                  We also regularly help patients looking for:<br />
+                  ✅ Ear wax removal in Dudley<br />
+                  ✅ Ear cleaning in Halesowen<br />
+                  ✅ Microsuction near Brierley Hill
                 </p>
+                <br />
+
+                <h3 className="text-2xl font-bold mb-4">What is microsuction ear wax removal?</h3>
+                <p className="text-gray-300"><br />
+                  Microsuction is a modern technique that uses gentle suction and specialist equipment to
+                  safely remove excess ear wax. Unlike traditional methods, it does not involve water and
+                  allows for precise treatment under direct observation.
+                </p>
+                <br />
+
+                <h3 className="text-2xl font-bold mb-4">Is ear wax removal safe?</h3>
+                <p className="text-gray-300"><br />
+                  Yes, when carried out by a trained and experienced professional, microsuction is a very safe
+                  procedure. We always assess your ears first to ensure the treatment is suitable for you.
+                </p>
+                <br />
+
+                <h3 className="text-2xl font-bold mb-4">How do I know if I need ear wax removal?</h3>
+                <p className="text-gray-300"><br />
+                  You may benefit from ear wax removal if you experience:<br /><br />
+                  ✅ Reduced or muffled hearing<br />
+                  ✅ A blocked sensation in the ear<br />
+                  ✅ Tinnitus (ringing in the ears)<br />
+                  ✅ Discomfort or irritation<br /><br />
+                  If you are unsure, we are happy to assess your ears and provide honest advice.
+                </p>
+                <br />
+
+                <h3 className="text-2xl font-bold mb-4">Walk-In Hearing Aid Cleaning Service in Stourbridge Hearing Centre</h3>
+                <p className="text-gray-300"><br />
+                  We provide a convenient walk-in hearing aid cleaning service in Stourbridge Centre ,
+                  available 6 days a week, so you can visit us without booking in advance.<br /><br />
+                  Our cleaning service helps to:<br /><br />
+                  ✅ Remove wax and debris build-up<br />
+                  ✅ Improve sound quality<br />
+                  ✅ Extend the life of your hearing aids<br />
+                  In many cases, cleaning can be completed during a short visit while you wait.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">Common Signs Your Hearing Aids Need Cleaning or Repair</h3>
+                <p className="text-gray-300"><br />
+                You may benefit from a visit if you notice:<br /><br />
+                ✅ Reduced or muffled sound<br />
+                ✅ Intermittent or distorted audio<br />
+                ✅ Whistling (feedback)<br />
+                ✅ Visible wax build-up<br />
+                ✅ A general drop in performance<br />
+                Addressing these issues early can help prevent further problems.<br />
+                </p><br />
+
+
+
               </div>
 
               <div className="bg-black text-white rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">Patient feedback</h3>
+
+                <h3 className="text-2xl font-bold mb-4">How long does an ear wax removal or hearing appointment take?</h3>
                 <p className="text-gray-300 italic mb-4">
-                  "The audiologist was calm, professional and made the whole process easy — I much preferred having it done at home." — A local patient
-                </p>
-                <p className="text-gray-400 text-sm">
-                  Want to add your testimonial? Email it to us and we may feature it on our site.
-                </p>
+                  Most appointments take between 15 and 30 minutes, depending on the treatment required.
+                  We always allow enough time to ensure safe and thorough care.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">Do you provide hearing aids in Stourbridge?</h3>
+                <p className="text-gray-300 italic mb-4">
+                 Yes, we offer a range of modern hearing aids from leading manufacturers. As an
+                independent provider, we can recommend the most suitable option based on your hearing
+                needs, lifestyle, and budget.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">What happens after a hearing test?</h3>
+                <p className="text-gray-300 italic mb-4">
+                After your hearing test, we will clearly explain your results and discuss any next steps. If
+                treatment is needed, we will guide you through your options without any pressure.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">Do I need a referral for a hearing test?</h3>
+                <p className="text-gray-300 italic mb-4">
+                No, you can book directly with us without needing a GP referral.
+                </p><br />
+
+                <h3 className="text-2xl font-bold mb-4">How often should I have my hearing checked?</h3>
+                <p className="text-gray-300 italic mb-4">
+                We generally recommend a hearing test every 1–2 years, or sooner if you notice any
+                changes in your hearing.
+                </p><br />
+
+
               </div>
             </div>
           </section>
