@@ -1,11 +1,10 @@
 // Layout.tsx
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
 import { Footer } from './Footer';
 import { ChevronDown } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const navigate = useNavigate();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -19,11 +18,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on navigation
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location]);
-
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'Earwax Removal', path: '/earwax-removal' },
@@ -36,16 +30,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
   ];
 
   const servicesDropdown = [
-    { label: 'Hearing Aids - Birmingham', path: '/hearing-aids-birmingham' },
-    { label: 'Hearing Aids - Dudley', path: '/hearing-aids-dudley' },
-    { label: 'Hearing Aids - Halesowen', path: '/hearing-aids-halesowen' },
-    { label: 'Hearing Aids - Wolverhampton', path: '/hearing-aids-wolverhampton' },
-    { label: 'Hearing Aids - Kidderminster', path: '/hearing-aids-kidderminster' },
-    { label: 'Hearing Aids - Bromsgrove', path: '/hearing-aids-bromsgrove' },
-    { label: 'Hearing Aids - Redditch', path: '/hearing-aids-redditch' },
-    { label: 'Hearing Aids - Oldbury', path: '/hearing-aids-oldbury' },
-    { label: 'Hearing Aids - Kingswinford', path: '/hearing-aids-kingswinford' },
-    { label: 'Hearing Aids - Brierley Hill', path: '/hearing-aids-brierley-hill' },
+    { label: 'Birmingham', path: '/hearing-aids-birmingham' },
+    { label: 'Dudley', path: '/hearing-aids-dudley' },
+    { label: 'Halesowen', path: '/hearing-aids-halesowen' },
+    { label: 'Wolverhampton', path: '/hearing-aids-wolverhampton' },
+    { label: 'Kidderminster', path: '/hearing-aids-kidderminster' },
+    { label: 'Bromsgrove', path: '/hearing-aids-bromsgrove' },
+    { label: 'Redditch', path: '/hearing-aids-redditch' },
+    { label: 'Oldbury', path: '/hearing-aids-oldbury' },
+    { label: 'Kingswinford', path: '/hearing-aids-kingswinford' },
+    { label: 'Brierley Hill', path: '/hearing-aids-brierley-hill' },
   ];
 
   return (
@@ -58,8 +52,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex justify-between items-center gap-2">
             {/* Logo */}
-            <button
-              onClick={() => navigate('/')}
+            <Link
+              to="/"
               className="flex items-center group cursor-pointer flex-shrink-0 bg-white p-2 rounded-lg"
             >
               <img
@@ -67,13 +61,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 alt="Stourbridge Hearing Centre"
                 className="h-8 sm:h-10 md:h-12 w-auto transition-transform duration-300 group-hover:scale-105"
               />
-            </button>
+            </Link>
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
               {menuItems.map((item) => (
                 <div key={item.path} className="relative group">
-                  <button
+                  <Link
+                    to={item.path}
                     className={`flex items-center gap-1 transition-all duration-300 font-medium hover:scale-105 text-sm whitespace-nowrap ${
                       location.pathname === item.path
                         ? 'text-rose-600'
@@ -82,31 +77,31 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   >
                     {item.label}
                     {item.label === 'Hearing Aids' && <ChevronDown className="w-4 h-4" />}
-                  </button>
+                  </Link>
 
                   {/* Dropdown for Hearing Aids */}
                   {item.label === 'Hearing Aids' && (
                     <div className="absolute left-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                       {servicesDropdown.map((service) => (
-                        <button
+                        <Link
                           key={service.path}
-                          onClick={() => navigate(service.path)}
+                          to={service.path}
                           className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600"
                         >
                           {service.label}
-                        </button>
+                        </Link>
                       ))}
                     </div>
                   )}
                 </div>
               ))}
 
-              <button
-                onClick={() => navigate('/contact')}
+              <Link
+                to="/contact"
                 className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 text-sm whitespace-nowrap"
               >
                 Book Now
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -135,8 +130,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="lg:hidden mt-4 pb-4 space-y-2">
               {menuItems.map((item) => (
                 <div key={item.path}>
-                  <button
-                    onClick={() => navigate(item.path)}
+                  <Link
+                    to={item.path}
                     className={`block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 ${
                       location.pathname === item.path
                         ? 'bg-gradient-to-r from-rose-50 to-pink-50 text-rose-600'
@@ -144,31 +139,31 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     }`}
                   >
                     {item.label}
-                  </button>
+                  </Link>
 
                   {/* Mobile Dropdown for Hearing Aids */}
                   {item.label === 'Hearing Aids' && (
                     <div className="ml-4 flex flex-col gap-1">
                       {servicesDropdown.map((service) => (
-                        <button
+                        <Link
                           key={service.path}
-                          onClick={() => navigate(service.path)}
+                          to={service.path}
                           className="flex items-center gap-1 text-left px-4 py-2 text-sm text-gray-600 hover:text-rose-600"
                         >
                           <ChevronDown className="w-3 h-3" /> {service.label}
-                        </button>
+                        </Link>
                       ))}
                     </div>
                   )}
                 </div>
               ))}
 
-              <button
-                onClick={() => navigate('/contact')}
+              <Link
+                to="/contact"
                 className="block w-full text-left px-4 py-2 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg"
               >
                 Book Now
-              </button>
+              </Link>
             </div>
           )}
         </div>
