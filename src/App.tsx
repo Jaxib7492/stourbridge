@@ -1,4 +1,5 @@
 import React from 'react';
+import { FAQPage } from './pages/FAQPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { HomePage } from './pages/HomePage';
@@ -37,6 +38,8 @@ function App() {
           <Route path="/home-visits" element={<HomeVisitsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+
+          <Route path="/faq" element={<FAQPage />} />
 
           <Route path="/hearing-aids-birmingham" element={<HearingAidsBirmingham />} />
           <Route path="/hearing-aids-dudley" element={<HearingAidsDudley />} />

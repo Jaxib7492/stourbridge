@@ -25,6 +25,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: 'Aftercare', path: '/aftercare' },
     { label: 'Financing', path: '/financing' },
     { label: 'Home Visits', path: '/home-visits' },
+    { label: 'Our Services', path: '#' }, // dropdown
+    { label: 'FAQ', path: '/faq' }, // NEW
     { label: 'About Us', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ];
@@ -51,6 +53,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex justify-between items-center gap-2">
+
             {/* Logo */}
             <Link
               to="/"
@@ -66,9 +69,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
               {menuItems.map((item) => (
-                <div key={item.path} className="relative group">
+                <div key={item.label} className="relative group">
                   <Link
-                    to={item.path}
+                    to={item.path === '#' ? '#' : item.path}
+                    onClick={(e) => item.path === '#' && e.preventDefault()}
                     className={`flex items-center gap-1 transition-all duration-300 font-medium hover:scale-105 text-sm whitespace-nowrap ${
                       location.pathname === item.path
                         ? 'text-rose-600'
@@ -76,17 +80,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     }`}
                   >
                     {item.label}
-                    {item.label === 'Hearing Aids' && <ChevronDown className="w-4 h-4" />}
+                    {item.label === 'Our Services' && (
+                      <ChevronDown className="w-4 h-4" />
+                    )}
                   </Link>
 
-                  {/* Dropdown for Hearing Aids */}
-                  {item.label === 'Hearing Aids' && (
+                  {/* Dropdown for Our Services */}
+                  {item.label === 'Our Services' && (
                     <div className="absolute left-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                       {servicesDropdown.map((service) => (
                         <Link
                           key={service.path}
                           to={service.path}
-                          className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600"
                         >
                           {service.label}
                         </Link>
@@ -96,6 +102,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               ))}
 
+              {/* CTA Button */}
               <Link
                 to="/contact"
                 className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 text-sm whitespace-nowrap"
@@ -123,16 +130,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 />
               </svg>
             </button>
+
           </div>
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="lg:hidden mt-4 pb-4 space-y-2">
               {menuItems.map((item) => (
-                <div key={item.path}>
+                <div key={item.label}>
                   <Link
-                    to={item.path}
-                    className={`block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 ${
+                    to={item.path === '#' ? '#' : item.path}
+                    onClick={(e) => item.path === '#' && e.preventDefault()}
+                    className={`block px-4 py-2 rounded-lg transition-all duration-300 ${
                       location.pathname === item.path
                         ? 'bg-gradient-to-r from-rose-50 to-pink-50 text-rose-600'
                         : 'text-gray-700 hover:bg-gradient-to-r hover:from-rose-50 hover:to-pink-50 hover:text-rose-600'
@@ -141,16 +150,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     {item.label}
                   </Link>
 
-                  {/* Mobile Dropdown for Hearing Aids */}
-                  {item.label === 'Hearing Aids' && (
+                  {/* Mobile Dropdown */}
+                  {item.label === 'Our Services' && (
                     <div className="ml-4 flex flex-col gap-1">
                       {servicesDropdown.map((service) => (
                         <Link
                           key={service.path}
                           to={service.path}
-                          className="flex items-center gap-1 text-left px-4 py-2 text-sm text-gray-600 hover:text-rose-600"
+                          className="flex items-center gap-1 px-4 py-2 text-sm text-gray-600 hover:text-rose-600"
                         >
-                          <ChevronDown className="w-3 h-3" /> {service.label}
+                          <ChevronDown className="w-3 h-3" />
+                          {service.label}
                         </Link>
                       ))}
                     </div>
@@ -160,7 +170,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
               <Link
                 to="/contact"
-                className="block w-full text-left px-4 py-2 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg"
+                className="block px-4 py-2 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-lg hover:shadow-lg"
               >
                 Book Now
               </Link>
