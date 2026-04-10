@@ -9,7 +9,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
-  // Track scrolling for header shadow effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -44,6 +43,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: 'Brierley Hill', path: '/hearing-aids-brierley-hill' },
   ];
 
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
+    setServicesOpen(false);
+  };
+
   return (
     <>
       <nav
@@ -58,6 +62,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             {/* LOGO */}
             <Link
               to="/"
+              onClick={handleNavClick}
               className="flex items-center flex-shrink-0 bg-white p-2 rounded-lg"
             >
               <img
@@ -88,13 +93,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     }`}
                   >
                     {item.label}
-
                     {item.label === 'Our Services' && (
                       <ChevronDown className="w-4 h-4" />
                     )}
                   </Link>
 
-                  {/* DROPDOWN */}
                   {item.label === 'Our Services' && (
                     <div
                       className={`absolute left-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white shadow-lg rounded-lg transition-all duration-300 z-50 ${
@@ -106,7 +109,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                           key={service.path}
                           to={service.path}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600"
-                          onClick={() => setServicesOpen(false)}
+                          onClick={handleNavClick}
                         >
                           {service.label}
                         </Link>
@@ -117,7 +120,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               ))}
 
-              {/* BUTTON */}
               <Link
                 to="/contact"
                 className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold"
@@ -150,6 +152,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                       if (item.label === 'Our Services') {
                         e.preventDefault();
                         setServicesOpen(!servicesOpen);
+                      } else {
+                        handleNavClick();
                       }
                     }}
                     className="block px-4 py-2 text-gray-700 hover:text-rose-600"
@@ -157,7 +161,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     {item.label}
                   </Link>
 
-                  {/* MOBILE DROPDOWN */}
                   {item.label === 'Our Services' && servicesOpen && (
                     <div className="ml-4 flex flex-col">
 
@@ -166,7 +169,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                           key={service.path}
                           to={service.path}
                           className="px-4 py-2 text-sm text-gray-600 hover:text-rose-600"
-                          onClick={() => setServicesOpen(false)}
+                          onClick={handleNavClick}
                         >
                           {service.label}
                         </Link>
@@ -180,6 +183,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
               <Link
                 to="/contact"
+                onClick={handleNavClick}
                 className="block px-4 py-2 bg-rose-600 text-white rounded-lg text-center"
               >
                 Book Now
@@ -191,10 +195,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </nav>
 
-      {/* PAGE CONTENT */}
       <main className="pt-16">{children}</main>
 
-      {/* FOOTER */}
       <Footer />
     </>
   );
