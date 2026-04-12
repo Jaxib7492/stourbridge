@@ -79,6 +79,23 @@ export function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
+          {/* MOBILE ONLY VIDEO */}
+{/* MOBILE ONLY CIRCULAR VIDEO */}
+{/* MOBILE CIRCULAR VIDEO */}
+<div className="flex justify-center mb-6 sm:hidden">
+  <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-red-500 shadow-2xl bg-black">
+
+    <video
+      src="/waxx1-copy.mp4"
+      className="w-full h-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+    />
+
+  </div>
+</div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 drop-shadow-2xl overflow-visible" style={{lineHeight: '1.6'}}>
             <span className="inline-block animate-fade-in-up opacity-0" style={{animationDelay: '0.1s'}}>Professional</span>{' '}
             <span className="inline-block animate-fade-in-up opacity-0" style={{animationDelay: '0.2s'}}>Earwax</span>{' '}
