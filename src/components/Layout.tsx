@@ -52,7 +52,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <>
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white shadow-sm'
+          scrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-lg'
+            : 'bg-white shadow-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
@@ -101,7 +103,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   {item.label === 'Our Services' && (
                     <div
                       className={`absolute left-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white shadow-lg rounded-lg transition-all duration-300 z-50 ${
-                        servicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                        servicesOpen
+                          ? 'opacity-100 visible'
+                          : 'opacity-0 invisible'
                       }`}
                     >
                       {servicesDropdown.map((service) => (
@@ -132,7 +136,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             {/* MOBILE BUTTON */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2"
+              className="lg:hidden p-2 text-2xl"
             >
               ☰
             </button>
@@ -141,13 +145,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
           {/* MOBILE MENU */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden mt-4 space-y-2 pb-4">
+            <div className="lg:hidden mt-4 space-y-1 pb-4 border-t pt-3">
 
               {menuItems.map((item) => (
                 <div key={item.label}>
 
-                  <Link
-                    to={item.path === '#' ? '#' : item.path}
+                  {/* MAIN ITEM */}
+                  <div
+                    className="flex justify-between items-center px-4 py-2"
                     onClick={(e) => {
                       if (item.label === 'Our Services') {
                         e.preventDefault();
@@ -156,13 +161,27 @@ export function Layout({ children }: { children: React.ReactNode }) {
                         handleNavClick();
                       }
                     }}
-                    className="block px-4 py-2 text-gray-700 hover:text-rose-600"
                   >
-                    {item.label}
-                  </Link>
+                    <Link
+                      to={item.path === '#' ? '#' : item.path}
+                      className="text-gray-700 hover:text-rose-600"
+                    >
+                      {item.label}
+                    </Link>
 
+                    {/* ARROW ONLY FOR SERVICES */}
+                    {item.label === 'Our Services' && (
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform ${
+                          servicesOpen ? 'rotate-180' : ''
+                        }`}
+                      />
+                    )}
+                  </div>
+
+                  {/* DROPDOWN */}
                   {item.label === 'Our Services' && servicesOpen && (
-                    <div className="ml-4 flex flex-col">
+                    <div className="ml-4 flex flex-col border-l pl-2">
 
                       {servicesDropdown.map((service) => (
                         <Link
@@ -184,7 +203,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="block px-4 py-2 bg-rose-600 text-white rounded-lg text-center"
+                className="block mx-4 mt-3 px-4 py-3 bg-rose-600 text-white rounded-lg text-center font-semibold"
               >
                 Book Now
               </Link>
