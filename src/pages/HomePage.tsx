@@ -80,22 +80,22 @@ export function HomePage() {
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           {/* MOBILE ONLY VIDEO */}
-{/* MOBILE ONLY CIRCULAR VIDEO */}
-{/* MOBILE CIRCULAR VIDEO */}
-<div className="flex justify-center mb-6 sm:hidden">
-  <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-red-500 shadow-2xl bg-black">
+          {/* MOBILE ONLY CIRCULAR VIDEO */}
+          {/* MOBILE CIRCULAR VIDEO */}
+          <div className="flex justify-center mb-6 sm:hidden">
+            <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-red-500 shadow-2xl bg-black">
 
-    <video
-      src="/waxx1-copy.mp4"
-      className="w-full h-full object-cover"
-      autoPlay
-      muted
-      loop
-      playsInline
-    />
+              <video
+                src="/waxx1-copy.mp4"
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
 
-  </div>
-</div>
+            </div>
+          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 drop-shadow-2xl overflow-visible" style={{lineHeight: '1.6'}}>
             <span className="inline-block animate-fade-in-up opacity-0" style={{animationDelay: '0.1s'}}>Professional</span>{' '}
             <span className="inline-block animate-fade-in-up opacity-0" style={{animationDelay: '0.2s'}}>Earwax</span>{' '}
@@ -598,6 +598,21 @@ export function HomePage() {
           </div>
         </div>
       )}
+
+      {/* MOBILE FLOATING ACTION BUTTONS */}
+        <div className="sm:hidden fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+
+          {/* Book Earwax Removal */}
+          <button
+            onClick={() => navigate('/contact')}
+            className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-3 rounded-full shadow-2xl text-sm font-semibold active:scale-95 transition-all"
+          >
+            Contact Us
+          </button>
+
+
+        </div>
+
     </div>
   );
 }
