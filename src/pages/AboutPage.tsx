@@ -21,7 +21,7 @@ export function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 lg:order-1">
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">
                 Friendly. Professional. Independent.
               </h2>
@@ -37,7 +37,7 @@ export function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl p-8 flex items-center justify-center min-h-[400px] overflow-hidden">
+            <div className="order-1 lg:order-2 bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl p-8 flex items-center justify-center min-h-[400px] overflow-hidden">
               <img
                 src="/Clinic.jpeg"
                 alt="Inside Stourbridge Hearing Centre reception area"
