@@ -28,7 +28,7 @@ export function AboutPage() {
 
               <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  At Stourbridge Hearing Centre, we believe great hearing care is personal. Our <span className="font-bold text-white">HCPC-registered audiologists</span> take time to listen, understand your needs, and provide care that makes a real difference in your everyday life.
+                  At Stourbridge Hearing Centre, we believe great hearing care is personal. Our <span className="font-bold text-white">Fully Qualified HCPC Registered Audiologists</span> take time to listen, understand your needs, and provide care that makes a real difference in your everyday life.
                 </p>
 
                 <p>
@@ -61,7 +61,7 @@ export function AboutPage() {
                 <h3 className="text-2xl font-bold text-red-500">Experienced Audiologists</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Qualified, HCPC-registered audiologists with a gentle approach and years of experience.
+                Qualified, Fully Qualified HCPC Registered Audiologists with a gentle approach and years of experience.
               </p>
             </div>
 

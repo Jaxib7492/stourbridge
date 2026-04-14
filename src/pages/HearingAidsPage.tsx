@@ -155,19 +155,12 @@ export function HearingAidsPage() {
             What Our Patients Say
           </h2>
           <p className="text-lg text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-            See real results from patients who've experienced better hearing with Stourbridge Hearing Centre. Add testimonial images or short videos here.
+            See real results from patients who've experienced better hearing with Stourbridge Hearing Centre.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 border border-gray-700">
-              <div className="aspect-video bg-gray-800 rounded-lg mb-6 flex items-center justify-center">
-                <video
-                  controls
-                  className="w-full h-full rounded-lg"
-                >
-                  <source src="/Client 3.mp4" type="video/mp4" />
-                </video>
-              </div>
+              
               <p className="text-gray-300 italic text-center">
                 "I can finally hear clearly again! The service was amazing and the aftercare is brilliant."
               </p>

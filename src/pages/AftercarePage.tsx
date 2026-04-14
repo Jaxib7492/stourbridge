@@ -25,7 +25,7 @@ export function AftercarePage() {
     <div className="min-h-screen bg-black text-white">
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
                 Hearing Aids Aftercare You Can Rely On
@@ -58,7 +58,7 @@ export function AftercarePage() {
 
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 bg-black bg-opacity-40 border border-gray-600 rounded-lg text-sm text-gray-100">
-                  HCPC-registered clinicians
+                  Fully Qualified HCPC Registered clinicians
                 </span>
                 <span className="px-4 py-2 bg-black bg-opacity-40 border border-gray-600 rounded-lg text-sm text-gray-100">
                   Same-week appointments
@@ -69,30 +69,51 @@ export function AftercarePage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-black to-gray-900 border border-gray-700 rounded-2xl p-8">
-              <div className="grid grid-cols-3 gap-4 mb-4">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-                  <span className="text-gray-300 text-center">Cleaning</span>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-                  <span className="text-gray-300 text-center">Fine-tuning</span>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-                  <span className="text-gray-300 text-center">Hearing Checks</span>
-                </div>
-              </div>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-                  <span className="text-gray-300 text-center">Wax Check</span>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-                  <span className="text-gray-300 text-center">Domes & Filters</span>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-                  <span className="text-gray-300 text-center">On-going Support</span>
-                </div>
-              </div>
-            </div>
+            {/* RIGHT SIDE (Tiles + Video stacked) */}
+<div className="flex flex-col gap-6">
+
+  {/* VIDEO BLOCK */}
+  <div className="order-1 lg:order-2 rounded-2xl overflow-hidden border border-gray-700 shadow-lg">
+    <video
+      src="/New-Video.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-auto object-contain"
+    />
+  </div>
+
+  {/* TILES BLOCK */}
+  <div className="order-2 lg:order-1 bg-gradient-to-br from-black to-gray-900 border border-gray-700 rounded-2xl p-8">
+    
+    <div className="grid grid-cols-3 gap-4 mb-4">
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+        <span className="text-gray-300 text-center">Cleaning</span>
+      </div>
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+        <span className="text-gray-300 text-center">Fine-tuning</span>
+      </div>
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+        <span className="text-gray-300 text-center">Hearing Checks</span>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-3 gap-4">
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+        <span className="text-gray-300 text-center">Wax Check</span>
+      </div>
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+        <span className="text-gray-300 text-center">Domes & Filters</span>
+      </div>
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+        <span className="text-gray-300 text-center">On-going Support</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
           </div>
         </div>
       </section>
