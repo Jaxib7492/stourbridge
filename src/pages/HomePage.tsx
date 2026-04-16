@@ -155,7 +155,7 @@ export function HomePage() {
             <div className="inline-flex items-center space-x-2 bg-white/95 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
               <CheckCircle className="w-5 h-5 text-green-600" />
               <span className="text-sm font-medium text-gray-700">
-                Fully Qualified HCPC Registered clinicians
+                Fully Qualified HCPC Registered Audiologists
               </span>
             </div>
           </div>

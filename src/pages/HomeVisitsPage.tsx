@@ -10,21 +10,33 @@ export function HomeVisitsPage() {
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
-            <div className="bg-gradient-to-br from-red-600 to-red-500 p-4 rounded-xl flex-shrink-0">
-              <Home className="w-8 h-8 text-white" />
-            </div>
+            
             <div className="flex-1 min-w-0">
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-2">
                 <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white break-words">
                   Stourbridge Hearing Centre — Home Visit Hearing Care
                 </h1>
                 <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
-                  Home Visits • Stourbridge
+                  Home Visits service Available
                 </span>
               </div>
               <p className="text-gray-300 text-base sm:text-lg">
                 Expert aftercare & hearing services at the comfort of your home
               </p>
+            </div>
+          </div>
+          <div className="mt-10 mb-12 flex justify-center">
+            <div className="w-full max-w-2xl bg-black rounded-2xl overflow-hidden shadow-xl border border-red-700">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/byKbXJViT_k?rel=0&modestbranding=1&showinfo=0&controls=1"
+                  title="Home Visit Hearing Care"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
 
@@ -50,20 +62,7 @@ export function HomeVisitsPage() {
             </div>
           </div>
 
-          <div className="mt-10 mb-12 flex justify-center">
-            <div className="w-full max-w-2xl bg-black rounded-2xl overflow-hidden shadow-xl border border-red-700">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/byKbXJViT_k?rel=0&modestbranding=1&showinfo=0&controls=1"
-                  title="Home Visit Hearing Care"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
+          
 
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
