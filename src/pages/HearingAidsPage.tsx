@@ -16,6 +16,18 @@ export function HearingAidsPage() {
             Hearing solutions, not just devices — fitted by independent audiologists.
           </p>
 
+          <div className="mt-10 mb-12 flex justify-center">
+  <div className="w-full max-w-2xl bg-black rounded-2xl overflow-hidden shadow-xl border border-red-700">
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+      <video
+        className="absolute top-0 left-0 w-full h-full object-contain"
+        src="/Client-3.mp4"
+        controls
+      />
+    </div>
+  </div>
+</div>
+
           <div className="flex flex-wrap justify-center gap-4">
             <button
               onClick={() => navigate('/contact')}
@@ -160,11 +172,17 @@ export function HearingAidsPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 border border-gray-700">
-              
-              <p className="text-gray-300 italic text-center">
-                "I can finally hear clearly again! The service was amazing and the aftercare is brilliant."
-              </p>
+            <div className="aspect-video bg-gray-800 rounded-lg mb-6 flex items-center justify-center overflow-hidden">
+              <video
+                src="/Client-3.mp4"
+                className="w-full h-full object-contain rounded-lg"
+                controls
+              />
             </div>
+            <p className="text-gray-300 italic text-center">
+              "I can finally hear clearly again! The service was amazing and the aftercare is brilliant."
+            </p>
+          </div>
 
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 border border-gray-700">
               <div className="aspect-video bg-gray-800 rounded-lg mb-6 flex items-center justify-center overflow-hidden">
