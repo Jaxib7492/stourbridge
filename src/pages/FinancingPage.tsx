@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export function FinancingPage() {
   const navigate = useNavigate();
@@ -19,7 +20,15 @@ export function FinancingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black text-white">
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>Interest-Free Hearing Aid Finance | Stourbridge Hearing Centre</title>
+        <meta name="description" content="Spread the cost of your hearing aids with 0% APR finance options. Use our monthly payment calculator to see how affordable better hearing can be in Stourbridge." />
+        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/financing" />
+      </Helmet>
+
+      {/* Hero Section */}
       <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900/40 via-black to-black">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -45,6 +54,7 @@ export function FinancingPage() {
         </div>
       </section>
 
+      {/* Calculator Section */}
       {showCalculator && (
         <section ref={calculatorRef} className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
           <div className="max-w-7xl mx-auto">
@@ -112,43 +122,38 @@ export function FinancingPage() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-red-700 to-red-600 rounded-2xl p-8 text-white">
-                <h2 className="text-2xl font-bold mb-6">Your example monthly payment</h2>
-                <div className="text-center mb-8">
-                  <p className="text-6xl font-bold mb-2">£{monthlyPayment}</p>
-                  <p className="text-xl">per month for {term} months</p>
+              <div className="bg-gradient-to-br from-red-700 to-red-600 rounded-2xl p-8 text-white flex flex-col justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold mb-6">Your example monthly payment</h2>
+                  <div className="text-center mb-8">
+                    <p className="text-6xl font-bold mb-2">£{monthlyPayment}</p>
+                    <p className="text-xl">per month for {term} months</p>
+                  </div>
+
+                  <div className="space-y-3 mb-10 text-sm">
+                    <p>• Representative 0% APR on selected plans</p>
+                    <p>• No setup fees | No hidden costs</p>
+                    <p>• Instant decision in most cases</p>
+                    <p>• Apply online or in-clinic</p>
+                  </div>
                 </div>
 
-                <div className="space-y-3 mb-10 text-sm">
-                  <p>• Representative 0% APR on selected plans</p>
-                  <p>• No setup fees | No hidden costs</p>
-                  <p>• Instant decision in most cases</p>
-                  <p>• Apply online or in-clinic</p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 gap-3">
                   <button
                     onClick={() => navigate('/contact')}
-                    className="bg-white text-red-700 px-6 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all"
+                    className="bg-white text-red-700 px-6 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all text-center"
                   >
                     Enquire about finance
                   </button>
                   <button
                     onClick={() => navigate('/contact')}
-                    className="bg-red-900 text-white px-6 py-4 rounded-lg font-semibold hover:bg-red-800 transition-all"
+                    className="bg-red-900 text-white px-6 py-4 rounded-lg font-semibold hover:bg-red-800 transition-all text-center"
                   >
                     Book FREE hearing test
-                  </button>
-                  <button
-                    onClick={() => navigate('/contact')}
-                    className="bg-green-600 text-white px-6 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all"
-                  >
-                    Book a Free Hearing Aids Demonstration
                   </button>
                 </div>
               </div>
             </div>
-
             <p className="text-gray-500 text-sm mt-6 text-center">
               *Finance subject to status and affordability. Representative examples only. Terms & conditions apply.
             </p>
@@ -156,94 +161,65 @@ export function FinancingPage() {
         </section>
       )}
 
+      {/* Process Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">How finance works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">1) Choose your aids</h3>
-              <p className="text-gray-300">
-                Pick from leading brands and styles — RIC, ITE, CIC and more.
-              </p>
+              <p className="text-gray-300">Pick from leading brands and styles — RIC, ITE, CIC and more.</p>
             </div>
-
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">2) Select a plan</h3>
-              <p className="text-gray-300">
-                Use the calculator to see payments at 0% APR on selected terms.
-              </p>
+              <p className="text-gray-300">Use the calculator to see payments at 0% APR on selected terms.</p>
             </div>
-
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">3) Apply & get fitted</h3>
-              <p className="text-gray-300">
-                Quick application and fitting with lifetime aftercare included.
-              </p>
+              <p className="text-gray-300">Quick application and fitting with lifetime aftercare included.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* FAQ Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Finance FAQs</h2>
           <div className="space-y-4">
             <details className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl overflow-hidden group">
               <summary className="px-8 py-6 text-xl font-semibold text-white cursor-pointer hover:bg-gray-800 transition-colors list-none flex items-center justify-between">
-                <span>▼ Is the 0% APR truly interest-free?</span>
+                <span>Is the 0% APR truly interest-free?</span>
+                <span className="text-red-500 font-bold">↓</span>
               </summary>
-              <div className="px-8 pb-6 text-gray-300">
+              <div className="px-8 pb-6 text-gray-300 border-t border-gray-700 pt-4">
                 Yes — on selected terms (e.g. 3, 6, 10 or 12 months) there's no interest charged and your cost of credit is £0.
               </div>
             </details>
-
             <details className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl overflow-hidden group">
               <summary className="px-8 py-6 text-xl font-semibold text-white cursor-pointer hover:bg-gray-800 transition-colors list-none flex items-center justify-between">
-                <span>▼ What amounts can I finance?</span>
+                <span>What amounts can I finance?</span>
+                <span className="text-red-500 font-bold">↓</span>
               </summary>
-              <div className="px-8 pb-6 text-gray-300">
+              <div className="px-8 pb-6 text-gray-300 border-t border-gray-700 pt-4">
                 Typical finance ranges from £300–£6,000. Use the calculator to try an example, or contact us to discuss other options.
-              </div>
-            </details>
-
-            <details className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl overflow-hidden group">
-              <summary className="px-8 py-6 text-xl font-semibold text-white cursor-pointer hover:bg-gray-800 transition-colors list-none flex items-center justify-between">
-                <span>▼ How do I apply?</span>
-              </summary>
-              <div className="px-8 pb-6 text-gray-300">
-                Click "Enquire about finance" and we'll guide you through a quick application online or in-clinic.
               </div>
             </details>
           </div>
         </div>
       </section>
 
+      {/* Final CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-red-700 to-red-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to make hearing easier?
-          </h2>
-          <p className="text-xl text-white mb-10">
-            Talk to an audiologist today about interest-free options and the best aids for you.
-          </p>
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to make hearing easier?</h2>
+          <p className="text-xl text-white mb-10">Talk to an audiologist today about interest-free options.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
-              onClick={() => navigate('/contact')}
-              className="bg-white text-red-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg text-lg"
-            >
+            <button onClick={() => navigate('/contact')} className="bg-white text-red-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg text-lg">
               Apply for finance
             </button>
-            <button
-              onClick={scrollToCalculator}
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-700 px-8 py-4 rounded-lg font-semibold transition-all text-lg"
-            >
-              Recalculate
-            </button>
-            <button
-              onClick={() => navigate('/contact')}
-              className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-lg text-lg"
-            >
-              Book a Free Hearing Aids Demonstration
+            <button onClick={() => navigate('/contact')} className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-lg text-lg">
+              Book Demonstration
             </button>
           </div>
         </div>

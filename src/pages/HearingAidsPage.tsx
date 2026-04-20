@@ -1,12 +1,25 @@
 import React from 'react';
 import { CreditCard } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async'; // Ensure this is installed
 
 export function HearingAidsPage() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* SEO BLOCK START */}
+      <Helmet>
+        <title>Private Hearing Aids Stourbridge | Independent Audiologists</title>
+        <meta name="description" content="Discover the latest digital hearing aids from leading brands like Phonak, Oticon, and Starkey. Benefit from free hearing tests, 0% finance, and lifetime aftercare." />
+        <meta name="keywords" content="private hearing aids, digital hearing aids Stourbridge, independent audiologist, free hearing test, rechargeable hearing aids" />
+        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids" />
+        <meta property="og:title" content="Private Hearing Aids | Stourbridge Hearing Centre" />
+        <meta property="og:description" content="Expertly fitted hearing solutions from independent audiologists. Latest technology with 0% finance available." />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      {/* SEO BLOCK END */}
+
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -17,16 +30,16 @@ export function HearingAidsPage() {
           </p>
 
           <div className="mt-10 mb-12 flex justify-center">
-  <div className="w-full max-w-2xl bg-black rounded-2xl overflow-hidden shadow-xl border border-red-700">
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-      <video
-        className="absolute top-0 left-0 w-full h-full object-contain"
-        src="/Client-3.mp4"
-        controls
-      />
-    </div>
-  </div>
-</div>
+            <div className="w-full max-w-2xl bg-black rounded-2xl overflow-hidden shadow-xl border border-red-700">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <video
+                  className="absolute top-0 left-0 w-full h-full object-contain"
+                  src="/Client-3.mp4"
+                  controls
+                />
+              </div>
+            </div>
+          </div>
 
           <div className="flex flex-wrap justify-center gap-4">
             <button
@@ -272,7 +285,7 @@ export function HearingAidsPage() {
               <div className="bg-white rounded-lg p-4 w-32 h-20 flex items-center justify-center">
                 <img
                   src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-                  alt="Starkey"
+                  alt="Starkey Hearing Aids Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -281,7 +294,7 @@ export function HearingAidsPage() {
               <div className="bg-white rounded-lg p-4 w-32 h-20 flex items-center justify-center">
                 <img
                   src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-                  alt="Phonak"
+                  alt="Phonak Hearing Aids Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -290,7 +303,7 @@ export function HearingAidsPage() {
               <div className="bg-white rounded-lg p-4 w-32 h-20 flex items-center justify-center">
                 <img
                   src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-                  alt="Oticon"
+                  alt="Oticon Hearing Aids Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -299,7 +312,7 @@ export function HearingAidsPage() {
               <div className="bg-white rounded-lg p-4 w-32 h-20 flex items-center justify-center">
                 <img
                   src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-                  alt="Bernafon"
+                  alt="Bernafon Hearing Aids Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -308,7 +321,7 @@ export function HearingAidsPage() {
               <div className="bg-white rounded-lg p-4 w-32 h-20 flex items-center justify-center">
                 <img
                   src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-                  alt="Signia"
+                  alt="Signia Hearing Aids Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -317,7 +330,7 @@ export function HearingAidsPage() {
               <div className="bg-white rounded-lg p-4 w-32 h-20 flex items-center justify-center">
                 <img
                   src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-                  alt="Widex"
+                  alt="Widex Hearing Aids Logo"
                   className="w-full h-full object-contain"
                 />
               </div>

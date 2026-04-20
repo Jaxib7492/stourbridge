@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.stourbridgehearing.co.uk/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://www.stourbridgehearing.co.uk/earwax-removal</loc><priority>0.8</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids</loc><priority>0.8</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/aftercare</loc><priority>0.7</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/financing</loc><priority>0.7</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/home-visits</loc><priority>0.7</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/about</loc><priority>0.7</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/contact</loc><priority>0.7</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/faq</loc><priority>0.6</priority></url>
 
-
-<url>
-  <loc>https://www.stourbridgehearing.co.uk/</loc>
-  <lastmod>2026-03-05T08:38:17+00:00</lastmod>
-</url>
-
-
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-birmingham</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-dudley</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-halesowen</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-wolverhampton</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-bromsgrove</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-redditch</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-oldbury</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford</loc><priority>0.6</priority></url>
+  <url><loc>https://www.stourbridgehearing.co.uk/hearing-aids-brierley-hill</loc><priority>0.6</priority></url>
 </urlset>

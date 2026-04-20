@@ -1,12 +1,20 @@
 import React from 'react';
 import { User, MapPin, Settings, Star, Clock, FileText, Ear, Heart, Stethoscope, Volume2, Music, Phone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export function AboutPage() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* SEO Metadata block */}
+      <Helmet>
+        <title>About Us | Stourbridge Hearing Centre | Independent Audiologists</title>
+        <meta name="description" content="Meet our HCPC Registered Audiologists. Stourbridge Hearing Centre is an independent clinic providing expert earwax removal, free hearing tests, and high-tech hearing aids." />
+        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/about" />
+      </Helmet>
+
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">

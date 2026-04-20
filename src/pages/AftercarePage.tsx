@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export function AftercarePage() {
   const navigate = useNavigate();
@@ -23,6 +24,13 @@ export function AftercarePage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>Hearing Aid Aftercare & Support | Stourbridge Hearing Centre</title>
+        <meta name="description" content="Lifetime hearing aid aftercare in Stourbridge. Free walk-in cleaning, fine-tuning, and earwax checks 6 days a week. Keep your hearing aids performing perfectly." />
+        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/aftercare" />
+      </Helmet>
+
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -70,50 +78,46 @@ export function AftercarePage() {
             </div>
 
             {/* RIGHT SIDE (Tiles + Video stacked) */}
-<div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6">
+              {/* VIDEO BLOCK */}
+              <div className="order-1 lg:order-2 rounded-2xl overflow-hidden border border-gray-700 shadow-lg">
+                <video
+                  src="/New-Video.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto object-contain"
+                />
+              </div>
 
-  {/* VIDEO BLOCK */}
-  <div className="order-1 lg:order-2 rounded-2xl overflow-hidden border border-gray-700 shadow-lg">
-    <video
-      src="/New-Video.mp4"
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-auto object-contain"
-    />
-  </div>
+              {/* TILES BLOCK */}
+              <div className="order-2 lg:order-1 bg-gradient-to-br from-black to-gray-900 border border-gray-700 rounded-2xl p-8">
+                <div className="grid grid-cols-3 gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+                    <span className="text-gray-300 text-center">Cleaning</span>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+                    <span className="text-gray-300 text-center">Fine-tuning</span>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+                    <span className="text-gray-300 text-center">Hearing Checks</span>
+                  </div>
+                </div>
 
-  {/* TILES BLOCK */}
-  <div className="order-2 lg:order-1 bg-gradient-to-br from-black to-gray-900 border border-gray-700 rounded-2xl p-8">
-    
-    <div className="grid grid-cols-3 gap-4 mb-4">
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-        <span className="text-gray-300 text-center">Cleaning</span>
-      </div>
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-        <span className="text-gray-300 text-center">Fine-tuning</span>
-      </div>
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-        <span className="text-gray-300 text-center">Hearing Checks</span>
-      </div>
-    </div>
-
-    <div className="grid grid-cols-3 gap-4">
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-        <span className="text-gray-300 text-center">Wax Check</span>
-      </div>
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-        <span className="text-gray-300 text-center">Domes & Filters</span>
-      </div>
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
-        <span className="text-gray-300 text-center">On-going Support</span>
-      </div>
-    </div>
-
-  </div>
-
-</div>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+                    <span className="text-gray-300 text-center">Wax Check</span>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+                    <span className="text-gray-300 text-center">Domes & Filters</span>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 flex items-center justify-center border border-gray-700 h-32">
+                    <span className="text-gray-300 text-center">On-going Support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -127,60 +131,22 @@ export function AftercarePage() {
               </h2>
 
               <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded bg-teal-500 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-white" />
+                {[
+                  "Lifetime aftercare — scheduled reviews to keep performance optimised.",
+                  "Professional fine-tuning & comfort adjustments for your listening environments.",
+                  "Routine cleaning: domes, wax filters, microphones and receivers.",
+                  "6-monthly hearing checks to monitor changes and update your settings when needed.",
+                  "Connectivity help: pairing to phones and apps, tips & troubleshooting."
+                ].map((text, i) => (
+                  <div key={i} className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-6 h-6 rounded bg-teal-500 flex items-center justify-center">
+                        <Check className="w-4 h-4 text-white" />
+                      </div>
                     </div>
+                    <p className="text-gray-300 text-lg leading-relaxed">{text}</p>
                   </div>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Lifetime aftercare — scheduled reviews to keep performance optimised.
-                  </p>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded bg-teal-500 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-white" />
-                    </div>
-                  </div>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Professional fine-tuning & comfort adjustments for your listening environments.
-                  </p>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded bg-teal-500 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-white" />
-                    </div>
-                  </div>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Routine cleaning: domes, wax filters, microphones and receivers.
-                  </p>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded bg-teal-500 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-white" />
-                    </div>
-                  </div>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    6-monthly hearing checks to monitor changes and update your settings when needed.
-                  </p>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded bg-teal-500 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-white" />
-                    </div>
-                  </div>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Connectivity help: pairing to phones and apps, tips & troubleshooting.
-                  </p>
-                </div>
+                ))}
               </div>
 
               <div className="flex flex-wrap gap-4 mt-10">
@@ -220,7 +186,7 @@ export function AftercarePage() {
 
               <div className="flex flex-wrap gap-4">
                 <button
-                  onClick={() => window.open('https://www.google.com/maps/search/59+High+St,+Stourbridge+DY8+1DE', '_blank')}
+                  onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=59+High+St+Stourbridge+DY8+1DE', '_blank')}
                   className="bg-white hover:bg-gray-100 text-red-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Get Directions
@@ -249,18 +215,16 @@ export function AftercarePage() {
               </p>
 
               <div className="space-y-4 mb-8">
-                <div className="flex gap-3 items-start">
-                  <Check className="w-5 h-5 text-teal-500 flex-shrink-0 mt-1" />
-                  <p className="text-gray-300">Visual check for wax and blockage</p>
-                </div>
-                <div className="flex gap-3 items-start">
-                  <Check className="w-5 h-5 text-teal-500 flex-shrink-0 mt-1" />
-                  <p className="text-gray-300">Advice on next steps if wax is present</p>
-                </div>
-                <div className="flex gap-3 items-start">
-                  <Check className="w-5 h-5 text-teal-500 flex-shrink-0 mt-1" />
-                  <p className="text-gray-300">No appointment required</p>
-                </div>
+                {[
+                  "Visual check for wax and blockage",
+                  "Advice on next steps if wax is present",
+                  "No appointment required"
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <Check className="w-5 h-5 text-teal-500 flex-shrink-0 mt-1" />
+                    <p className="text-gray-300">{item}</p>
+                  </div>
+                ))}
               </div>
 
               <div className="flex flex-wrap gap-4">
@@ -302,29 +266,17 @@ export function AftercarePage() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8">
-              <div className="text-6xl font-bold text-red-600 mb-4">1</div>
-              <h3 className="text-2xl font-bold text-white mb-4">Check & Clean</h3>
-              <p className="text-gray-300 leading-relaxed">
-                We inspect microphones, receivers and vents, then clean or replace domes and wax filters.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8">
-              <div className="text-6xl font-bold text-red-600 mb-4">2</div>
-              <h3 className="text-2xl font-bold text-white mb-4">Fine-Tune</h3>
-              <p className="text-gray-300 leading-relaxed">
-                We adjust settings for comfort and clarity across your day-to-day listening.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8">
-              <div className="text-6xl font-bold text-red-600 mb-4">3</div>
-              <h3 className="text-2xl font-bold text-white mb-4">Review</h3>
-              <p className="text-gray-300 leading-relaxed">
-                We plan follow-ups and share tips for getting the very best from your hearing aids.
-              </p>
-            </div>
+            {[
+              { num: 1, title: "Check & Clean", text: "We inspect microphones, receivers and vents, then clean or replace domes and wax filters." },
+              { num: 2, title: "Fine-Tune", text: "We adjust settings for comfort and clarity across your day-to-day listening." },
+              { num: 3, title: "Review", text: "We plan follow-ups and share tips for getting the very best from your hearing aids." }
+            ].map((step, i) => (
+              <div key={i} className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8">
+                <div className="text-6xl font-bold text-red-600 mb-4">{step.num}</div>
+                <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{step.text}</p>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -370,9 +322,7 @@ export function AftercarePage() {
                 {openFaq === index && (
                   <div className="px-8 pb-6">
                     <p className="text-gray-300 leading-relaxed">
-                      {faq.answer.split('**').map((part, i) =>
-                        i % 2 === 0 ? part : <span key={i} className="font-bold text-white">{part}</span>
-                      )}
+                      {faq.answer}
                     </p>
                   </div>
                 )}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, HelpCircle, Search } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -112,7 +113,6 @@ export function FAQPage() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // 🔍 FILTER LOGIC FOR SEARCH
   const filteredFAQs = faqs.filter(
     (faq) =>
       faq.question.toLowerCase().includes(search.toLowerCase()) ||
@@ -121,11 +121,16 @@ export function FAQPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>FAQs | Hearing Tests & Earwax Removal Stourbridge</title>
+        <meta name="description" content="Find answers to common questions about hearing tests, microsuction earwax removal, hearing aids, and home visits in Stourbridge, Dudley, and Halesowen." />
+        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/faqs" />
+      </Helmet>
 
       {/* HERO */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
         <div className="max-w-5xl mx-auto text-center">
-
           <div className="flex justify-center mb-6">
             <div className="bg-black/30 p-4 rounded-full">
               <HelpCircle className="w-10 h-10 text-red-400" />
@@ -143,7 +148,6 @@ export function FAQPage() {
           {/* 🔍 SEARCH BAR */}
           <div className="mt-10 max-w-2xl mx-auto relative">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-
             <input
               type="text"
               placeholder="Search FAQs..."
@@ -152,14 +156,12 @@ export function FAQPage() {
               className="w-full pl-12 pr-4 py-4 rounded-xl bg-black/40 border border-gray-700 text-white focus:outline-none focus:border-red-500"
             />
           </div>
-
         </div>
       </section>
 
       {/* FAQ LIST */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-4xl mx-auto space-y-4">
-
           {filteredFAQs.length > 0 ? (
             filteredFAQs.map((faq, index) => (
               <div
@@ -170,20 +172,19 @@ export function FAQPage() {
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center px-6 py-5 text-left hover:bg-black/30 transition-all"
                 >
-                  <span className="text-white font-semibold">
+                  <span className="text-white font-semibold pr-4">
                     {faq.question}
                   </span>
-
                   <ChevronDown
-                    className={`w-5 h-5 text-red-400 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-red-400 flex-shrink-0 transition-transform duration-300 ${
                       openIndex === index ? 'rotate-180' : ''
                     }`}
                   />
                 </button>
 
                 <div
-                  className={`px-6 overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-40 pb-5' : 'max-h-0'
+                  className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${
+                    openIndex === index ? 'max-h-[500px] pb-5 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <p className="text-gray-300 leading-relaxed">
@@ -193,36 +194,38 @@ export function FAQPage() {
               </div>
             ))
           ) : (
-            <p className="text-center text-gray-400">
-              No results found for your search.
-            </p>
+            <div className="py-20 text-center">
+              <p className="text-xl text-gray-400">
+                No results found for your search.
+              </p>
+              <button 
+                onClick={() => setSearch('')}
+                className="mt-4 text-red-500 hover:underline"
+              >
+                Clear search
+              </button>
+            </div>
           )}
-
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-700 via-red-600 to-red-700">
         <div className="max-w-4xl mx-auto text-center">
-
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-white">
             Still have questions?
           </h2>
-
           <p className="text-xl text-white mb-8">
             Contact our team for professional help anytime.
           </p>
-
           <a
             href="/contact"
-            className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             Contact Us
           </a>
-
         </div>
       </section>
-
     </div>
   );
 }
