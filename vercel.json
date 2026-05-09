@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/4db79e21cf804f22bf35b20dde310dfa.txt",
+      "destination": "/4db79e21cf804f22bf35b20dde310dfa.txt"
+    },
+    {
+      "source": "/((?!api|static|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
