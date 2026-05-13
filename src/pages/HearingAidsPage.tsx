@@ -29,7 +29,7 @@ export function HearingAidsPage() {
             <div className="w-full max-w-4xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border border-red-700/50">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/ubYEoG1cpQg?si=ndlnO6Ci3KVQ9thw?rel=0&modestbranding=1&showinfo=0&controls=1"
+                src="https://www.youtube.com/embed/9ixmIbHQNLA?si=xSt1TlWtCpS8u5kh?rel=0&modestbranding=1&showinfo=0&controls=1"
                 title="Stourbridge Hearing Aids Centre Client Review"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
