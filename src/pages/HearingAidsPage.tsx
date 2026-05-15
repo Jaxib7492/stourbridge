@@ -112,7 +112,7 @@ export function HearingAidsPage() {
              </div>
              <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
                 <Zap className="w-10 h-10 mb-4 text-white" />
-                <h4 className="font-bold text-white">Free Trial</h4>
+                <h4 className="font-bold text-white">Free hearing aids sound quality Demonstration</h4>
              </div>
           </div>
         </div>
