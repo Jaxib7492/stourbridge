@@ -16,23 +16,137 @@ export default function HearingAidsBirmingham() {
       </Helmet>
 
       {/* HERO */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Hearing Aids & Ear Care — Birmingham
-          </h1>
-          <p className="text-xl text-gray-100 max-w-2xl mx-auto">
-            Professional hearing services and safe ear wax removal for patients across Birmingham. 
-            Expert care, precise technology, and effective results.
+      {/* HERO */}
+<section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-center">
+  <div className="max-w-5xl mx-auto">
+
+    {/* TITLE */}
+    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+      Hearing Aids & Ear Care — Birmingham
+    </h1>
+
+    {/* SUBTITLE */}
+    <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+      Professional hearing services and safe ear wax removal for patients across Birmingham.
+      Expert care, precise technology, and effective results.
+    </p>
+
+    {/* BUTTONS */}
+    <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+      {/* CONSULTATION BUTTON */}
+      <button
+        onClick={() => navigate('/contact')}
+        className="bg-black hover:bg-gray-900 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
+      >
+        Book Your Consultation
+      </button>
+
+      {/* HOME VISITS BUTTON */}
+      <button
+        onClick={() => navigate('/home-visits')}
+        className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white hover:text-red-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
+      >
+        Home Visits
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+{/* PROFESSIONAL LOCATION MAP */}
+<section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+  <div className="max-w-6xl mx-auto">
+
+    {/* HEADING */}
+    <div className="text-center mb-12">
+
+      <h2 className="text-4xl font-bold text-white mb-4">
+        Visit Stourbridge Hearing Centre
+      </h2>
+
+      <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        Professional hearing aid services and microsuction ear wax removal
+        with expert care and advanced technology.
+      </p>
+
+    </div>
+
+    {/* MAP CARD */}
+    <div className="bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+
+      {/* MAP */}
+      <div className="relative w-full h-[550px]">
+
+        <iframe
+          title="Stourbridge Hearing Centre Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6674309.426382166!2d3.1469805935044!3d46.61824495131681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487091bae0831089%3A0xd24b5345dc5080ef!2sStourbridge%20Hearing%20Centre%20-Earwax%20removal%20%26%20Hearing%20Aids%20Specialists!5e0!3m2!1sen!2s!4v1779387526809!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full"
+        ></iframe>
+
+        {/* GET DIRECTIONS BUTTON */}
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=Stourbridge+Hearing+Centre"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-2xl font-bold shadow-2xl transition-all duration-300 hover:scale-105"
+        >
+          Get Directions
+        </a>
+
+      </div>
+
+      {/* INFO SECTION */}
+      <div className="p-8 grid md:grid-cols-3 gap-6">
+
+        {/* LOCATION */}
+        <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
+          <h3 className="text-xl font-semibold text-red-500 mb-3">
+            Clinic Location
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            Stourbridge Hearing Centre provides professional hearing care,
+            hearing aids, and microsuction ear wax removal services.
           </p>
-          <button
-            onClick={() => navigate('/contact')}
-            className="mt-10 bg-black hover:bg-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg transition-transform hover:scale-105 shadow-2xl"
-          >
-            Book Your Consultation
-          </button>
         </div>
-      </section>
+
+        {/* HOME VISITS */}
+        <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
+          <h3 className="text-xl font-semibold text-red-500 mb-3">
+            Home Visits Available
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            Comfortable at-home appointments available for patients
+            unable to travel to the clinic.
+          </p>
+        </div>
+
+        {/* FAST BOOKINGS */}
+        <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
+          <h3 className="text-xl font-semibold text-red-500 mb-3">
+            Fast Appointments
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            Same-day and next-day bookings available depending on availability.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* INTRO */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">

@@ -5,6 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -13,7 +14,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -24,10 +27,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: 'Aftercare', path: '/aftercare' },
     { label: 'Financing', path: '/financing' },
     { label: 'Home Visits', path: '/home-visits' },
-    { label: 'Our Services', path: '#' },
-    { label: 'FAQ', path: '/faq' },
-    { label: 'About Us', path: '/about' },
-    { label: 'Contact', path: '/contact' },
   ];
 
   const servicesDropdown = [
@@ -50,6 +49,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      {/* NAVBAR */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
           scrolled
@@ -81,13 +81,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <div key={item.label} className="relative">
 
                   <Link
-                    to={item.path === '#' ? '#' : item.path}
-                    onClick={(e) => {
-                      if (item.label === 'Our Services') {
-                        e.preventDefault();
-                        setServicesOpen(!servicesOpen);
-                      }
-                    }}
+                    to={item.path}
+                    onClick={handleNavClick}
                     className={`flex items-center gap-1 font-medium text-sm transition ${
                       location.pathname === item.path
                         ? 'text-rose-600'
@@ -95,38 +90,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     }`}
                   >
                     {item.label}
-                    {item.label === 'Our Services' && (
-                      <ChevronDown className="w-4 h-4" />
-                    )}
                   </Link>
-
-                  {item.label === 'Our Services' && (
-                    <div
-                      className={`absolute left-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white shadow-lg rounded-lg transition-all duration-300 z-50 ${
-                        servicesOpen
-                          ? 'opacity-100 visible'
-                          : 'opacity-0 invisible'
-                      }`}
-                    >
-                      {servicesDropdown.map((service) => (
-                        <Link
-                          key={service.path}
-                          to={service.path}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600"
-                          onClick={handleNavClick}
-                        >
-                          {service.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
 
                 </div>
               ))}
 
+              {/* BOOK BUTTON */}
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold"
+                className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-all duration-300"
               >
                 Book Now
               </Link>
@@ -150,56 +122,22 @@ export function Layout({ children }: { children: React.ReactNode }) {
               {menuItems.map((item) => (
                 <div key={item.label}>
 
-                  {/* MAIN ITEM */}
                   <div
                     className="flex justify-between items-center px-4 py-2"
-                    onClick={(e) => {
-                      if (item.label === 'Our Services') {
-                        e.preventDefault();
-                        setServicesOpen(!servicesOpen);
-                      } else {
-                        handleNavClick();
-                      }
-                    }}
+                    onClick={handleNavClick}
                   >
                     <Link
-                      to={item.path === '#' ? '#' : item.path}
+                      to={item.path}
                       className="text-gray-700 hover:text-rose-600"
                     >
                       {item.label}
                     </Link>
-
-                    {/* ARROW ONLY FOR SERVICES */}
-                    {item.label === 'Our Services' && (
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform ${
-                          servicesOpen ? 'rotate-180' : ''
-                        }`}
-                      />
-                    )}
                   </div>
-
-                  {/* DROPDOWN */}
-                  {item.label === 'Our Services' && servicesOpen && (
-                    <div className="ml-4 flex flex-col border-l pl-2">
-
-                      {servicesDropdown.map((service) => (
-                        <Link
-                          key={service.path}
-                          to={service.path}
-                          className="px-4 py-2 text-sm text-gray-600 hover:text-rose-600"
-                          onClick={handleNavClick}
-                        >
-                          {service.label}
-                        </Link>
-                      ))}
-
-                    </div>
-                  )}
 
                 </div>
               ))}
 
+              {/* MOBILE BOOK BUTTON */}
               <Link
                 to="/contact"
                 onClick={handleNavClick}
@@ -214,8 +152,73 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </nav>
 
-      <main className="pt-16">{children}</main>
+      {/* FLOATING RIGHT SIDE MENU */}
+      <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col">
 
+        {/* SERVICE LOCATIONS */}
+        <button
+          onClick={() => setServicesOpen(!servicesOpen)}
+          className="bg-rose-600 text-white px-5 py-4 text-sm font-semibold shadow-2xl hover:bg-rose-700 transition-all duration-300 flex items-center gap-2"
+        >
+          Service Locations
+
+          <ChevronDown
+            className={`w-4 h-4 transition-transform ${
+              servicesOpen ? 'rotate-180' : ''
+            }`}
+          />
+        </button>
+
+        {/* DROPDOWN */}
+        {servicesOpen && (
+          <div className="bg-white shadow-2xl max-h-96 overflow-y-auto w-64">
+
+            {servicesDropdown.map((service) => (
+              <Link
+                key={service.path}
+                to={service.path}
+                className="block px-4 py-3 text-sm text-gray-700 border-b hover:bg-rose-50 hover:text-rose-600 transition-all duration-300"
+                onClick={handleNavClick}
+              >
+                {service.label}
+              </Link>
+            ))}
+
+          </div>
+        )}
+
+        {/* FAQ */}
+        <Link
+          to="/faq"
+          className="bg-white text-gray-800 px-5 py-4 text-sm font-semibold shadow-2xl border-t border-gray-200 hover:bg-rose-600 hover:text-white transition-all duration-300"
+        >
+          FAQ
+        </Link>
+
+        {/* ABOUT US */}
+        <Link
+          to="/about"
+          className="bg-white text-gray-800 px-5 py-4 text-sm font-semibold shadow-2xl border-t border-gray-200 hover:bg-rose-600 hover:text-white transition-all duration-300"
+        >
+          About Us
+        </Link>
+
+        {/* CONTACT */}
+        <Link
+          to="/contact"
+          className="bg-black text-white px-5 py-4 text-sm font-semibold shadow-2xl border-t border-white/10 hover:bg-rose-600 transition-all duration-300"
+        >
+          Contact
+        </Link>
+
+      </div>
+
+      {/* MAIN CONTENT */}
+      <main className="pt-16">
+        {children}
+      </main>
+
+      {/* FOOTER */}
       <Footer />
     </>
   );
