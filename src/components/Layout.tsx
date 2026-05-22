@@ -27,7 +27,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: 'Financing', path: '/financing' },
     { label: 'Home Visits', path: '/home-visits' },
     { label: 'About Us', path: '/about' },
-    { label: 'Blog', path: '/blog' }, // ONLY TOP NAV
+    { label: 'Blog', path: '/blog' },
   ];
 
   const servicesDropdown = [
@@ -96,7 +96,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               ))}
 
-              {/* BOOK BUTTON */}
               <Link
                 to="/contact"
                 className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
@@ -173,13 +172,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 FAQ
               </Link>
 
-              <Link
-                to="/about"
-                onClick={handleNavClick}
-                className="block px-4 py-3 text-gray-700 hover:text-rose-600 hover:bg-rose-50 rounded-lg"
-              >
-                About Us
-              </Link>
+              {/* ❌ REMOVED DUPLICATE ABOUT US LINK */}
 
               <Link
                 to="/contact"
@@ -240,12 +233,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
       </div>
 
-      {/* MAIN CONTENT */}
       <main className="pt-16">
         {children}
       </main>
 
-      {/* FOOTER */}
       <Footer />
     </>
   );
