@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { SiTiktok } from 'react-icons/si';
 
 export function Footer() {
   const navigate = useNavigate();
@@ -18,22 +19,33 @@ export function Footer() {
             <p className="text-sm text-gray-400 mb-4">
               Your local, independent hearing care experts in Stourbridge.
             </p>
+
             <div className="flex gap-3">
               <a
-                href="https://facebook.com"
+                href="https://m.facebook.com/story.php?story_fbid=pfbid0rhSJD23RgiikRVramk8Zrfwt8V6puoUkPH2dH1HbWZ9RiPt2iCBaDgJ79PAsBqfl&id=100062869005008"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors duration-300"
               >
                 <Facebook className="w-4 h-4" />
               </a>
+
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/reel/DQKhS6ljPXT/?igsh=YTZ3Mnk0aW85dXRn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors duration-300"
               >
                 <Instagram className="w-4 h-4" />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@stourbridgehearingcentre?_r=1&_t=ZN-96ZogMCojMV"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors duration-300"
+              >
+                <SiTiktok className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>

@@ -107,10 +107,6 @@ export function HomePage() {
             <span className="inline-block bg-gradient-to-r from-red-400 via-red-300 to-red-400 bg-clip-text text-transparent animate-fade-in-up opacity-0" style={{animationDelay: '0.8s', paddingBottom: '0.5rem'}}>Stourbridge</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
-            Safe microsuction, advanced private hearing aids, and caring local service in Stourbridge — trusted by patients visiting from Dudley, Halesowen, Brierley Hill, and surrounding areas.
-          </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
             <button
               onClick={() => navigate('/contact')}
@@ -145,7 +141,7 @@ export function HomePage() {
             </button>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up opacity-0" style={{animationDelay: '1.6s'}}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up opacity-0" style={{animationDelay: '1.6s'}}>
             <div className="inline-flex items-center space-x-2 bg-white/95 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
               <CheckCircle className="w-5 h-5 text-green-600" />
               <span className="text-sm font-medium text-gray-700">
@@ -159,6 +155,10 @@ export function HomePage() {
               </span>
             </div>
           </div>
+
+          <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
+            Safe microsuction, advanced private hearing aids, and caring local service in Stourbridge — trusted by patients visiting from Dudley, Halesowen, Brierley Hill, and surrounding areas.
+          </p>
         </div>
       </section>
 

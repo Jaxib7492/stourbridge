@@ -16,39 +16,32 @@ export function ContactPage() {
         <link rel="canonical" href="https://www.stourbridgehearing.co.uk/contact" />
       </Helmet>
 
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-black">
+      {/* Top Information Header - Re-enabled container for mobile but hid subtitle on mobile per instructions */}
+      <section className="relative py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white md:mb-6">
             Contact Stourbridge Hearing Centre
           </h1>
-          <p className="text-xl text-gray-300">
+          <p className="hidden md:block text-xl text-gray-300">
             We're here to help with your hearing care. Reach out today — we'd love to hear from you.
           </p>
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {/* Address Tile */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
-              <div className="flex flex-col items-center text-center space-y-4">
-                <div className="bg-red-900/30 p-4 rounded-lg">
-                  <MapPin className="w-8 h-8 text-red-500" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-white mb-2 text-xl">Address</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    59 High St,<br />
-                    Stourbridge<br />
-                    DY8 1DE
-                  </p>
-                </div>
-              </div>
-            </div>
+      {/* Combined Section with responsive sorting layout */}
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12">
+          
+          {/* Form Block Area */}
+          <div className="order-1 lg:order-none lg:col-span-6">
+            <ContactForm />
+          </div>
 
+          {/* Info Blocks Container */}
+          <div className="order-2 lg:order-none lg:col-span-6 flex flex-col gap-8">
+            
             {/* Phone Tile */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
+            <div className="order-1 md:order-none bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="bg-red-900/30 p-4 rounded-lg">
                   <Phone className="w-8 h-8 text-red-500" />
@@ -62,28 +55,8 @@ export function ContactPage() {
               </div>
             </div>
 
-            {/* Email Tile */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
-              <div className="flex flex-col items-center text-center space-y-4">
-                <div className="bg-red-900/30 p-4 rounded-lg">
-                  <Mail className="w-8 h-8 text-red-500" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-white mb-2 text-xl">Email</h3>
-                  <a
-                    href="mailto:stourbridgehearingcentre@gmail.com"
-                    className="text-gray-300 hover:text-red-400 transition-colors break-all"
-                  >
-                    stourbridgehearingcentre@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Opening Hours Block */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+            <div className="order-2 md:order-none bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
               <div className="flex items-start space-x-4">
                 <div className="bg-red-900/30 p-3 rounded-lg flex-shrink-0">
                   <Clock className="w-6 h-6 text-red-500" />
@@ -114,8 +87,41 @@ export function ContactPage() {
               </div>
             </div>
 
-            {/* Form Block */}
-            <ContactForm />
+            {/* Email Tile */}
+            <div className="order-3 md:order-none bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="bg-red-900/30 p-4 rounded-lg">
+                  <Mail className="w-8 h-8 text-red-500" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-white mb-2 text-xl">Email</h3>
+                  <a
+                    href="mailto:stourbridgehearingcentre@gmail.com"
+                    className="text-gray-300 hover:text-red-400 transition-colors break-all"
+                  >
+                    stourbridgehearingcentre@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Address Tile */}
+            <div className="order-4 md:order-none bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="bg-red-900/30 p-4 rounded-lg">
+                  <MapPin className="w-8 h-8 text-red-500" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-white mb-2 text-xl">Address</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    59 High St,<br />
+                    Stourbridge<br />
+                    DY8 1DE
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

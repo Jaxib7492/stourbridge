@@ -26,6 +26,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: 'Aftercare', path: '/aftercare' },
     { label: 'Financing', path: '/financing' },
     { label: 'Home Visits', path: '/home-visits' },
+    { label: 'About Us', path: '/about' },
+    { label: 'Blog', path: '/blog' }, // ONLY TOP NAV
   ];
 
   const servicesDropdown = [
@@ -57,7 +59,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-
           <div className="flex justify-between items-center gap-2">
 
             {/* LOGO */}
@@ -81,20 +82,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   key={item.label}
                   to={item.path}
                   onClick={handleNavClick}
-                  className={`font-medium text-sm transition ${
+                  className={`font-medium text-sm transition relative ${
                     location.pathname === item.path
                       ? 'text-rose-600'
                       : 'text-gray-700 hover:text-rose-600'
                   }`}
                 >
                   {item.label}
+
+                  {location.pathname === item.path && (
+                    <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-rose-600 rounded-full"></span>
+                  )}
                 </Link>
               ))}
 
               {/* BOOK BUTTON */}
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
               >
                 Book Now
               </Link>
@@ -104,7 +109,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             {/* MOBILE BUTTON */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-2xl"
+              className="lg:hidden p-2 text-2xl text-gray-700"
             >
               ☰
             </button>
@@ -113,21 +118,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
           {/* MOBILE MENU */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden mt-4 space-y-1 pb-4 border-t pt-3">
+            <div className="lg:hidden mt-4 space-y-1 pb-4 border-t pt-3 bg-white rounded-2xl shadow-xl">
 
-              {/* MAIN LINKS */}
               {menuItems.map((item) => (
                 <Link
                   key={item.label}
                   to={item.path}
                   onClick={handleNavClick}
-                  className="block px-4 py-3 text-gray-700 hover:text-rose-600 hover:bg-rose-50 rounded-lg"
+                  className={`block px-4 py-3 rounded-lg transition ${
+                    location.pathname === item.path
+                      ? 'bg-rose-50 text-rose-600 font-semibold'
+                      : 'text-gray-700 hover:text-rose-600 hover:bg-rose-50'
+                  }`}
                 >
                   {item.label}
                 </Link>
               ))}
 
-              {/* SERVICES DROPDOWN */}
+              {/* SERVICES */}
               <div className="px-4 py-2">
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
@@ -143,23 +151,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
                 {servicesOpen && (
                   <div className="ml-2 mt-2 border-l pl-3 space-y-2">
-
                     {servicesDropdown.map((service) => (
                       <Link
                         key={service.path}
                         to={service.path}
                         onClick={handleNavClick}
-                        className="block text-sm text-gray-600 hover:text-rose-600"
+                        className="block text-sm text-gray-600 hover:text-rose-600 py-1"
                       >
                         {service.label}
                       </Link>
                     ))}
-
                   </div>
                 )}
               </div>
 
-              {/* EXTRA LINKS */}
               <Link
                 to="/faq"
                 onClick={handleNavClick}
@@ -179,18 +184,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="block mx-4 mt-3 px-4 py-3 bg-rose-600 text-white rounded-lg text-center font-semibold"
+                className="block mx-4 mt-3 px-4 py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-xl text-center font-semibold shadow-lg"
               >
                 Contact
               </Link>
 
             </div>
           )}
-
         </div>
       </nav>
 
-      {/* FLOATING RIGHT SIDE MENU */}
+      {/* FLOATING RIGHT SIDE MENU (NO BLOG HERE) */}
       <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col">
 
         <button
@@ -207,38 +211,29 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         {servicesOpen && (
           <div className="bg-white shadow-2xl max-h-96 overflow-y-auto w-64">
-
             {servicesDropdown.map((service) => (
               <Link
                 key={service.path}
                 to={service.path}
-                className="block px-4 py-3 text-sm text-gray-700 border-b hover:bg-rose-50 hover:text-rose-600"
+                className="block px-4 py-3 text-sm text-gray-700 border-b hover:bg-rose-50 hover:text-rose-600 transition"
                 onClick={handleNavClick}
               >
                 {service.label}
               </Link>
             ))}
-
           </div>
         )}
 
         <Link
           to="/faq"
-          className="bg-white text-gray-800 px-5 py-4 text-sm font-semibold shadow-2xl border-t hover:bg-rose-600 hover:text-white"
+          className="bg-white text-gray-800 px-5 py-4 text-sm font-semibold shadow-2xl border-t hover:bg-rose-600 hover:text-white transition"
         >
           FAQ
         </Link>
 
         <Link
-          to="/about"
-          className="bg-white text-gray-800 px-5 py-4 text-sm font-semibold shadow-2xl border-t hover:bg-rose-600 hover:text-white"
-        >
-          About Us
-        </Link>
-
-        <Link
           to="/contact"
-          className="bg-black text-white px-5 py-4 text-sm font-semibold shadow-2xl border-t hover:bg-rose-600"
+          className="bg-black text-white px-5 py-4 text-sm font-semibold shadow-2xl border-t hover:bg-rose-600 transition"
         >
           Contact
         </Link>
