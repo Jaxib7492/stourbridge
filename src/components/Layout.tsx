@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Footer } from './Footer';
-import { ChevronDown } from 'lucide-react';
+import {
+  ChevronDown,
+  Phone,
+  CheckCircle2,
+} from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -50,15 +54,147 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      {/* TOP PROMOTION BAR */}
+      <div className="fixed top-0 left-0 w-full z-[60]">
+
+        {/* DESKTOP VERSION */}
+        <div className="hidden md:flex h-[60px]">
+
+          {/* FREE EAR CHECK */}
+          <div className="flex-1 bg-green-700 text-white px-6 flex items-center justify-between shadow-md">
+
+            <div className="flex items-center gap-3">
+              <div className="bg-white/15 p-2 rounded-full">
+                <CheckCircle2 className="w-5 h-5" />
+              </div>
+
+              <div>
+                <h3 className="text-base font-bold uppercase tracking-wide leading-none">
+                  FREE EAR CHECK SERVICE
+                </h3>
+
+                <p className="text-xs text-green-100 mt-1">
+                  Quick, professional and no obligation.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white text-green-700 font-bold px-4 py-1.5 rounded-full text-xs shadow-md">
+              FREE
+            </div>
+          </div>
+
+          {/* CALL NOW */}
+          <a
+            href="tel:01384476306"
+            className="flex-1 bg-red-600 text-white px-6 flex items-center justify-between shadow-md hover:bg-red-700 transition"
+          >
+            <div className="flex items-center gap-3">
+              <div className="bg-white/15 p-2 rounded-full">
+                <Phone className="w-5 h-5" />
+              </div>
+
+              <div>
+                <h3 className="text-base font-bold uppercase tracking-wide leading-none">
+                  CALL NOW
+                </h3>
+
+                <p className="text-xs text-red-100 mt-1">
+                  Speak to our friendly team today!
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white text-red-600 font-bold px-4 py-1.5 rounded-full text-sm shadow-md">
+              01384 476 306
+            </div>
+          </a>
+
+        </div>
+
+        {/* MOBILE VERSION */}
+        <div className="md:hidden px-3 pt-3 space-y-2 bg-white">
+
+          {/* FREE EAR CHECK VOUCHER */}
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-green-700 to-green-600 shadow-xl">
+
+            {/* Decorative circles */}
+            <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
+            <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
+
+            <div className="flex items-center justify-between px-4 py-4">
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white/15 backdrop-blur-md p-2 rounded-full">
+                  <CheckCircle2 className="w-5 h-5 text-white" />
+                </div>
+
+                <div>
+                  <h3 className="text-white font-extrabold uppercase text-sm tracking-wide leading-none">
+                    Free Ear Check
+                  </h3>
+
+                  <p className="text-green-100 text-xs mt-1">
+                    Quick, professional & no obligation
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white text-green-700 font-extrabold text-xs px-4 py-2 rounded-full shadow-md">
+                FREE
+              </div>
+
+            </div>
+          </div>
+
+          {/* CALL NOW VOUCHER */}
+          <a
+            href="tel:01384476306"
+            className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-rose-600 shadow-xl block"
+          >
+
+            {/* Decorative circles */}
+            <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
+            <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
+
+            <div className="flex items-center justify-between px-4 py-4">
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white/15 backdrop-blur-md p-2 rounded-full">
+                  <Phone className="w-5 h-5 text-white" />
+                </div>
+
+                <div>
+                  <h3 className="text-white font-extrabold uppercase text-sm tracking-wide leading-none">
+                    Call Now
+                  </h3>
+
+                  <p className="text-red-100 text-xs mt-1">
+                    Speak to our friendly team
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white text-red-600 font-extrabold text-sm px-4 py-2 rounded-full shadow-md">
+                01384 476 306
+              </div>
+
+            </div>
+          </a>
+
+        </div>
+      </div>
+
       {/* NAVBAR */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
           scrolled
             ? 'bg-white/95 backdrop-blur-md shadow-lg'
             : 'bg-white shadow-sm'
-        }`}
+        } md:top-[60px] top-[145px]`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+
           <div className="flex justify-between items-center gap-2">
 
             {/* LOGO */}
@@ -141,6 +277,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   className="w-full flex justify-between items-center text-gray-700 font-medium py-2"
                 >
                   Service Locations
+
                   <ChevronDown
                     className={`w-4 h-4 transition-transform ${
                       servicesOpen ? 'rotate-180' : ''
@@ -172,8 +309,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 FAQ
               </Link>
 
-              {/* ❌ REMOVED DUPLICATE ABOUT US LINK */}
-
               <Link
                 to="/contact"
                 onClick={handleNavClick}
@@ -187,7 +322,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </nav>
 
-      {/* FLOATING RIGHT SIDE MENU (NO BLOG HERE) */}
+      {/* FLOATING RIGHT SIDE MENU */}
       <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col">
 
         <button
@@ -195,6 +330,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           className="bg-rose-600 text-white px-5 py-4 text-sm font-semibold shadow-2xl hover:bg-rose-700 transition-all duration-300 flex items-center gap-2"
         >
           Service Locations
+
           <ChevronDown
             className={`w-4 h-4 transition-transform ${
               servicesOpen ? 'rotate-180' : ''
@@ -233,7 +369,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
       </div>
 
-      <main className="pt-16">
+      {/* MAIN CONTENT */}
+      <main className="pt-[220px] md:pt-[125px]">
         {children}
       </main>
 

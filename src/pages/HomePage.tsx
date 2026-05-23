@@ -119,7 +119,7 @@ export function HomePage() {
               onClick={() => navigate('/contact')}
               className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
             >
-              Free Ear Check
+              Free Hearing Check
             </button>
             <button
               onClick={() => navigate('/contact')}
