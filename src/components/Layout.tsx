@@ -118,10 +118,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
           {/* FREE EAR CHECK VOUCHER */}
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-green-700 to-green-600 shadow-xl">
 
-            {/* Decorative circles */}
-            <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
-            <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
-
             <div className="flex items-center justify-between px-4 py-4">
 
               <div className="flex items-center gap-3">
@@ -152,10 +148,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
             href="tel:01384476306"
             className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-rose-600 shadow-xl block"
           >
-
-            {/* Decorative circles */}
-            <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
-            <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full opacity-90"></div>
 
             <div className="flex items-center justify-between px-4 py-4">
 
