@@ -259,15 +259,13 @@ export default function HearingAidsDudley() {
             </p>
           </div>
 
-          <div className="bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
-
-            <img
-              src="dudley-review.png"
-              alt="Google review from Dudley patient"
-              className="w-full h-auto object-cover"
-            />
-
-          </div>
+          <div className="w-full max-w-xl mx-auto bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="dudley-review.png"
+    alt="Google review from Dudley patient"
+    className="w-full h-auto object-contain"
+  />
+</div>
 
         </div>
       </section>
