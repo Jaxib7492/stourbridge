@@ -23,7 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // FIX: Prevents background scrolling when the mobile menu is open
+  // Prevents background scrolling when the mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -258,7 +258,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
           {/* MOBILE MENU */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden mt-4 space-y-1 pb-4 border-t pt-3 bg-white rounded-2xl shadow-xl">
+            <div className="lg:hidden mt-4 space-y-1 pb-4 border-t pt-3 bg-white rounded-2xl shadow-xl max-h-[calc(100vh-220px)] overflow-y-auto scrolling-touch">
 
               {menuItems.map((item) => (
                 <Link
