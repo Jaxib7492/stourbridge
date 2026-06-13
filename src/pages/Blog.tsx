@@ -23,7 +23,7 @@ export function Blog() {
         {/* HEADER */}
         <header className="space-y-6 text-center sm:text-left border-b border-red-800/40 pb-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-            Jim’s Hearing Journey: From Blocked Ears to Clear Conversations
+            Jim’s Hearing Journey: From Blocked Ears to Clear Conversations.
           </h1>
           <p className="text-xl text-red-100 leading-relaxed font-light">
             Hearing problems don’t always happen suddenly. For many people, they develop slowly—so
