@@ -86,13 +86,14 @@ export function HomePage() {
             <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-red-500 shadow-2xl bg-black">
 
               <video
-                src="/waxx1-copy.mp4"
-                className="w-full h-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+              src="/waxx1-copy.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+              controlsList="nodownload noplaybackrate noremoteplayback"
+            />
 
             </div>
           </div>

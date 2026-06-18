@@ -145,7 +145,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-6 text-center">
           <p className="text-sm text-gray-500">
-            © 2025 Stourbridge Hearing Centre. All rights reserved.
+            © 2026 Stourbridge Hearing Centre. All rights reserved.
           </p>
         </div>
       </div>

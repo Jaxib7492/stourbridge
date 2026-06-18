@@ -88,6 +88,7 @@ export function AftercarePage() {
                   loop
                   playsInline
                   className="w-full h-auto object-contain"
+                  controlsList="nodownload noplaybackrate noremoteplayback"
                 />
               </div>
 
