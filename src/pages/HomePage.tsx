@@ -158,7 +158,7 @@ export function HomePage() {
           </div>
 
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
-            Safe microsuction, advanced private hearing aids, and caring local service in Stourbridge — trusted by patients visiting from Dudley, Halesowen, Brierley Hill, and surrounding areas.
+            Professional hearing care in Stourbridge including safe microsuction earwax removal, free hearing checks, comprehensive hearing tests, advanced private hearing aids, tinnitus advice, ear health checks, and personalised hearing solutions from HCPC registered audiologists — trusted by patients visiting from Dudley, Halesowen, Brierley Hill, Kingswinford, Hagley, Kidderminster, Wolverhampton, Birmingham, and surrounding areas.
           </p>
         </div>
       </section>
@@ -173,10 +173,10 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto relative z-10 w-full overflow-hidden">
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 px-2" style={{lineHeight: '1.3'}}>
-              Professional Earwax Removal
+              Professional Microsuction Earwax Removal in Stourbridge
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-2">
-              Safe, gentle microsuction earwax removal by qualified audiologists — immediate relief, same-week appointments available
+              Safe, gentle microsuction earwax removal in Stourbridge by qualified audiologists — helping with blocked ears, wax build-up, reduced hearing, ear discomfort, and hearing loss caused by earwax. Same-week appointments and a free quick look service are available.
             </p>
           </div>
 
@@ -189,28 +189,28 @@ export function HomePage() {
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                     <div className="min-w-0 flex-1">
                       <p className="text-white font-semibold text-sm sm:text-base">Safe & Comfortable</p>
-                      <p className="text-gray-400 text-sm break-words">No water flushed into the ear canal</p>
+                      <p className="text-gray-400 text-sm break-words">No water flushed into the ear canal — a modern ear cleaning method for blocked ears</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                     <div className="min-w-0 flex-1">
                       <p className="text-white font-semibold text-sm sm:text-base">Immediate Results</p>
-                      <p className="text-gray-400 text-sm break-words">Feel the difference straight away</p>
+                      <p className="text-gray-400 text-sm break-words">Feel the difference straight away when hearing loss is caused by wax build-up</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                     <div className="min-w-0 flex-1">
                       <p className="text-white font-semibold text-sm sm:text-base">Safe for Perforations</p>
-                      <p className="text-gray-400 text-sm break-words">Suitable even if you have ear problems</p>
+                      <p className="text-gray-400 text-sm break-words">Suitable for many patients with ear problems, hearing aids, or previous ear concerns</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                     <div className="min-w-0 flex-1">
                       <p className="text-white font-semibold text-sm sm:text-base">Expert Care</p>
-                      <p className="text-gray-400 text-sm break-words">Performed by HCPC-registered audiologists</p>
+                      <p className="text-gray-400 text-sm break-words">Performed by HCPC-registered audiologists and experienced hearing care specialists</p>
                     </div>
                   </li>
                 </ul>
@@ -221,14 +221,14 @@ export function HomePage() {
                       Free Quick Look Service Available
                     </p>
                     <p className="text-green-300 text-xs sm:text-sm text-center mt-1 break-words">
-                      Not sure if you need removal? We offer a complimentary ear check
+                      Not sure if you need earwax removal? We offer a complimentary ear check and ear health advice
                     </p>
                   </div>
                   <button
                     onClick={() => navigate('/earwax-removal')}
                     className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-4 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   >
-                    Learn More About Earwax Removal
+                    Learn More About Microsuction Earwax Removal
                   </button>
                 </div>
               </div>
@@ -244,12 +244,12 @@ export function HomePage() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
-                    title="Earwax Removal at Stourebridge"
+                    title="Microsuction earwax removal and hearing care at Stourbridge Hearing Centre"
                   />
                 </div>
                 <div className="mt-4 sm:mt-6 text-center px-2">
-                  <p className="text-white font-semibold text-base sm:text-lg break-words">Professional Microsuction</p>
-                  <p className="text-gray-400 text-sm sm:text-base break-words">Watch how our gentle earwax removal procedure works</p>
+                  <p className="text-white font-semibold text-base sm:text-lg break-words">Professional Microsuction Earwax Removal</p>
+                  <p className="text-gray-400 text-sm sm:text-base break-words">Watch how our gentle microsuction earwax removal procedure works at our Stourbridge hearing clinic</p>
                 </div>
               </div>
             </div>
@@ -263,10 +263,10 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4" style={{lineHeight: '1.3'}}>
-              Private Hearing Aids Tailored to You
+              Private Digital Hearing Aids & Hearing Tests in Stourbridge
             </h2>
             <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-              We offer discreet, high-performance hearing aids from leading brands. Every fitting is personalised with expert aftercare.
+              We offer professional hearing tests, hearing assessments, hearing aid fittings, hearing aid adjustments, hearing aid servicing, hearing aid repairs, tinnitus support, and discreet digital hearing aids from leading brands. Every fitting is personalised with expert aftercare from your local independent hearing clinic in Stourbridge.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -280,7 +280,7 @@ export function HomePage() {
                 onClick={() => navigate('/contact')}
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
               >
-                Book a Free Hearing Aids Demonstration
+                Book a Free Hearing Aid Demonstration
               </button>
             </div>
           </div>
@@ -289,31 +289,75 @@ export function HomePage() {
             <div className="relative rounded-xl overflow-hidden shadow-lg aspect-square bg-gray-800 hover:shadow-xl transition-all duration-300 hover:scale-105 group">
               <img
                 src="/1.jpeg"
-                alt="Hearing care service"
+                alt="Professional hearing care and hearing tests in Stourbridge"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg aspect-square bg-gray-800 hover:shadow-xl transition-all duration-300 hover:scale-105 group">
               <img
                 src="/2.jpeg"
-                alt="Patient care at clinic"
+                alt="Patient receiving hearing care at Stourbridge Hearing Centre"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg aspect-square bg-gray-800 hover:shadow-xl transition-all duration-300 hover:scale-105 group">
               <img
                 src="/image copy copy copy copy copy.png"
-                alt="Clinic interior"
+                alt="Independent hearing clinic in Stourbridge High Street"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg aspect-square bg-gray-800 hover:shadow-xl transition-all duration-300 hover:scale-105 group">
               <img
                 src="/image copy copy.png"
-                alt="Hearing care equipment"
+                alt="Hearing aids and audiology equipment for hearing tests in Stourbridge"
                 className="w-full h-full object-cover object-top"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Hearing Care Services Section */}
+      <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-br from-red-900/20 to-red-800/20 rounded-full blur-3xl"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4" style={{lineHeight: '1.3'}}>
+              Complete Hearing Care Services in Stourbridge
+            </h2>
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
+              From hearing tests and digital hearing aids to earwax removal, tinnitus advice, hearing protection, and ongoing aftercare, our independent hearing centre provides friendly local support for your hearing health.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-on-scroll opacity-0 translate-y-8" style={{animationDelay: '200ms'}}>
+            {[
+              'Hearing Tests',
+              'Free Hearing Checks',
+              'Private Hearing Assessments',
+              'Digital Hearing Aids',
+              'Invisible Hearing Aids',
+              'Rechargeable Hearing Aids',
+              'Hearing Aid Fittings',
+              'Hearing Aid Adjustments',
+              'Hearing Aid Repairs',
+              'Hearing Aid Servicing',
+              'Tinnitus Advice',
+              'Ear Health Checks',
+              'Microsuction Earwax Removal',
+              'Blocked Ear Treatment',
+              'Hearing Protection',
+              'Home Visit Hearing Care'
+            ].map((service) => (
+              <div key={service} className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-5 hover:border-red-500 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                  <p className="text-white font-semibold text-sm sm:text-base">{service}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -323,19 +367,16 @@ export function HomePage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Patients Visit Us From Nearby Areas
+            Patients Visit Our Hearing Clinic in Stourbridge From Nearby Areas
           </h2>
 
           <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-            Our hearing clinic in Stourbridge welcomes patients from surrounding areas. 
-            Many people travel to us from Dudley, Halesowen, Brierley Hill, Wolverhampton, 
-            Birmingham, and nearby locations for professional earwax removal and hearing care.
+            Our hearing clinic in Stourbridge welcomes patients from surrounding areas for hearing tests, hearing aids, hearing care, microsuction earwax removal, tinnitus advice, and ear health checks. Many people travel to us from Dudley, Halesowen, Brierley Hill, Wolverhampton, Birmingham, and nearby locations for professional audiology services.
           </p>
 
           <p className="text-gray-400 max-w-3xl mx-auto">
             We are conveniently located in Stourbridge High Street, making it easy to access 
-            from nearby towns including Kingswinford, Cradley Heath, Kidderminster, 
-            Hagley, and Stourport-on-Severn.
+            from nearby towns including Kingswinford, Cradley Heath, Kidderminster, Hagley, Stourport-on-Severn, Wordsley, Pedmore, Amblecote, Bromsgrove, and Belbroughton.
           </p>
         </div>
       </section>
@@ -353,9 +394,9 @@ export function HomePage() {
               <div className="bg-red-900/30 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 <Users className="w-8 h-8 text-red-500 group-hover:animate-pulse" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Experienced Audiologists in Stourbridge</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Experienced Audiologists & Hearing Care Specialists in Stourbridge</h3>
               <p className="text-gray-300 leading-relaxed">
-                Our qualified audiologists are experts in earwax removal, microsuction, and private hearing aids. With years of clinical experience, we ensure every patient receives safe, comfortable, and effective treatment.
+                Our qualified audiologists are experts in earwax removal, microsuction, hearing tests, hearing assessments, tinnitus advice, and private hearing aids. With years of clinical experience, we ensure every patient receives safe, comfortable, and effective treatment.
               </p>
             </div>
 
@@ -363,9 +404,9 @@ export function HomePage() {
               <div className="bg-red-900/30 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 <MapPin className="w-8 h-8 text-red-500 group-hover:animate-pulse" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Independent Hearing Care Near You</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Independent Hearing Clinic & Hearing Care Near You</h3>
               <p className="text-gray-300 leading-relaxed">
-                As a local, independent hearing centre in Stourbridge, we provide honest advice and ongoing support — without pressure or sales targets. You'll always see the same trusted audiologist at every visit.
+                As a local, independent hearing centre in Stourbridge, we provide honest hearing care advice, hearing aid demonstrations, hearing aid aftercare, and ongoing support — without pressure or sales targets. You'll always see the same trusted audiologist at every visit.
               </p>
             </div>
 
@@ -375,7 +416,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Hundreds of Happy Patients</h3>
               <p className="text-gray-300 leading-relaxed">
-                We're proud to have helped hundreds of patients improve their hearing health. Read our Google reviews to see why so many people choose Stourbridge Hearing Centre for expert, caring service.
+                We're proud to have helped hundreds of patients improve their hearing health through professional hearing tests, private hearing aids, earwax removal, and caring local support. Read our Google reviews to see why so many people choose Stourbridge Hearing Centre.
               </p>
             </div>
           </div>
@@ -384,20 +425,20 @@ export function HomePage() {
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 text-center animate-on-scroll opacity-0 translate-y-8" style={{animationDelay: '600ms'}}>
             <p className="text-gray-300 text-lg mb-6 flex items-center justify-center gap-2">
               <Ear className="w-6 h-6 text-red-500" />
-              <span>Join hundreds of patients who trust us for safe, comfortable earwax removal.</span>
+              <span>Join hundreds of patients who trust us for safe, comfortable earwax removal, hearing tests, hearing aids, and long-term hearing care.</span>
             </p>
             <button
               onClick={() => navigate('/contact')}
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1 inline-flex items-center gap-2"
             >
-              Book Your Appointment
+              Book Your Hearing Appointment
               <span className="text-xl">→</span>
             </button>
           </div>
         </div>
       </section>
 
-      {/* Inside the Clinic Section */}
+      {/* Inside Our Stourbridge Hearing Clinic Section */}
       <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-80 h-80 bg-gradient-to-br from-red-900/20 to-red-800/20 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="max-w-6xl mx-auto relative z-10">
@@ -405,7 +446,7 @@ export function HomePage() {
             <div className="flex items-center justify-between mb-4">
               <div className="flex-1"></div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex-1" style={{lineHeight: '1.3'}}>
-                Inside the Clinic
+                Inside Our Stourbridge Hearing Clinic
               </h2>
               <div className="flex-1 flex justify-end">
                 {isAuthenticated && (
@@ -420,7 +461,7 @@ export function HomePage() {
               </div>
             </div>
             <p className="text-base sm:text-lg text-gray-300">
-              A quick look around Stourbridge Hearing Centre.
+              A quick look around Stourbridge Hearing Centre, your local independent hearing clinic for earwax removal, hearing tests, private hearing aids, and hearing care.
             </p>
           </div>
 
@@ -455,10 +496,10 @@ export function HomePage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4" style={{lineHeight: '1.3'}}>
-              Get in Touch
+              Book Your Hearing Test or Earwax Removal Appointment
             </h2>
             <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-              Book your appointment or contact us for any questions
+              Book your hearing test, free hearing check, hearing aid consultation, microsuction earwax removal appointment, or contact us for hearing care advice.
             </p>
           </div>
 
@@ -477,7 +518,7 @@ export function HomePage() {
                       DY8 1DE
                     </p>
                     <p className="text-gray-400 mt-2">
-                      Easily accessible for patients travelling from Dudley, Halesowen, Birmingham and nearby areas.
+                      Easily accessible for patients travelling from Dudley, Halesowen, Kingswinford, Brierley Hill, Wolverhampton, Birmingham, Kidderminster and nearby areas for hearing aids, hearing tests and earwax removal.
                     </p>
                   </div>
                 </div>
@@ -530,6 +571,56 @@ export function HomePage() {
             <div className="animate-on-scroll opacity-0 translate-y-8" style={{animationDelay: '200ms'}}>
               <ContactForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
+        <div className="absolute top-10 left-10 w-80 h-80 bg-gradient-to-br from-red-900/20 to-red-800/20 rounded-full blur-3xl"></div>
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4" style={{lineHeight: '1.3'}}>
+              Hearing Care FAQs
+            </h2>
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
+              Common questions about hearing tests, hearing aids, earwax removal, microsuction, and hearing care in Stourbridge.
+            </p>
+          </div>
+
+          <div className="space-y-4 animate-on-scroll opacity-0 translate-y-8" style={{animationDelay: '200ms'}}>
+            {[
+              {
+                question: 'Do you offer hearing tests in Stourbridge?',
+                answer: 'Yes. We offer professional hearing tests, free hearing checks, and private hearing assessments at Stourbridge Hearing Centre.'
+              },
+              {
+                question: 'Do you provide private hearing aids?',
+                answer: 'Yes. We provide private digital hearing aids, invisible hearing aids, rechargeable hearing aids, hearing aid fittings, adjustments, servicing, and aftercare.'
+              },
+              {
+                question: 'Is microsuction earwax removal safe?',
+                answer: 'Microsuction is a safe and modern earwax removal method performed by qualified audiologists. It does not use water flushing and is suitable for many patients with blocked ears.'
+              },
+              {
+                question: 'Can earwax cause hearing loss?',
+                answer: 'Yes. Earwax build-up can cause blocked ears, reduced hearing, discomfort, and sometimes tinnitus-like symptoms. Earwax removal may help restore clearer hearing when wax is the cause.'
+              },
+              {
+                question: 'Which areas do you cover?',
+                answer: 'Patients visit us from Stourbridge, Dudley, Halesowen, Brierley Hill, Kingswinford, Hagley, Kidderminster, Wolverhampton, Birmingham, and surrounding areas.'
+              },
+              {
+                question: 'Do you offer home visits?',
+                answer: 'Yes. Home visit hearing care may be available for patients who cannot easily attend the clinic. Contact us to check availability.'
+              }
+            ].map((item) => (
+              <div key={item.question} className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-red-500 transition-all duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{item.question}</h3>
+                <p className="text-gray-300 leading-relaxed">{item.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
