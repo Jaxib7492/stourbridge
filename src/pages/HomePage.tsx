@@ -445,7 +445,9 @@ export function HomePage() {
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-8">
             <div className="flex items-center justify-between mb-4">
               <div className="flex-1"></div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex-1" style={{lineHeight: '1.3'}}>
+              <h2
+                className="w-full lg:flex-1 text-4xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight text-center lg:text-left"
+              >
                 Inside Our Stourbridge Hearing Clinic
               </h2>
               <div className="flex-1 flex justify-end">

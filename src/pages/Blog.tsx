@@ -263,11 +263,17 @@ export function Blog() {
               Ear Infections: Symptoms, Causes, Treatment & Expert Ear Care in Stourbridge
             </h1>
 
-            <img
-              src="ear-infection.jpg"
+            <video
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
               className="w-full rounded-xl"
-              alt="Ear infection examination and ear health care in Stourbridge"
-            />
+            >
+              <source src="ear-infection-vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
 
             <p>
               Ear infections are among the most common ear conditions affecting both children and adults.
