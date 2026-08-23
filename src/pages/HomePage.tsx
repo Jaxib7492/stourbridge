@@ -158,7 +158,7 @@ export function HomePage() {
           </div>
 
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
-            Professional hearing care in Stourbridge including safe microsuction earwax removal, free hearing checks, comprehensive hearing tests, advanced private hearing aids, tinnitus advice, ear health checks, and personalised hearing solutions from HCPC registered audiologists — trusted by patients visiting from Dudley, Halesowen, Brierley Hill, Kingswinford, Hagley, Kidderminster, Wolverhampton, Birmingham, and surrounding areas.
+            Professional hearing care in Stourbridge: microsuction earwax removal, hearing tests, hearing aids, tinnitus advice and ear health checks from HCPC-registered audiologists.
           </p>
         </div>
       </section>
@@ -371,12 +371,12 @@ export function HomePage() {
           </h2>
 
           <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-            Our hearing clinic in Stourbridge welcomes patients from surrounding areas for hearing tests, hearing aids, hearing care, microsuction earwax removal, tinnitus advice, and ear health checks. Many people travel to us from Dudley, Halesowen, Brierley Hill, Wolverhampton, Birmingham, and nearby locations for professional audiology services.
+            Our Stourbridge hearing clinic offers hearing tests, hearing aids, microsuction earwax removal, tinnitus advice and ear health checks, welcoming patients from Dudley, Halesowen, Brierley Hill, Wolverhampton, Birmingham and surrounding areas.
+
           </p>
 
           <p className="text-gray-400 max-w-3xl mx-auto">
-            We are conveniently located in Stourbridge High Street, making it easy to access 
-            from nearby towns including Kingswinford, Cradley Heath, Kidderminster, Hagley, Stourport-on-Severn, Wordsley, Pedmore, Amblecote, Bromsgrove, and Belbroughton.
+            We are conveniently located on Stourbridge High Street, easily accessible from Kingswinford, Cradley Heath, Kidderminster, Hagley, Stourport-on-Severn, Wordsley, Pedmore, Amblecote, Bromsgrove and Belbroughton.
           </p>
         </div>
       </section>
