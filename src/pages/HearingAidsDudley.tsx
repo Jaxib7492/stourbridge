@@ -65,13 +65,13 @@ export default function HearingAidsDudley() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-8">
-            Ear Wax Removal & Hearing Aids in Dudley
+            Microsuction Earwax Removal & Private Hearing Aids in Dudley
           </h1>
 
           <p className="text-xl text-red-50 max-w-4xl mx-auto leading-relaxed">
-            Safe microsuction ear wax removal, professional hearing tests,
-            modern hearing aids, and personalised audiology care for patients
-            across Dudley and surrounding areas.
+            HCPC-Registered Clinical Audiology Care, Water-Free Ear Cleaning & Video Otoscopy
+            At Stourbridge Hearing Centre, our qualified clinical audiologists deliver safe, water-free microsuction earwax extraction and full diagnostic hearing evaluations for patients across Dudley.
+            Whether you are experiencing sudden conductible hearing loss, ear fullness, tinnitus, or cerumen impaction, our High Street clinic provides rapid, expert relief without wet ear syringing.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
@@ -102,19 +102,16 @@ export default function HearingAidsDudley() {
 
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Safe Microsuction Ear Wax Removal in Dudley
+              Water-Free Clinical Microsuction & Otoscopic Examinations in Dudley
             </h2>
 
             <p className="text-gray-400 text-xl max-w-3xl mx-auto">
-              Professional ear wax removal and hearing care services for Dudley
-              patients using modern microsuction technology.
+              Precision Cerumen Extraction Performed Under High-Magnification Inspection
             </p>
           </div>
 
           <p>
-            We provide professional ear wax removal near Dudley using
-            microsuction, one of the safest and most effective methods of
-            removing excess ear wax.
+            Our independent audiology clinic serves patients from Dudley, Sedgley, Tipton, Kingswinford, and surrounding Black Country communities with clinical-grade ear care.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -405,7 +402,7 @@ export default function HearingAidsDudley() {
                 a: 'Please contact Stourbridge Hearing Centre directly for current pricing and appointment availability.',
               },
               {
-                q: 'Is microsuction safe?',
+                q: 'Why is clinical microsuction preferred over traditional syringing?',
                 a: 'Yes. Microsuction is regarded as one of the safest methods of ear wax removal when performed by a trained professional.',
               },
               {

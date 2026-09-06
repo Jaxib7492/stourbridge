@@ -10,8 +10,8 @@ export default function HearingAidsBirmingham() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Hearing Aids & Ear Wax Removal Birmingham | Professional Care</title>
-        <meta name="description" content="Expert hearing aids and microsuction ear wax removal services in Birmingham. Fast appointments, professional audiologists, and gold-standard ear care." />
+        <title>Hearing Aids & Microsuction Birmingham | Independent Audiologist</title>
+        <meta name="description" content="HCPC-registered audiologists providing private hearing aids and microsuction earwax removal for Birmingham patients. Clinical care, home visits & same-day appointments." />
         <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids-birmingham" />
       </Helmet>
 
@@ -22,13 +22,14 @@ export default function HearingAidsBirmingham() {
 
     {/* TITLE */}
     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-      Hearing Aids & Ear Care — Birmingham
+      Private Hearing Aids & Microsuction Earwax Removal for Birmingham
     </h1>
 
     {/* SUBTITLE */}
     <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
-      Professional hearing services and safe ear wax removal for patients across Birmingham.
-      Expert care, precise technology, and effective results.
+      HCPC-Registered Clinical Audiology Care, Hearing Assessments & Domiciliary Visits
+      At Stourbridge Hearing Centre, our qualified clinical audiologists deliver comprehensive hearing healthcare for patients across Birmingham.
+      Whether you require precise microsuction earwax removal, full diagnostic audiometry, or invisible digital hearing aids, our independent practice provides expert, patient-focused care tailored to your exact hearing needs.
     </p>
 
     {/* BUTTONS */}
@@ -63,12 +64,12 @@ export default function HearingAidsBirmingham() {
     <div className="text-center mb-12">
 
       <h2 className="text-4xl font-bold text-white mb-4">
-        Visit Stourbridge Hearing Centre
+        Independent Audiology Practice Serving Birmingham & West Midlands
       </h2>
 
       <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-        Professional hearing aid services and microsuction ear wax removal
-        with expert care and advanced technology.
+        Advanced Diagnostic Hearing Services & Clinical Cerumen Management
+        Located within easy reach of Greater Birmingham, our independent practice offers private audiometry, prescription hearing instrument fittings, and water-free microsuction.
       </p>
 
     </div>
@@ -156,8 +157,7 @@ export default function HearingAidsBirmingham() {
             As an independent clinic, we pride ourselves on giving each patient the time and attention they deserve.
           </p>
           <p>
-            Blocked ears can lead to more than just physical discomfort; they can cause significant hearing loss, 
-            tinnitus, and social isolation. Our Birmingham clinics offer fast, reliable treatments to restore your hearing clarity.
+            Excess cerumen (earwax) impaction can cause conductible hearing loss, otalgia, and tinnitus. We provide prompt, clinical-grade ear care and video otoscopy to clear blocked canals and assess middle-ear health.
           </p>
           <div className="flex items-center justify-center md:justify-start gap-2 text-red-500 font-semibold">
             <MapPin className="w-5 h-5" />
@@ -212,29 +212,29 @@ export default function HearingAidsBirmingham() {
             <div className="flex gap-4">
               <ShieldCheck className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold mb-2">Expert Audiologists</h3>
-                <p className="text-gray-400">Our clinic is led by highly experienced professionals focused on clinical excellence.</p>
+                <h3 className="text-xl font-semibold mb-2">HCPC-Registered Clinical Audiologists</h3>
+                <p className="text-gray-400">Professional care carried out strictly by qualified audiologists committed to clinical excellence.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Clock className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold mb-2">Quick Turnaround</h3>
-                <p className="text-gray-400">We offer same-day or next-day appointments in many cases to resolve hearing issues fast.</p>
+                <h3 className="text-xl font-semibold mb-2">Rapid Access Appointments</h3>
+                <p className="text-gray-400">Same-day and next-day clinical availability for urgent earwax removal and hearing checks.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Star className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold mb-2">Independent Choice</h3>
-                <p className="text-gray-400">We aren't tied to one manufacturer, giving you access to the world's best hearing aid brands.</p>
+                <h3 className="text-xl font-semibold mb-2">Unbiased Multi-Brand Technology</h3>
+                <p className="text-gray-400">As an independent practice, we prescribe devices from all leading global manufacturers without commercial bias.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Ear className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold mb-2">Lifetime Aftercare</h3>
-                <p className="text-gray-400">Our commitment doesn't end at fitting; we provide ongoing support and adjustments for life.</p>
+                <h3 className="text-xl font-semibold mb-2">Comprehensive Lifetime Care</h3>
+                <p className="text-gray-400">All hearing instrument fittings include ongoing clinical adjustments, ear canal health checks, and routine aftercare.</p>
               </div>
             </div>
           </div>
@@ -247,16 +247,16 @@ export default function HearingAidsBirmingham() {
           <h2 className="text-4xl font-bold text-center mb-12 text-red-500">Frequently Asked Questions</h2>
           <div className="space-y-8">
             <div className="bg-black/40 p-6 rounded-xl border border-gray-800">
-              <h3 className="text-xl font-semibold text-white mb-3">Is microsuction safe?</h3>
-              <p className="text-gray-400">Yes, it is widely considered the safest and most comfortable method for removing earwax, as the professional has a clear view of the ear canal throughout.</p>
+              <h3 className="text-xl font-semibold text-white mb-3">Why is clinical microsuction preferred over traditional syringing?</h3>
+              <p className="text-gray-400">Microsuction uses low-pressure suction under continuous microscopic visualization, avoiding water pressure against the tympanic membrane and lowering the risk of infection or injury.</p>
             </div>
             <div className="bg-black/40 p-6 rounded-xl border border-gray-800">
-              <h3 className="text-xl font-semibold text-white mb-3">Do I need ear drops before my appointment?</h3>
-              <p className="text-gray-400">While not always necessary, using Olive Oil drops for 2-3 days prior can help soften the wax and make the removal process even smoother.</p>
+              <h3 className="text-xl font-semibold text-white mb-3">Should I soften earwax with drops before my microsuction appointment?</h3>
+              <p className="text-gray-400">Applying medical-grade olive oil spray for 1 to 2 days prior to your visit softens hard cerumen, facilitating quicker and more comfortable extraction.</p>
             </div>
             <div className="bg-black/40 p-6 rounded-xl border border-gray-800">
-              <h3 className="text-xl font-semibold text-white mb-3">How long does treatment take?</h3>
-              <p className="text-gray-400">Standard appointments usually last between 15–30 minutes, depending on the amount of wax present in both ears.</p>
+              <h3 className="text-xl font-semibold text-white mb-3">How long does a full clinical earwax removal session take?</h3>
+              <p className="text-gray-400">Appointment slots generally take 15 to 30 minutes, incorporating preliminary video otoscopy, bilateral suction clearance, and post-procedure verification.</p>
             </div>
           </div>
         </div>
@@ -265,8 +265,8 @@ export default function HearingAidsBirmingham() {
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-700 to-red-800 text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Take the First Step to Better Hearing</h2>
-          <p className="text-xl mb-10 opacity-90">Book your Birmingham clinic appointment or home visit today.</p>
+          <h2 className="text-4xl font-bold mb-6">Schedule Private Hearing Care or Domiciliary Visits for Birmingham</h2>
+          <p className="text-xl mb-10 opacity-90">Contact our HCPC-registered audiology team today to arrange in-clinic microsuction, a diagnostic hearing assessment, or a home visit across Greater Birmingham.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate('/contact')}

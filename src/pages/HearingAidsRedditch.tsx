@@ -52,13 +52,11 @@ export default function HearingAidsRedditch() {
     <div className="text-center mb-12">
 
       <h2 className="text-4xl font-bold text-white mb-4">
-        Visit Stourbridge Hearing Centre
+        Independent Audiological Care Serving Redditch & The Black Country
       </h2>
 
       <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-        Professional hearing aid services and microsuction ear wax removal
-        with expert care and advanced technology.
-      </p>
+        Clinical Cerumen Extraction & Prescription Digital Hearing Instruments
 
     </div>
 
@@ -161,7 +159,7 @@ export default function HearingAidsRedditch() {
               <div className="bg-red-500/10 p-3 rounded-lg group-hover:bg-red-500/20 transition-colors">
                 <Ear className="w-10 h-10 text-red-500" />
               </div>
-              <h2 className="text-2xl font-bold text-white italic">Microsuction Wax Removal</h2>
+              <h2 className="text-2xl font-bold text-white italic">Clinical Microsuction Cerumen Extraction</h2>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Microsuction is the safest, most precise method for clearing earwax blockages. 

@@ -38,19 +38,19 @@ export function EarplugsPage() {
       icon: ShieldCheck,
       title: 'Custom Hearing Protection',
       description:
-        'Custom silicone and acrylic ear mould impressions designed for industrial work, sleep, swimming, and motorsport.',
+        'Silicone and acrylic ear mould impressions designed for industrial work, sleep, swimming, and motorsport.',
     },
     {
       icon: Volume2,
       title: 'Noise Reduction Ear Plugs',
       description:
-        'Bespoke ear impressions tailored for custom noise-attenuating earplugs and precision acoustic filters.',
+        'Bespoke moulding tailored for noise-attenuating earplugs and precision acoustic filters.',
     },
     {
       icon: Ear,
-      title: 'Other Custom-Made Ear Products',
+      title: 'Other Custom Ear Products',
       description:
-        'Professional otoscopic ear impressions taken to exact depth requirements for any specialist ear product supplier.',
+        'Other products requiring professionally taken ear impressions.',
     },
   ];
 
@@ -59,37 +59,37 @@ export function EarplugsPage() {
       icon: Stethoscope,
       title: 'Professional Service',
       description:
-        'Precision ear canal moulding conducted strictly by qualified clinical audiologists.',
+        'Professional ear impression service.',
     },
     {
       icon: ClipboardCheck,
-      title: 'Standalone Appointment',
+      title: 'Standalone Service',
       description:
-        'Independent service—no requirement to purchase end-products directly through our clinic.',
+        'Available as a standalone service.',
     },
     {
       icon: Ear,
-      title: 'Suitable for Many Products',
+      title: 'Versatile Product Support',
       description:
-        'Otometric impressions crafted to match specifications for all IEM and custom plug brands.',
+        'Suitable for customers purchasing in-ear monitors or custom shooting plugs.',
     },
     {
       icon: Search,
       title: 'FREE Ear Check',
       description:
-        'Complimentary otoscopy screening to verify ear health before inserting impression material',
+        'FREE Quick Look Ear Check.',
     },
     {
       icon: MapPin,
       title: 'Convenient Location',
       description:
-        'Centrally located High Street practice serving Dudley, Halesowen, and West Midlands.',
+        'Convenient Stourbridge town centre location.',
     },
     {
       icon: Award,
-      title: 'Friendly & Professional',
+      title: 'Qualified Audiologist',
       description:
-        'Clinical safety protocols using otostops to safeguard the tympanic membrane..',
+        'Friendly and professional service by a qualified audiologist.',
     },
   ];
 
@@ -97,7 +97,7 @@ export function EarplugsPage() {
     {
       number: '01',
       icon: CalendarDays,
-      title: 'Schedule Otoscopic Screening',
+      title: 'Schedule Screening',
       description:
         'Book your preliminary ear canal inspection at our Stourbridge practice.',
     },
@@ -106,21 +106,21 @@ export function EarplugsPage() {
       icon: Search,
       title: 'Diagnostic Otoscopy',
       description:
-        'Our audiologist examines the ear canal for clear acoustic pathways and healthy eardrums.',
+        'Our audiologist examines the ear canal for clear pathways and healthy eardrums.',
     },
     {
       number: '03',
       icon: Ear,
-      title: 'Impression Material Placement',
+      title: 'Material Placement',
       description:
         'An impression dam is safely positioned and medical-grade silicone is applied.',
     },
     {
       number: '04',
       icon: Headphones,
-      title: 'Manufacturer Submission',
+      title: 'Manufacturer Dispatch',
       description:
-        'Receive your accurate, cured ear impressions ready for dispatch to your manufacturer.',
+        'Receive your accurate, cured impressions ready for submission to your supplier.',
     },
   ];
 
@@ -128,33 +128,33 @@ export function EarplugsPage() {
     {
       question: 'What is an ear impression?',
       answer:
-        'An ear impression is a professional mould or impression taken from inside the ear so that a custom-made ear product can be manufactured to fit accurately.',
+        'An ear impression is a custom mould taken from inside the ear, enabling third-party manufacturers to craft bespoke hearing protection or audio gear that fits perfectly.',
     },
     {
-      question: 'What products can you take ear impressions for?',
+      question: 'What products can you take impressions for?',
       answer:
-        'We can provide professional ear impressions for products including in-ear monitors, custom shooting ear plugs, custom hearing protection, noise reduction ear plugs and other custom-made ear products.',
+        'We accommodate in-ear monitors, shooting plugs, industrial protection, sleeping and swimming plugs, and all other bespoke acoustic fitments.',
     },
     {
       question:
         'Do I need to purchase the custom product from Stourbridge Hearing Centre?',
       answer:
-        'No. Our standalone ear impression service is ideal if you are ordering directly from third-party manufacturers. Our clinical audiologists produce high-precision otometric impressions accepted by all major custom earplug and IEM brands.',
+        'No. Our standalone service is designed for customers ordering directly from third-party manufacturers. Our clinical impressions are accepted by all major IEM and custom earplug brands.',
     },
     {
-      question: 'Is the ear check before the impression free?',
+      question: 'Is the initial ear check free?',
       answer:
-        'Yes. We offer a FREE Quick Look Ear Check before your ear impression appointment. This allows us to look inside your ears and check whether they are suitable for the procedure.',
+        'Yes. We offer a complimentary otoscopy screening before taking impressions to verify that your ear canals are clear and suitable.',
     },
     {
-      question: 'Why do I need an ear check before an impression?',
+      question: 'Why do I need an ear check beforehand?',
       answer:
-        'It is important to check that your ears and ear canals are suitable before taking an ear impression. A quick look can identify issues such as excessive earwax that could affect the ear impression process.',
+        'It ensures safety and accuracy. Obstructions like excessive earwax or inflammation must be identified early, as they can interfere with impression taking or endanger canal tissue.',
     },
     {
       question: 'Where are you located?',
       answer:
-        'Stourbridge Hearing Centre is located at 59 High Street, Stourbridge, DY8 1DE, in Stourbridge town centre.',
+        'Stourbridge Hearing Centre is located at 59 High Street, Stourbridge, DY8 1DE, in the town centre.',
     },
   ];
 
@@ -218,118 +218,84 @@ export function EarplugsPage() {
   return (
     <div className="min-h-screen bg-black text-white">
 
-      {/* ========================================================= */}
       {/* SEO METADATA */}
-      {/* ========================================================= */}
-
       <Helmet>
-        <title>
-          Custom Ear Impressions Stourbridge | Audiologist Earplugs
-        </title>
-
-        <meta name="description" content="HCPC-registered ear impression service in Stourbridge. Professional impressions for custom in-ear monitors, shooting plugs, and noise protection. Free ear check." />
-
+        <title>Custom Ear Impressions Stourbridge | Audiologist Earplugs</title>
+        <meta
+          name="description"
+          content="HCPC-registered ear impression service in Stourbridge. Professional impressions for custom in-ear monitors, shooting plugs, and noise protection. Free ear check."
+        />
         <meta
           name="keywords"
           content="ear impressions Stourbridge, ear impression service Stourbridge, custom earplugs Stourbridge, custom shooting ear plugs Stourbridge, custom hearing protection Stourbridge, in ear monitor impressions Stourbridge, noise reduction ear plugs Stourbridge, professional ear impressions, ear impressions West Midlands, custom ear products Stourbridge"
         />
-
         <meta
           property="og:title"
           content="Ear Impression Service Stourbridge | Stourbridge Hearing Centre"
         />
-
         <meta
           property="og:description"
           content="Professional ear impressions for in-ear monitors, custom shooting ear plugs, hearing protection, noise reduction ear plugs and other custom-made ear products."
         />
-
         <meta
           property="og:url"
           content="https://www.stourbridgehearing.co.uk/earplugs"
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_GB" />
-
         <meta name="twitter:card" content="summary_large_image" />
-
         <link
           rel="canonical"
           href="https://www.stourbridgehearing.co.uk/earplugs"
         />
-
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
-
         <script type="application/ld+json">
           {JSON.stringify(faqSchemaData)}
         </script>
       </Helmet>
 
-      {/* ========================================================= */}
       {/* HERO SECTION */}
-      {/* ========================================================= */}
-
       <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-red-800 to-red-950 text-white">
-
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
-
         <div className="absolute -bottom-40 -left-32 w-96 h-96 bg-black/30 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             {/* HERO CONTENT */}
-
             <div>
-
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                 <Ear className="w-4 h-4 text-red-200" />
-
                 <span className="text-sm font-semibold">
                   Professional Ear Impression Service
                 </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                Ear Impressions
-                <span className="block text-red-200">
-                  in Stourbridge
-                </span>
+                Ear Impression Service
+                <span className="block text-red-200">in Stourbridge</span>
               </h1>
 
               <div className="w-20 h-1 bg-red-400 mb-6 rounded-full" />
 
-              <h2 className="text-xl sm:text-2xl font-bold mb-5">
-                Clinical Ear Impressions for Custom Hearing Protection & In-Ear Monitors
-              </h2>
-
               <p className="text-red-50 text-base sm:text-lg leading-relaxed mb-5 max-w-2xl">
-                At Stourbridge Hearing Centre, we provide a professional ear
-                impression service for customers who require accurate
-                impressions of their ears for custom-made products.
+                At Stourbridge Hearing Centre, we provide a professional ear impression service for customers who require accurate impressions of their ears for custom-made products.
               </p>
 
               <p className="text-red-100 leading-relaxed mb-8 max-w-2xl">
-                If you are purchasing in-ear monitors, custom shooting ear
-                plugs, hearing protection or other custom-made ear products,
-                we can provide the professional ear impressions required for
-                your chosen supplier or manufacturer.
+                If you are purchasing in-ear monitors, custom shooting ear plugs, hearing protection or other custom-made ear products, we can provide the professional ear impressions required for your chosen supplier or manufacturer.
               </p>
 
               {/* HERO BUTTONS */}
-
               <div className="flex flex-col sm:flex-row gap-4">
-
                 <button
                   onClick={() => navigate('/contact')}
                   className="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-500 text-white px-7 py-4 rounded-xl font-bold shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   <CalendarDays className="w-5 h-5" />
-                  Book FREE Ear Check
+                  Book FREE Quick Look Ear Check
                 </button>
 
                 <a
@@ -339,13 +305,10 @@ export function EarplugsPage() {
                   <Phone className="w-5 h-5" />
                   Call 01384 476 306
                 </a>
-
               </div>
 
               {/* HERO TRUST BADGES */}
-
               <div className="flex flex-wrap gap-3 mt-8">
-
                 <div className="flex items-center gap-2 bg-black/20 border border-white/10 rounded-full px-4 py-2 text-sm">
                   <Check className="w-4 h-4 text-green-300" />
                   FREE Quick Look Ear Check
@@ -355,170 +318,15 @@ export function EarplugsPage() {
                   <Check className="w-4 h-4 text-green-300" />
                   Qualified Audiologist
                 </div>
-
               </div>
-
             </div>
 
-            {/* HERO VISUAL */}
-
+            {/* HERO VISUAL (PLACED BOX CARD HERE) */}
             <div className="relative">
-
-              <div className="relative bg-gray-900 border border-gray-700 rounded-3xl p-3 shadow-2xl">
-
-                <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl min-h-[360px] sm:min-h-[430px] flex items-center justify-center overflow-hidden">
-
-                  <div className="text-center px-8">
-
-                    <div className="mx-auto w-28 h-28 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center mb-7">
-                      <Ear className="w-16 h-16 text-red-500" />
-                    </div>
-
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
-                      Professional Ear Impressions
-                    </h3>
-
-                    <p className="text-gray-400 max-w-md mx-auto leading-relaxed">
-                      Accurate professional impressions for custom-made ear
-                      products.
-                    </p>
-
-                    <div className="mt-7 inline-flex items-center gap-2 bg-red-600 text-white px-5 py-3 rounded-full font-bold text-sm">
-                      <ShieldCheck className="w-5 h-5" />
-                      Professional & Accurate
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              {/* FLOATING BADGE */}
-
-              <div className="absolute -bottom-5 -left-4 sm:-left-8 bg-gray-900 text-white rounded-2xl shadow-xl p-4 sm:p-5 border border-gray-700">
-
-                <div className="flex items-center gap-3">
-
-                  <div className="w-11 h-11 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center">
-                    <Search className="w-5 h-5 text-red-500" />
-                  </div>
-
-                  <div>
-
-                    <p className="text-xs font-bold text-red-500 uppercase tracking-wide">
-                      FREE
-                    </p>
-
-                    <p className="font-bold">
-                      Quick Look Ear Check
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ========================================================= */}
-      {/* INTRO / CUSTOM PRODUCTS */}
-      {/* ========================================================= */}
-
-      <section className="py-16 sm:py-20 bg-black">
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="text-center max-w-3xl mx-auto mb-12">
-
-            <p className="text-red-500 font-bold uppercase tracking-wider text-sm mb-3">
-              Professional Ear Impressions For
-            </p>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-              Custom Products
-            </h2>
-
-            <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-              Our ear impression service is available as a standalone
-              appointment. You may already know which company or supplier you
-              are purchasing your custom product from and simply require
-              professionally taken ear impressions.
-            </p>
-
-          </div>
-
-          {/* PRODUCT CARDS */}
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
-
-            {productTypes.map((product) => {
-
-              const Icon = product.icon;
-
-              return (
-                <div
-                  key={product.title}
-                  className="group bg-gray-900 border border-gray-800 rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1"
-                >
-
-                  <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
-
-                    <Icon className="w-8 h-8 text-red-500 group-hover:text-white transition-colors duration-300" />
-
-                  </div>
-
-                  <h3 className="font-bold text-white text-lg mb-3">
-                    {product.title}
-                  </h3>
-
-                  <p className="text-sm text-gray-400 leading-relaxed">
-                    {product.description}
-                  </p>
-
-                </div>
-              );
-
-            })}
-
-          </div>
-
-          <p className="text-center text-gray-500 text-sm mt-8">
-            Once your ear impressions have been taken, you can use them as
-            required for the custom product being made.
-          </p>
-
-        </div>
-
-      </section>
-
-      {/* ========================================================= */}
-      {/* FREE EAR CHECK SECTION */}
-      {/* ========================================================= */}
-
-      <section className="py-16 sm:py-20 bg-gray-950">
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-            {/* VISUAL CARD */}
-
-            <div className="order-2 lg:order-1">
-
-              <div className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 rounded-3xl p-8 sm:p-12 overflow-hidden shadow-2xl">
-
+              <div className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 rounded-3xl p-8 sm:p-12 overflow-hidden shadow-2xl border border-red-500/20">
                 <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-2xl" />
 
                 <div className="relative">
-
                   <div className="w-20 h-20 bg-white/15 rounded-2xl flex items-center justify-center mb-7">
                     <Search className="w-10 h-10 text-white" />
                   </div>
@@ -532,140 +340,192 @@ export function EarplugsPage() {
                   </h3>
 
                   <p className="text-red-50 leading-relaxed mb-7">
-                    Before taking an ear impression, it is important to check
-                    that your ears and ear canals are suitable for the
-                    procedure.
+                    Before taking an ear impression, it is important to check that your ears and ear canals are suitable for the procedure.
                   </p>
 
                   <div className="bg-black/20 border border-white/20 rounded-2xl p-5">
-
                     <div className="flex gap-4">
-
                       <Check className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-
                       <p className="text-white text-sm sm:text-base leading-relaxed">
-                        We offer a FREE Quick Look Ear Check before your ear
-                        impression appointment.
+                        At Stourbridge Hearing Centre, we offer a FREE Quick Look Ear Check before your ear impression appointment.
                       </p>
-
                     </div>
-
                   </div>
-
                 </div>
-
               </div>
 
+              {/* FLOATING BADGE */}
+              <div className="absolute -bottom-5 -left-4 sm:-left-8 bg-gray-900 text-white rounded-2xl shadow-xl p-4 sm:p-5 border border-gray-700">
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center">
+                    <Search className="w-5 h-5 text-red-500" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-red-500 uppercase tracking-wide">
+                      FREE
+                    </p>
+                    <p className="font-bold">
+                      Quick Look Ear Check
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUCTS SECTION */}
+      <section className="py-16 sm:py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <p className="text-red-500 font-bold uppercase tracking-wider text-sm mb-3">
+              Professional Ear Impressions For
+            </p>
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
+              Custom Products
+            </h2>
+
+            <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
+              Our ear impression service is available as a standalone appointment. You may already know which company or supplier you are purchasing your custom product from and simply require professionally taken ear impressions.
+            </p>
+          </div>
+
+          {/* PRODUCT CARDS */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            {productTypes.map((product) => {
+              const Icon = product.icon;
+              return (
+                <div
+                  key={product.title}
+                  className="group bg-gray-900 border border-gray-800 rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                    <Icon className="w-8 h-8 text-red-500 group-hover:text-white transition-colors duration-300" />
+                  </div>
+
+                  <h3 className="font-bold text-white text-lg mb-3">
+                    {product.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-400 leading-relaxed">
+                    {product.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          <p className="text-center text-gray-500 text-sm mt-8">
+            Once your ear impressions have been taken, you can use them as required for the custom product being made.
+          </p>
+        </div>
+      </section>
+
+      {/* FREE EAR CHECK SECTION */}
+      <section className="py-16 sm:py-20 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+            {/* VISUAL CARD */}
+            <div className="order-2 lg:order-1">
+              <div className="relative bg-gray-900 border border-gray-700 rounded-3xl p-3 shadow-2xl">
+                <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl min-h-[360px] sm:min-h-[430px] flex items-center justify-center overflow-hidden">
+                  <div className="text-center px-8">
+                    <div className="mx-auto w-28 h-28 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center mb-7">
+                      <Ear className="w-16 h-16 text-red-500" />
+                    </div>
+
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+                      Professional Ear Impressions
+                    </h3>
+
+                    <p className="text-gray-400 max-w-md mx-auto leading-relaxed">
+                      Accurate professional impressions for custom-made ear products.
+                    </p>
+
+                    <div className="mt-7 inline-flex items-center gap-2 bg-red-600 text-white px-5 py-3 rounded-full font-bold text-sm">
+                      <ShieldCheck className="w-5 h-5" />
+                      Professional & Accurate
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* CONTENT */}
-
             <div className="order-1 lg:order-2">
-
               <p className="text-red-500 font-bold uppercase tracking-wider text-sm mb-3">
                 Pre-Impression Clinical Otoscopy
               </p>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-                Otoscopic Examination Prior to Ear Moulding
+                Free Quick Look Ear Check Before Your Ear Impression
               </h2>
 
               <p className="text-gray-400 leading-relaxed mb-5">
-                At Stourbridge Hearing Centre, we offer a FREE Quick Look Ear
-                Check before your ear impression appointment.
+                Before taking an ear impression, it is important to check that your ears and ear canals are suitable for the procedure.
               </p>
 
               <p className="text-gray-400 leading-relaxed mb-8">
-                Using specialist equipment, we can take a quick look inside
-                your ears to check for issues such as excessive earwax that
-                could affect the ear impression process.
+                At Stourbridge Hearing Centre, we offer a FREE Quick Look Ear Check before your ear impression appointment.
               </p>
 
               <div className="space-y-4">
-
                 <div className="flex gap-4 p-5 bg-gray-900 rounded-2xl border border-gray-800 shadow-lg">
-
                   <div className="w-11 h-11 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center flex-shrink-0">
                     <Search className="w-5 h-5 text-red-500" />
                   </div>
-
                   <div>
-
                     <h3 className="font-bold text-white mb-1">
                       Quick Look Inside Your Ears
                     </h3>
-
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      We check your ears and ear canals to assess whether they
-                      are suitable for the procedure.
+                      Using specialist equipment, we can take a quick look inside your ears.
                     </p>
-
                   </div>
-
                 </div>
 
                 <div className="flex gap-4 p-5 bg-gray-900 rounded-2xl border border-gray-800 shadow-lg">
-
                   <div className="w-11 h-11 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center flex-shrink-0">
                     <ShieldCheck className="w-5 h-5 text-red-500" />
                   </div>
-
                   <div>
-
                     <h3 className="font-bold text-white mb-1">
                       Check for Excessive Earwax
                     </h3>
-
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      We can check for issues such as excessive earwax that
-                      could affect the ear impression process.
+                      We check for issues such as excessive earwax that could affect the ear impression process.
                     </p>
-
                   </div>
-
                 </div>
 
                 <div className="flex gap-4 p-5 bg-red-950/40 rounded-2xl border border-red-900/50">
-
                   <div className="w-11 h-11 rounded-xl bg-red-600 flex items-center justify-center flex-shrink-0">
                     <Check className="w-5 h-5 text-white" />
                   </div>
-
                   <div>
-
                     <h3 className="font-bold text-white mb-1">
                       Proceed When Suitable
                     </h3>
-
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      If your ears are suitable, we can proceed with arranging
-                      or carrying out your ear impression service.
+                      If your ears are suitable, we can proceed with arranging or carrying out your ear impression service.
                     </p>
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
 
           </div>
-
         </div>
-
       </section>
 
-      {/* ========================================================= */}
       {/* WHY CHOOSE US */}
-      {/* ========================================================= */}
-
       <section className="py-16 sm:py-20 bg-black">
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="text-center max-w-3xl mx-auto mb-12">
-
             <p className="text-red-500 font-bold uppercase tracking-wider text-sm mb-3">
               Why Choose Stourbridge Hearing Centre?
             </p>
@@ -675,65 +535,43 @@ export function EarplugsPage() {
             </h2>
 
             <p className="text-gray-400 text-lg leading-relaxed">
-              A professional ear impression service designed around accuracy,
-              convenience and your comfort.
+              Professional ear impression service designed around your needs.
             </p>
-
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
             {benefits.map((benefit) => {
-
               const Icon = benefit.icon;
-
               return (
                 <div
                   key={benefit.title}
                   className="relative bg-gray-900 border border-gray-800 rounded-2xl p-7 shadow-lg hover:shadow-2xl hover:border-red-500/40 transition-all duration-300"
                 >
-
                   <div className="flex items-start gap-5">
-
                     <div className="w-14 h-14 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center flex-shrink-0">
                       <Icon className="w-7 h-7 text-red-500" />
                     </div>
 
                     <div>
-
                       <h3 className="text-lg font-bold text-white mb-2">
                         {benefit.title}
                       </h3>
-
                       <p className="text-gray-400 text-sm leading-relaxed">
                         {benefit.description}
                       </p>
-
                     </div>
-
                   </div>
-
                 </div>
               );
-
             })}
-
           </div>
-
         </div>
-
       </section>
 
-      {/* ========================================================= */}
       {/* HOW IT WORKS */}
-      {/* ========================================================= */}
-
       <section className="py-16 sm:py-20 bg-gradient-to-b from-gray-900 to-black text-white">
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="text-center max-w-3xl mx-auto mb-14">
-
             <p className="text-red-400 font-bold uppercase tracking-wider text-sm mb-3">
               Simple Process
             </p>
@@ -743,26 +581,19 @@ export function EarplugsPage() {
             </h2>
 
             <p className="text-gray-400 text-lg leading-relaxed">
-              From your FREE Quick Look Ear Check through to your professional
-              ear impression.
+              From your FREE Quick Look Ear Check through to your professional ear impression.
             </p>
-
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
             {processSteps.map((step) => {
-
               const Icon = step.icon;
-
               return (
                 <div
                   key={step.number}
                   className="relative bg-gray-900 border border-gray-800 rounded-2xl p-7 hover:border-red-700 transition-all duration-300"
                 >
-
                   <div className="flex items-center justify-between mb-7">
-
                     <div className="w-14 h-14 rounded-2xl bg-red-600 flex items-center justify-center">
                       <Icon className="w-7 h-7 text-white" />
                     </div>
@@ -770,7 +601,6 @@ export function EarplugsPage() {
                     <span className="text-4xl font-extrabold text-red-900">
                       {step.number}
                     </span>
-
                   </div>
 
                   <h3 className="text-xl font-bold text-white mb-3">
@@ -780,167 +610,109 @@ export function EarplugsPage() {
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {step.description}
                   </p>
-
                 </div>
               );
-
             })}
-
           </div>
-
         </div>
-
       </section>
 
-      {/* ========================================================= */}
       {/* STANDALONE SERVICE */}
-      {/* ========================================================= */}
-
       <section className="py-16 sm:py-20 bg-black">
-
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 sm:p-12 lg:p-14 shadow-2xl">
-
             <div className="grid lg:grid-cols-2 gap-10 items-center">
-
               <div>
-
                 <p className="text-red-500 font-bold uppercase tracking-wider text-sm mb-3">
                   Standalone Service
                 </p>
 
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-5">
-                  Already Know Which Custom Product You Want?
+                  Professional Ear Impressions for Custom Products
                 </h2>
 
                 <p className="text-gray-400 leading-relaxed mb-5">
-                  Our ear impression service is available as a standalone
-                  appointment. You may already know which company or supplier
-                  you are purchasing your custom product from and simply
-                  require professionally taken ear impressions.
+                  Our ear impression service is available as a standalone appointment. You may already know which company or supplier you are purchasing your custom product from and simply require professionally taken ear impressions.
                 </p>
-
-                <p className="text-gray-400 leading-relaxed">
-                  We can provide the professional ear impressions required for
-                  your chosen supplier or manufacturer.
-                </p>
-
               </div>
 
               <div className="bg-gray-950 rounded-2xl border border-gray-800 p-7 shadow-xl">
-
                 <h3 className="text-xl font-bold text-white mb-5">
-                  We can provide impressions for:
+                  We can provide ear impressions for products including:
                 </h3>
 
                 <ul className="space-y-4">
-
                   {[
                     'In-ear monitors',
                     'Custom shooting ear plugs',
                     'Custom hearing protection',
                     'Noise reduction ear plugs',
-                    'Other custom-made ear products',
+                    'Other products requiring professionally taken ear impressions',
                   ].map((item) => (
-
-                    <li
-                      key={item}
-                      className="flex items-start gap-3"
-                    >
-
+                    <li key={item} className="flex items-start gap-3">
                       <span className="w-6 h-6 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <Check className="w-4 h-4 text-red-500" />
                       </span>
-
-                      <span className="text-gray-300">
-                        {item}
-                      </span>
-
+                      <span className="text-gray-300">{item}</span>
                     </li>
-
                   ))}
-
                 </ul>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
-      {/* ========================================================= */}
       {/* LOCATION / CONTACT */}
-      {/* ========================================================= */}
-
       <section className="py-16 sm:py-20 bg-gray-950">
-
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* LOCATION */}
-
             <div className="bg-gray-900 rounded-3xl border border-gray-800 p-8 sm:p-10 shadow-xl">
-
               <div className="w-14 h-14 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center justify-center mb-6">
                 <MapPin className="w-7 h-7 text-red-500" />
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-                Visit Our Stourbridge Audiology Practice
+                Contact Stourbridge Hearing Centre
               </h2>
 
               <p className="text-gray-400 leading-relaxed mb-6">
-                Our independent clinical ear impression service operates directly from our High Street practice in Stourbridge town centre.
+                Convenient Stourbridge town centre location.
               </p>
 
               <div className="bg-black rounded-2xl p-5 border border-gray-800">
-
                 <p className="font-bold text-white">
                   Stourbridge Hearing Centre
                 </p>
-
                 <p className="text-gray-400 mt-1">
-                  59 High Street
-                  <br />
-                  Stourbridge
-                  <br />
-                  DY8 1DE
+                  59 High Street, Stourbridge, DY8 1DE
                 </p>
-
               </div>
-
             </div>
 
             {/* CONTACT */}
-
             <div className="bg-black rounded-3xl border border-gray-800 p-8 sm:p-10 text-white shadow-2xl">
-
               <div className="w-14 h-14 bg-red-600 rounded-2xl flex items-center justify-center mb-6">
                 <Phone className="w-7 h-7 text-white" />
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold mb-4">
-                Book Your Clinical Ear Impression Appointment
+                Book Your Ear Impression Service in Stourbridge
               </h2>
 
               <p className="text-gray-400 leading-relaxed mb-8">
-                We advise arranging a preliminary otoscopic check to ensure your ear canals are clear of earwax prior to impression taking.
+                If you need professional ear impressions in Stourbridge for in-ear monitors, shooting ear plugs or other custom-made ear products, Stourbridge Hearing Centre is here to help. We recommend booking your FREE Quick Look Ear Check first so we can check your ears before proceeding with ear impressions.
               </p>
 
               <div className="flex flex-col gap-4">
-
                 <button
                   onClick={() => navigate('/contact')}
                   className="w-full bg-red-600 hover:bg-red-500 text-white px-6 py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-3"
                 >
                   <CalendarDays className="w-5 h-5" />
-                  Book FREE Ear Check
+                  Book FREE Quick Look Ear Check
                 </button>
 
                 <a
@@ -950,27 +722,17 @@ export function EarplugsPage() {
                   <Phone className="w-5 h-5" />
                   01384 476 306
                 </a>
-
               </div>
-
             </div>
 
           </div>
-
         </div>
-
       </section>
 
-      {/* ========================================================= */}
       {/* FAQ */}
-      {/* ========================================================= */}
-
       <section className="py-16 sm:py-20 bg-black">
-
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="text-center mb-12">
-
             <p className="text-red-500 font-bold uppercase tracking-wider text-sm mb-3">
               Frequently Asked Questions
             </p>
@@ -978,25 +740,20 @@ export function EarplugsPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
               Ear Impression FAQs
             </h2>
-
           </div>
 
           <div className="space-y-4">
-
             {faqs.map((faq, index) => (
-
               <div
                 key={faq.question}
                 className="border border-gray-800 rounded-2xl overflow-hidden bg-gray-900 shadow-lg"
               >
-
                 <button
                   onClick={() =>
                     setOpenFaq(openFaq === index ? null : index)
                   }
                   className="w-full px-6 py-5 sm:px-7 sm:py-6 flex items-center justify-between text-left hover:bg-gray-800 transition-colors"
                 >
-
                   <span className="text-base sm:text-lg font-bold text-white pr-5">
                     {faq.question}
                   </span>
@@ -1006,75 +763,50 @@ export function EarplugsPage() {
                       openFaq === index ? 'rotate-180' : ''
                     }`}
                   />
-
                 </button>
 
                 {openFaq === index && (
-
                   <div className="px-6 pb-6 sm:px-7">
-
                     <div className="border-t border-gray-800 pt-5">
-
                       <p className="text-gray-400 leading-relaxed">
                         {faq.answer}
                       </p>
-
                     </div>
-
                   </div>
-
                 )}
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
 
-      {/* ========================================================= */}
       {/* FINAL CTA */}
-      {/* ========================================================= */}
-
       <section className="relative overflow-hidden bg-gradient-to-br from-red-700 via-red-600 to-red-800">
-
         <div className="absolute inset-0">
-
           <div className="absolute -top-40 -right-20 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
-
           <div className="absolute -bottom-40 -left-20 w-96 h-96 rounded-full bg-black/10 blur-3xl" />
-
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
-
           <div className="mx-auto w-16 h-16 rounded-2xl bg-white/15 flex items-center justify-center mb-6">
             <Ear className="w-8 h-8 text-white" />
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Book Custom Ear Impressions at Our Stourbridge Practice
+            Book Your Ear Impression Service in Stourbridge
           </h2>
 
           <p className="text-red-50 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto mb-9">
-            If you require clinical ear impressions for custom-moulded IEMs, shooting plugs, or acoustic hearing protection, Stourbridge Hearing Centre provides expert audiological care.
-          </p>
-
-          <p className="text-white/90 mb-9">
-            Contact our HCPC-registered team today to schedule your complimentary otoscopic check and ear moulding session.
+            If you need professional ear impressions in Stourbridge for in-ear monitors, shooting ear plugs or other custom-made ear products, Stourbridge Hearing Centre is here to help.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-
             <button
               onClick={() => navigate('/contact')}
               className="bg-white hover:bg-gray-100 text-red-700 px-8 py-4 rounded-xl font-bold shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-3"
             >
               <CalendarDays className="w-5 h-5" />
-              Book FREE Ear Check
+              Book FREE Quick Look Ear Check
             </button>
 
             <a
@@ -1084,11 +816,8 @@ export function EarplugsPage() {
               <Phone className="w-5 h-5" />
               Call 01384 476 306
             </a>
-
           </div>
-
         </div>
-
       </section>
 
     </div>

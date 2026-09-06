@@ -63,12 +63,11 @@ export default function HearingAidsHalesowen() {
           <div className="text-center mb-12">
 
             <h2 className="text-4xl font-bold text-white mb-4">
-              Visit Stourbridge Hearing Centre
+              Independent Audiological Care Serving Halesowen & The Black Country
             </h2>
 
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Professional hearing aid services and microsuction ear wax removal
-              with expert care and advanced technology.
+              Clinical Cerumen Extraction & Prescription Digital Hearing Instruments
             </p>
 
           </div>

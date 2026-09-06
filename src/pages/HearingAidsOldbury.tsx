@@ -56,8 +56,7 @@ export default function HearingAidsOldbury() {
       </h2>
 
       <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-        Professional hearing aid services and microsuction ear wax removal
-        with expert care and advanced technology.
+        Clinical Cerumen Extraction & Prescription Digital Hearing Instruments
       </p>
 
     </div>
@@ -161,7 +160,7 @@ export default function HearingAidsOldbury() {
               <div className="bg-red-500/10 p-3 rounded-lg group-hover:bg-red-500/20 transition-colors">
                 <Ear className="w-10 h-10 text-red-500" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Microsuction Wax Removal</h2>
+              <h2 className="text-2xl font-bold text-white">Clinical Microsuction Cerumen Extraction</h2>
             </div>
             <p className="text-gray-400 leading-relaxed">
               We use gentle, medical-grade suction to clear earwax blockages. It is widely considered 

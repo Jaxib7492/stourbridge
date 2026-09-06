@@ -11,7 +11,7 @@ export default function HearingAidsBromsgrove() {
       {/* SEO Metadata */}
       <Helmet>
         <title>Hearing Aids & Ear Wax Removal Bromsgrove | Expert Care</title>
-        <meta name="description" content="Looking for hearing aids or ear wax removal in Bromsgrove? Our expert clinic offers 0% finance on hearing technology and safe microsuction ear wax removal." />
+        <meta name="description" content="HCPC-registered microsuction earwax removal & 0% APR private hearing aids in Bromsgrove. Water-free clinical ear care, video otoscopy & home visits available." />
         <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids-bromsgrove" />
       </Helmet>
 
@@ -22,13 +22,14 @@ export default function HearingAidsBromsgrove() {
 
     {/* TITLE */}
     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-      Hearing Aids & Earwax Removal — Bromsgrove
+      Microsuction Earwax Removal & Private Hearing Care in Bromsgrove
     </h1>
 
     {/* SUBTITLE */}
     <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
-      Providing expert hearing assessments and safe microsuction ear wax removal for the Bromsgrovve community.
-      Expert care, precise technology, and effective results.
+      HCPC-Registered Clinical Audiology, Advanced Ear Care & Home Visit Services
+      At Stourbridge Hearing Centre, our qualified clinical audiologists provide expert, water-free microsuction earwax removal and comprehensive hearing assessments for patients across Bromsgrove.
+      Whether you require rapid relief from impacted ear canal blockage or custom prescription hearing instruments with 0% APR financing options, our independent practice delivers patient-focused care..
     </p>
 
     {/* BUTTON */}
@@ -52,12 +53,11 @@ export default function HearingAidsBromsgrove() {
     <div className="text-center mb-12">
 
       <h2 className="text-4xl font-bold text-white mb-4">
-        Visit Stourbridge Hearing Centre
+        Independent Audiology & Cerumen Extraction Practice Serving Bromsgrove
       </h2>
 
       <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-        Professional hearing aid services and microsuction ear wax removal
-        with expert care and advanced technology.
+        Clinical Diagnostic Otoscopy & Prescription Digital Hearing Technology
       </p>
 
     </div>
@@ -138,12 +138,10 @@ export default function HearingAidsBromsgrove() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed space-y-6">
           <p>
-            We provide professional **earwax removal in Bromsgrove** using gold-standard microsuction techniques. 
-            Our clinic is a trusted destination for patients who prefer a clinical, audiologist-led environment over a high-street retailer.
+            Conveniently located for patients in Bromsgrove, Aston Fields, Catshill, and Barnt Green, our independent clinic provides clinical-grade hearing healthcare and video otoscopic examinations.
           </p>
           <p>
-            Whether you're noticing a gradual change in your hearing or sudden discomfort caused by a wax blockage, 
-            our team offers fast and reliable treatments tailored to your specific ear health needs.
+            Earwax impaction can trigger sudden conductive hearing impairment, otalgia, and tinnitus. Our registered audiologists utilize direct-vision micro-vacuum extraction to safely clear acoustic canals and evaluate middle-ear integrity.
           </p>
           <div className="flex items-center gap-2 text-red-500 font-semibold">
             <MapPin className="w-5 h-5" />
@@ -161,11 +159,10 @@ export default function HearingAidsBromsgrove() {
               <div className="bg-red-500/10 p-3 rounded-lg">
                 <Ear className="w-10 h-10 text-red-500" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Ear Wax Removal</h2>
+              <h2 className="text-2xl font-bold text-white">Water-Free Clinical Microsuction</h2>
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Microsuction is the safest and most effective way to remove ear wax. It is a dry procedure 
-              (no water used), making it perfect for sensitive ears or those with a history of infections.
+              Safe extraction of impacted cerumen under direct microscopic illumination, ideal for narrow canals, sensitive ears, or patients with perforated eardrums.
             </p>
           </div>
 
@@ -175,11 +172,10 @@ export default function HearingAidsBromsgrove() {
               <div className="bg-red-500/10 p-3 rounded-lg">
                 <Stethoscope className="w-10 h-10 text-red-500" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Hearing Technology</h2>
+              <h2 className="text-2xl font-bold text-white">Diagnostic Audiometric Assessments & Prescription Hearing Devices</h2>
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
-              We offer free hearing tests in Bromsgrove alongside the latest digital hearing aids. 
-              Enjoy independent advice on top brands like Oticon, Phonak, and Starkey with lifetime aftercare.
+              Comprehensive hearing checks and bespoke fittings of premium digital hearing instruments from Oticon, Phonak, Starkey, and Resound with 0% APR financing options.
             </p>
           </div>
         </div>
@@ -194,29 +190,29 @@ export default function HearingAidsBromsgrove() {
             <div className="flex gap-4">
               <ShieldCheck className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Patient-Focused</h3>
-                <p>We are independent, meaning we focus entirely on your hearing needs rather than manufacturer sales targets.</p>
+                <h3 className="text-xl font-semibold text-white mb-2">Rapid Access Appointments</h3>
+                <p>Clinical care provided strictly by qualified audiology practitioners adhering to gold-standard healthcare protocols.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Clock className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Fast Access</h3>
-                <p>No long waiting lists. We aim to offer appointments within 24–48 hours for urgent ear wax removal.</p>
+                <p>Emergency same-day and 24–48 hour appointments for fast, effective earwax extraction and hearing relief.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Star className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Proven Results</h3>
-                <p>Our audiologists have decades of experience in both NHS and private hearing care sectors.</p>
+                <h3 className="text-xl font-semibold text-white mb-2">Independent Multi-Brand Advice</h3>
+                <p>Complete freedom to select prescription hearing instruments across all major manufacturers without sales targets.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Ear className="w-8 h-8 text-red-500 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Home Visits</h3>
-                <p>We offer a full home visit service across Bromsgrove for those unable to attend our clinic in person.</p>
+                <h3 className="text-xl font-semibold text-white mb-2">Domiciliary Care Across Bromsgrove</h3>
+                <p>Dedicated home visits offering mobile microsuction and hearing tests for patients with mobility limitations.</p>
               </div>
             </div>
           </div>
@@ -230,26 +226,26 @@ export default function HearingAidsBromsgrove() {
           <div className="space-y-4">
             <details className="bg-gray-900 border border-gray-800 rounded-xl p-6 group cursor-pointer">
               <summary className="text-lg font-semibold list-none flex justify-between items-center">
-                <span>Is microsuction safe?</span>
+                <span>Why is water-free microsuction safer than traditional ear syringing?</span>
                 <span className="text-red-500 transition-transform group-open:rotate-180">↓</span>
               </summary>
-              <p className="mt-4 text-gray-400">Yes. It is considered the gold standard for earwax removal, providing a safer and cleaner experience than traditional syringing.</p>
+              <p className="mt-4 text-gray-400">Microsuction uses direct microscopic visualization and gentle low-pressure suction, eliminating the water pressure risks associated with traditional ear syringing.</p>
             </details>
 
             <details className="bg-gray-900 border border-gray-800 rounded-xl p-6 group cursor-pointer">
               <summary className="text-lg font-semibold list-none flex justify-between items-center">
-                <span>How do I know if my ears are blocked?</span>
+                <span>What are the main clinical symptoms of impacted earwax?</span>
                 <span className="text-red-500 transition-transform group-open:rotate-180">↓</span>
               </summary>
-              <p className="mt-4 text-gray-400">Common symptoms include a feeling of fullness, dull hearing, ringing (tinnitus), or even dizziness. A quick check with our audiologist can confirm the cause.</p>
+              <p className="mt-4 text-gray-400">Common signs include acoustic canal fullness, conductive hearing loss, tinnitus (ringing), ear canal discomfort, and occasional dizziness.</p>
             </details>
 
             <details className="bg-gray-900 border border-gray-800 rounded-xl p-6 group cursor-pointer">
               <summary className="text-lg font-semibold list-none flex justify-between items-center">
-                <span>Do you offer finance for hearing aids?</span>
+                <span>Are 0% APR financing plans available for hearing aids in Bromsgrove?</span>
                 <span className="text-red-500 transition-transform group-open:rotate-180">↓</span>
               </summary>
-              <p className="mt-4 text-gray-400">Yes! We offer flexible 0% APR finance options over 10 or 12 months to help spread the cost of your hearing technology.</p>
+              <p className="mt-4 text-gray-400">Yes. We offer interest-free monthly financing plans (over 3, 6, 10, or 12 months) with zero hidden fees and no deposit requirements on select hearing instruments.</p>
             </details>
           </div>
         </div>
@@ -258,8 +254,8 @@ export default function HearingAidsBromsgrove() {
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-red-700 text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-white">Better Hearing Starts Today</h2>
-          <p className="text-xl mb-10 text-red-50 opacity-90">Book your clinic appointment or home visit in Bromsgrove today.</p>
+          <h2 className="text-4xl font-bold mb-6 text-white">Book Clinical Ear Care or Home Visits in Bromsgrove Today</h2>
+          <p className="text-xl mb-10 text-red-50 opacity-90">Contact Stourbridge Hearing Centre to schedule same-day microsuction earwax removal, arrange a diagnostic hearing assessment, or request a domiciliary home visit.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate('/contact')}
