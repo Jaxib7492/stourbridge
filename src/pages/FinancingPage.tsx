@@ -23,8 +23,8 @@ export function FinancingPage() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Interest-Free Hearing Aid Finance | Stourbridge Hearing Centre</title>
-        <meta name="description" content="Spread the cost of your hearing aids with 0% APR finance options. Use our monthly payment calculator to see how affordable better hearing can be in Stourbridge." />
+        <title>0% Hearing Aid Finance Stourbridge | Interest-Free Monthly Payments</title>
+        <meta name="description" content="Spread the cost of private digital hearing aids with 0% APR interest-free finance in Stourbridge. Instant online calculator, £0 deposit options & full aftercare." />
         <link rel="canonical" href="https://www.stourbridgehearing.co.uk/financing" />
       </Helmet>
 
@@ -32,10 +32,11 @@ export function FinancingPage() {
       <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900/40 via-black to-black">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Flexible Finance — 0% APR Available
+            0% APR Private Hearing Aid Financing in Stourbridge
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-            Spread the cost of your private hearing aids with simple monthly payments and lifetime aftercare included.
+            Spread the Cost of Advanced Digital Hearing Aids with Interest-Free Payment Plans
+At Stourbridge Hearing Centre, we offer flexible, interest-free payment options to ensure world-class hearing technology is affordable. Purchase premium prescription hearing aids with zero hidden fees and lifetime clinical aftercare included.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button
@@ -60,9 +61,9 @@ export function FinancingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl p-8">
-                <h2 className="text-3xl font-bold text-white mb-4">Finance calculator</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Interactive Hearing Aid Monthly Repayment Estimator</h2>
                 <p className="text-gray-300 mb-8">
-                  Enter an amount and choose a term to see example monthly payments.
+                  Calculate interest-free monthly financing options for single or paired digital hearing instruments.
                 </p>
 
                 <div className="mb-8">
@@ -131,10 +132,10 @@ export function FinancingPage() {
                   </div>
 
                   <div className="space-y-3 mb-10 text-sm">
-                    <p>• Representative 0% APR on selected plans</p>
-                    <p>• No setup fees | No hidden costs</p>
-                    <p>• Instant decision in most cases</p>
-                    <p>• Apply online or in-clinic</p>
+                    <p>• 0.0% APR representative across short-term interest-free spreading options.</p>
+                    <p>• Transparent clinical pricing with zero administration charges or hidden setup fees.</p>
+                    <p>• Rapid credit decisions with instant soft-check eligibility assessments.</p>
+                    <p>• Flexible application options available in-clinic at Stourbridge High Street or online.</p>
                   </div>
                 </div>
 
@@ -167,16 +168,16 @@ export function FinancingPage() {
           <h2 className="text-4xl font-bold text-white mb-12 text-center">How finance works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">1) Choose your aids</h3>
-              <p className="text-gray-300">Pick from leading brands and styles — RIC, ITE, CIC and more.</p>
+              <h3 className="text-2xl font-bold text-white mb-4">1) Comprehensive Hearing Consultation</h3>
+              <p className="text-gray-300">Select tailored prescription hearing instruments (Phonak, Oticon, Starkey, Resound) following a full diagnostic assessment.</p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">2) Select a plan</h3>
-              <p className="text-gray-300">Use the calculator to see payments at 0% APR on selected terms.</p>
+              <h3 className="text-2xl font-bold text-white mb-4">2) Custom Repayment Structuring</h3>
+              <p className="text-gray-300">Tailor an interest-free finance schedule using our 0% APR payment terms (3, 6, 10, or 12 months).</p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">3) Apply & get fitted</h3>
-              <p className="text-gray-300">Quick application and fitting with lifetime aftercare included.</p>
+              <h3 className="text-2xl font-bold text-white mb-4">3) Professional Fitting & Aftercare</h3>
+              <p className="text-gray-300">Complete a rapid credit application and schedule your precision fitting with comprehensive lifetime clinical support.</p>
             </div>
           </div>
         </div>
@@ -189,20 +190,20 @@ export function FinancingPage() {
           <div className="space-y-4">
             <details className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl overflow-hidden group">
               <summary className="px-8 py-6 text-xl font-semibold text-white cursor-pointer hover:bg-gray-800 transition-colors list-none flex items-center justify-between">
-                <span>Is the 0% APR truly interest-free?</span>
+                <span>Are there any hidden fees or interest charges on 0% APR hearing aid financing?</span>
                 <span className="text-red-500 font-bold">↓</span>
               </summary>
               <div className="px-8 pb-6 text-gray-300 border-t border-gray-700 pt-4">
-                Yes — on selected terms (e.g. 3, 6, 10 or 12 months) there's no interest charged and your cost of credit is £0.
+                No. On all 0% APR agreement terms (3, 6, 10, or 12 months), the interest rate is strictly 0.0% with a £0 cost of credit and zero arrangement fees.
               </div>
             </details>
             <details className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl overflow-hidden group">
               <summary className="px-8 py-6 text-xl font-semibold text-white cursor-pointer hover:bg-gray-800 transition-colors list-none flex items-center justify-between">
-                <span>What amounts can I finance?</span>
+                <span>What range of credit is available for private hearing aid purchases?</span>
                 <span className="text-red-500 font-bold">↓</span>
               </summary>
               <div className="px-8 pb-6 text-gray-300 border-t border-gray-700 pt-4">
-                Typical finance ranges from £300–£6,000. Use the calculator to try an example, or contact us to discuss other options.
+                Financing plans cover purchases between £300 and £6,000, allowing patients to spread payments across single devices, binaural pairs, and rechargeable custom products.
               </div>
             </details>
           </div>
@@ -212,8 +213,8 @@ export function FinancingPage() {
       {/* Final CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-red-700 to-red-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to make hearing easier?</h2>
-          <p className="text-xl text-white mb-10">Talk to an audiologist today about interest-free options.</p>
+          <h2 className="text-4xl font-bold text-white mb-6">Apply for Interest-Free Hearing Aid Financing in Stourbridge</h2>
+          <p className="text-xl text-white mb-10">Speak with our HCPC-registered audiology team to discuss 0% APR payment plans, arrange a device demonstration, or schedule your complimentary diagnostic hearing assessment.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => navigate('/contact')} className="bg-white text-red-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg text-lg">
               Apply for finance

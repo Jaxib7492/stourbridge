@@ -10,8 +10,8 @@ export function AboutPage() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata block */}
       <Helmet>
-        <title>About Us | Stourbridge Hearing Centre | Independent Audiologists</title>
-        <meta name="description" content="Meet our HCPC Registered Audiologists. Stourbridge Hearing Centre is an independent clinic providing expert earwax removal, free hearing tests, and high-tech hearing aids." />
+        <title>Independent HCPC Audiologists in Stourbridge | Stourbridge Hearing Centre</title>
+        <meta name="description" content="Meet our HCPC-registered audiologists in Stourbridge. Local independent hearing clinic specializing in microsuction earwax removal, free hearing tests, and digital hearing aids." />
         <link rel="canonical" href="https://www.stourbridgehearing.co.uk/about" />
       </Helmet>
 
@@ -69,7 +69,7 @@ export function AboutPage() {
                 <h3 className="text-2xl font-bold text-red-500">Experienced Audiologists</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Qualified, Fully Qualified HCPC Registered Audiologists with a gentle approach and years of experience.
+                HCPC-registered audiologists dedicated to safe, gentle, and clinically proven hearing solutions.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export function AboutPage() {
                 <h3 className="text-2xl font-bold text-red-500">Independent & Local</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                We're independent — recommending only what's best for you, not tied to any manufacturer.
+                As an independent clinic, we offer impartial advice and access to top global hearing aid manufacturers.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export function AboutPage() {
                 <h3 className="text-2xl font-bold text-red-500">Free Ear Check Service</h3>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                A complimentary ear health check for peace of mind. Perfect if you're unsure whether you have earwax buildup or need further treatment.
+                A complimentary otoscopic ear health check to determine whether you have earwax blockage or require audiological care.
               </p>
               <button
                 onClick={() => navigate('/contact')}
@@ -155,7 +155,7 @@ export function AboutPage() {
                 <h3 className="text-2xl font-bold text-red-500">Earwax Removal</h3>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Safe, gentle microsuction performed by qualified audiologists. No water, no mess — instant results and clearer hearing.
+                Safe, water-free microsuction earwax removal performed by qualified clinical audiologists for immediate relief.
               </p>
               <button
                 onClick={() => navigate('/earwax-removal')}
@@ -171,7 +171,7 @@ export function AboutPage() {
                 <h3 className="text-2xl font-bold text-red-500">Free Hearing Test</h3>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Comprehensive hearing checks with honest, independent advice. Find out your hearing health today — with no pressure or obligation.
+                Full diagnostic hearing assessments with impartial guidance. Understand your hearing health with no obligation.
               </p>
               <button
                 onClick={() => navigate('/contact')}
@@ -306,10 +306,10 @@ export function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-700 via-red-600 to-red-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Experience Hearing Care You Can Trust
+            Book an Appointment at Our Stourbridge Clinic
           </h2>
           <p className="text-xl text-white mb-10">
-            Book your Free hearing test and hearing aids demonstration with our friendly audiology team today.
+            Schedule your free hearing test, ear check, or microsuction consultation with our HCPC-registered team today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button

@@ -41,9 +41,9 @@ export function EarwaxRemovalPage() {
 
   const faqs = [
     {
-      question: 'What is microsuction earwax removal?',
+      question: 'How does microsuction compare to traditional ear syringing?',
       answer:
-        'Microsuction earwax removal is a safe, water-free method of removing earwax using a fine suction tube under direct vision. It is commonly used by audiologists because it is precise, gentle and effective.',
+        'Unlike syringe irrigation, clinical microsuction uses medical-grade low pressure to gently extract cerumen without flushing water into the acoustic canal—making it safer for perforated eardrums or narrow canals.',
     },
     {
       question: 'Do you offer earwax removal in Stourbridge?',
@@ -56,9 +56,9 @@ export function EarwaxRemovalPage() {
         'Earwax removal is £50 for one ear and £70 for both ears. The appointment includes video otoscopy, microsuction removal, prevention advice, a free hearing check and a free follow-up if needed.',
     },
     {
-      question: 'Is microsuction safe for blocked ears?',
+      question: 'Is microsuction suitable for sensitive ear canals?',
       answer:
-        'Microsuction is a safe and comfortable option for many blocked ear problems because no water is flushed into the ear canal. Your audiologist will check your ears first using video otoscopy.',
+        'Yes. Because our HCPC-registered audiologists perform the procedure under direct microscopic magnification, microsuction remains the safest, most precise technique for sensitive or surgically altered ear canals.',
     },
     {
       question: 'Can earwax cause hearing loss or tinnitus?',
@@ -141,10 +141,10 @@ export function EarwaxRemovalPage() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Earwax Removal Stourbridge | Microsuction, Blocked Ear Treatment & Hearing Check</title>
+        <title>Microsuction Earwax Removal Stourbridge | Clinical Audiologist Ear Cleaning</title>
         <meta
           name="description"
-          content="Professional microsuction earwax removal in Stourbridge. Safe blocked ear treatment, ear cleaning, video otoscopy and free hearing check. Serving Dudley, Halesowen, Brierley Hill, Kingswinford and nearby areas."
+          content="HCPC-registered microsuction earwax removal in Stourbridge. Safe, water-free blocked ear treatment with video otoscopy & free hearing check. Same-day care."
         />
         <meta
           name="keywords"
@@ -172,7 +172,7 @@ export function EarwaxRemovalPage() {
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Earwax Removal & Microsuction in Stourbridge
+            Microsuction Earwax Removal in Stourbridge
           </h1>
 
           <p className="text-xl text-gray-100 mb-6 max-w-4xl mx-auto">
@@ -181,9 +181,7 @@ export function EarwaxRemovalPage() {
           </p>
 
           <p className="text-lg text-gray-100 mb-10 max-w-4xl mx-auto">
-            We help with blocked ears, muffled hearing, earwax build-up, ear discomfort and hearing loss caused by wax.
-            Your appointment includes video otoscopy, professional microsuction and a free hearing check from a trusted
-            local hearing clinic in Stourbridge.
+            Whether you are experiencing sudden conductible hearing loss, tinnitus, ear fullness, or impacted cerumen build-up, our High Street clinic offers fast, gentle relief without messy water irrigation.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -253,12 +251,10 @@ export function EarwaxRemovalPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Safe Earwax Removal, Ear Cleaning & Hearing Care Services
+              Clinical Ear Care & Audiological Treatment Services
             </h2>
             <p className="text-gray-300 text-lg max-w-4xl mx-auto">
-              At Stourbridge Hearing Centre, we provide local audiology support for earwax build-up, blocked ears,
-              muffled hearing, hearing checks and ongoing hearing care. Our microsuction service is suitable for many
-              patients looking for professional earwax removal near Dudley, Halesowen, Brierley Hill and Kingswinford.
+              Our independent Stourbridge audiology practice offers comprehensive diagnostic otoscopy, gentle cerumen extraction, and ear care. Serving patients across Stourbridge, Dudley, Halesowen, Brierley Hill, and Kingswinford.
             </p>
           </div>
 
@@ -393,30 +389,27 @@ export function EarwaxRemovalPage() {
               <div className="bg-red-900/30 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                 <Video className="w-8 h-8 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Video Otoscopy</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">High-Definition Video Otoscopy</h3>
               <p className="text-gray-300">
-                We examine your ear canal with video otoscopy, explain what we see, check for wax build-up and discuss
-                the best next step for your ear health.
+                Detailed endoscopic inspection of the external auditory meatus and tympanic membrane with live screen viewing.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 border border-gray-700">
               <div className="bg-red-900/30 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Precise Microsuction</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Precision Clinical Microsuction</h3>
               <p className="text-gray-300">
-                Wax is removed under magnification using a fine suction tube. This water-free ear cleaning method is
-                quick, precise and comfortable for most patients.
+                Safe extraction of impacted wax under direct microscopic illumination using low-pressure suction probes.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 border border-gray-700">
               <div className="bg-red-900/30 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                 <Heart className="w-8 h-8 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Care & Prevention</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Post-Treatment Audiometric Assessment</h3>
               <p className="text-gray-300">
-                We provide aftercare advice, wax prevention guidance, a free hearing check and invite you for a free
-                4-6 monthly pop-in check.
+                Comprehensive aftercare protocols, acoustic hygiene guidance, and complimentary screening for persistent hearing loss.
               </p>
             </div>
           </div>
@@ -492,11 +485,10 @@ export function EarwaxRemovalPage() {
             Stourbridge Hearing Centre
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Ready for Clearer Ears and Better Hearing?
+            Restore Clear Hearing at Our Stourbridge Clinic Today
           </h2>
           <p className="text-xl text-white mb-10">
-            Same-day appointments often available for microsuction earwax removal in Stourbridge. Free follow-up if wax
-            is not fully removed, plus a free hearing check included.
+            Same-day clinical microsuction appointments available at Stourbridge Hearing Centre. Experience immediate relief from blocked ears with expert audiological care, video otoscopy, and complimentary hearing screenings.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

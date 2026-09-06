@@ -158,7 +158,7 @@ export function HomePage() {
           </div>
 
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '1s'}}>
-            Professional hearing care in Stourbridge: microsuction earwax removal, hearing tests, hearing aids, tinnitus advice and ear health checks from HCPC-registered audiologists.
+            Trusted independent hearing clinic in Stourbridge. We offer gentle microsuction earwax removal, comprehensive hearing tests, advanced digital hearing aids, and expert tinnitus care by HCPC-registered audiologists.
           </p>
         </div>
       </section>
@@ -176,7 +176,7 @@ export function HomePage() {
               Professional Microsuction Earwax Removal in Stourbridge
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-2">
-              Safe, gentle microsuction earwax removal in Stourbridge by qualified audiologists — helping with blocked ears, wax build-up, reduced hearing, ear discomfort, and hearing loss caused by earwax. Same-week appointments and a free quick look service are available.
+              Get fast relief from blocked ears with safe, gentle microsuction earwax removal in Stourbridge. Performed by qualified audiologists to treat ear discomfort, wax buildup, and sudden hearing loss. Same-week appointments and complimentary ear checks available.
             </p>
           </div>
 
@@ -266,7 +266,7 @@ export function HomePage() {
               Private Digital Hearing Aids & Hearing Tests in Stourbridge
             </h2>
             <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-              We offer professional hearing tests, hearing assessments, hearing aid fittings, hearing aid adjustments, hearing aid servicing, hearing aid repairs, tinnitus support, and discreet digital hearing aids from leading brands. Every fitting is personalised with expert aftercare from your local independent hearing clinic in Stourbridge.
+              Experience clearer hearing with full-service audiology care in Stourbridge. From free hearing assessments and discreet digital hearing aids to precision fittings, repairs, and ongoing aftercare—backed by leading brand technology and expert tinnitus support.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -328,7 +328,7 @@ export function HomePage() {
               Complete Hearing Care Services in Stourbridge
             </h2>
             <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
-              From hearing tests and digital hearing aids to earwax removal, tinnitus advice, hearing protection, and ongoing aftercare, our independent hearing centre provides friendly local support for your hearing health.
+              Your local destination for complete ear health. We provide expert hearing assessments, prescription hearing aids, gentle wax removal, custom ear protection, and dedicated lifelong aftercare.
             </p>
           </div>
 
@@ -396,7 +396,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Experienced Audiologists & Hearing Care Specialists in Stourbridge</h3>
               <p className="text-gray-300 leading-relaxed">
-                Our qualified audiologists are experts in earwax removal, microsuction, hearing tests, hearing assessments, tinnitus advice, and private hearing aids. With years of clinical experience, we ensure every patient receives safe, comfortable, and effective treatment.
+                Our HCPC-registered audiologists bring years of clinical expertise in microsuction wax removal, diagnostic hearing assessments, and tailored hearing aid solutions to deliver safe, comfortable care.
               </p>
             </div>
 
@@ -406,7 +406,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Independent Hearing Clinic & Hearing Care Near You</h3>
               <p className="text-gray-300 leading-relaxed">
-                As a local, independent hearing centre in Stourbridge, we provide honest hearing care advice, hearing aid demonstrations, hearing aid aftercare, and ongoing support — without pressure or sales targets. You'll always see the same trusted audiologist at every visit.
+                As an independent Stourbridge hearing clinic, we provide unbiased advice, free hearing aid trials, and long-term aftercare without sales targets. You will always see the same dedicated audiologist.
               </p>
             </div>
 
@@ -446,7 +446,7 @@ export function HomePage() {
             <div className="flex items-center justify-between mb-4">
               <div className="flex-1"></div>
               <h2
-                className="w-full lg:flex-1 text-4xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight text-center lg:text-left"
+                className="w-full text-2xl sm:text-3xl lg:text-4xl font-bold text-white whitespace-nowrap text-center"
               >
                 Inside Our Stourbridge Hearing Clinic
               </h2>

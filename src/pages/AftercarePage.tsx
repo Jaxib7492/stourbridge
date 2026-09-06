@@ -116,11 +116,8 @@ export function AftercarePage() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Hearing Aid Aftercare Stourbridge | Cleaning, Servicing & Support</title>
-        <meta
-          name="description"
-          content="Hearing aid aftercare in Stourbridge including walk-in hearing aid cleaning, servicing, fine-tuning, repairs, wax filters, domes, Bluetooth help and free quick-look ear checks."
-        />
+        <title>Hearing Aid Aftercare & Servicing Stourbridge | Local Clinic</title>
+        <meta name="description" content="Lifetime hearing aid aftercare in Stourbridge. Walk-in hearing aid cleaning, fine-tuning, wax filter replacements, repairs & free ear health checks." />
         <meta
           name="keywords"
           content="hearing aid aftercare Stourbridge, hearing aid cleaning Stourbridge, hearing aid servicing Stourbridge, hearing aid repairs Stourbridge, hearing aid maintenance Stourbridge, hearing aid fine tuning, hearing aid adjustments, hearing checks Stourbridge, hearing care Stourbridge, audiologist Stourbridge, hearing clinic Stourbridge, earwax check Stourbridge, hearing aid domes, hearing aid wax filters, Bluetooth hearing aid help, hearing aid support Dudley, hearing aid support Halesowen, hearing aid support Kingswinford"
@@ -143,10 +140,10 @@ export function AftercarePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Hearing Aid Aftercare, Cleaning & Support in Stourbridge
+                Expert Hearing Aid Aftercare & Cleaning in Stourbridge
               </h1>
               <p className="text-xl text-gray-100 mb-10 leading-relaxed">
-                Enjoy lifetime hearing aid aftercare with professional fine-tuning, hearing aid cleaning, servicing, adjustments, Bluetooth support, wax filter changes, domes, and regular hearing checks to keep you hearing your best.
+                Comprehensive lifetime hearing aid support in Stourbridge. Led by HCPC-registered audiologists, we offer walk-in servicing, precision fine-tuning, wax filter changes, Bluetooth pairing, and routine diagnostic hearing checks.
               </p>
 
               <div className="space-y-4 mb-10">
@@ -233,10 +230,10 @@ export function AftercarePage() {
 
           <div className="mt-14 bg-black/30 border border-gray-700 rounded-2xl p-6 sm:p-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center">
-              Local Hearing Care for Stourbridge and Nearby Areas
+              Independent Audiology & Aftercare Across Stourbridge & West Midlands
             </h2>
             <p className="text-gray-200 text-center max-w-5xl mx-auto leading-relaxed">
-              Stourbridge Hearing Centre provides hearing aid aftercare, hearing aid servicing, hearing checks, hearing aid repairs, earwax checks and hearing care support for patients from Stourbridge, Dudley, Halesowen, Kingswinford, Brierley Hill, Hagley, Kidderminster, Wolverhampton, Birmingham, Cradley Heath, Wordsley, Pedmore and Amblecote.
+              Located on Stourbridge High Street, our independent hearing clinic provides professional hearing aid servicing, repairs, and audiological support for patients across Stourbridge, Dudley, Halesowen, Kingswinford, Brierley Hill, Hagley, and surrounding West Midlands communities.
             </p>
           </div>
         </div>
@@ -252,12 +249,12 @@ export function AftercarePage() {
 
               <div className="space-y-6">
                 {[
-                  "Lifetime aftercare — scheduled hearing aid reviews to keep performance optimised.",
-                  "Professional hearing aid fine-tuning and comfort adjustments for work, family, restaurants, TV, phone calls and everyday listening environments.",
-                  "Routine hearing aid cleaning including domes, wax filters, microphones, receivers, vents and tubing.",
-                  "6-monthly hearing checks to monitor changes and update your digital hearing aid settings when needed.",
-                  "Connectivity help including Bluetooth pairing, mobile app setup, phone streaming, TV streaming and troubleshooting.",
-                  "Advice on hearing loss, ear health, hearing protection, earwax checks and getting the best from your hearing aids."
+                  "Comprehensive lifetime aftercare — routine clinical reviews to ensure optimal performance.",
+                  "Clinical fine-tuning and parameter adjustments customized for complex acoustic environments, phone calls, and TV streaming.",
+                  "Deep cleaning and maintenance of acoustic domes, wax guards, microphones, receivers, vents, and earmould tubing.",
+                  "Regular diagnostic hearing assessments to track changes in your hearing profile and re-program settings accordingly.",
+                  "Advanced digital connectivity support, including Bluetooth pairing, smart app setup, and wireless streaming troubleshooting.",
+                  "Impartial audiological guidance on ear health, hearing preservation, and microsuction earwax management."
                 ].map((text, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0">
@@ -343,7 +340,7 @@ export function AftercarePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-                Free Quick-Look Ear Check in Stourbridge
+                Complimentary Otoscopic Ear Health Check in Stourbridge
               </h2>
               <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                 Not sure if wax is the problem? Drop in for a <span className="font-bold text-white">complimentary quick look</span> to check for earwax — especially useful if sounds are muffled, your hearing aids sound blocked, speech is unclear, or your hearing seems dull.
@@ -403,9 +400,9 @@ export function AftercarePage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
-              { num: 1, title: "Check & Clean", text: "We inspect microphones, receivers, vents and tubing, then clean or replace domes, tubes and wax filters when needed." },
-              { num: 2, title: "Fine-Tune", text: "We adjust your hearing aid settings for comfort, clarity, speech understanding and everyday listening environments." },
-              { num: 3, title: "Review", text: "We plan follow-ups, answer questions and share practical tips for getting the very best from your hearing aids." }
+              { num: 1, title: "Clinical Inspection & Cleaning", text: "We thoroughly inspect physical components—including microphones, receivers, and sound ports—replacing worn wax guards, domes, or tubing." },
+              { num: 2, title: "Acoustic Fine-Tuning", text: "We calibrate gain levels and dynamic frequency response to optimize speech clarity and background noise suppression." },
+              { num: 3, title: "Performance Review & Care Plan", text: "We evaluate your listening goals, establish long-term maintenance intervals, and provide guidance for managing your device." }
             ].map((step, i) => (
               <div key={i} className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8">
                 <div className="text-6xl font-bold text-red-600 mb-4">{step.num}</div>
@@ -512,10 +509,10 @@ export function AftercarePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-700 via-red-600 to-red-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Ready for Your Hearing Aid Aftercare Visit?
+            RVisit Our Stourbridge Hearing Aid Clinic Today
           </h2>
           <p className="text-xl text-white mb-10">
-            Book an appointment or simply walk in during opening hours for hearing aid cleaning, servicing, wax filters, domes, adjustments or a free quick-look ear check.
+            Schedule an appointment or visit our High Street practice during clinic hours for professional hearing aid servicing, adjustments, or a complimentary otoscopic check.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button

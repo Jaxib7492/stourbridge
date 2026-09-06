@@ -13,6 +13,10 @@ import { HearingAidsPage } from './pages/HearingAidsPage';
 import { AftercarePage } from './pages/AftercarePage';
 import { FinancingPage } from './pages/FinancingPage';
 import { HomeVisitsPage } from './pages/HomeVisitsPage';
+
+// Earplugs Page
+import { EarplugsPage } from './pages/Earplugs';
+
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { FAQPage } from './pages/FAQPage';
@@ -43,8 +47,14 @@ function App() {
 
           <Routes>
 
-            {/* MAIN PAGES */}
-            <Route path="/" element={<HomePage />} />
+            {/* =========================
+                MAIN PAGES
+            ========================= */}
+
+            <Route
+              path="/"
+              element={<HomePage />}
+            />
 
             <Route
               path="/earwax-removal"
@@ -71,13 +81,28 @@ function App() {
               element={<HomeVisitsPage />}
             />
 
-            {/* BLOG PAGE */}
+            {/* =========================
+                EARPLUGS PAGE
+            ========================= */}
+
+            <Route
+              path="/earplugs"
+              element={<EarplugsPage />}
+            />
+
+            {/* =========================
+                BLOG PAGE
+            ========================= */}
+
             <Route
               path="/blog"
               element={<Blog />}
             />
 
-            {/* EXTRA PAGES */}
+            {/* =========================
+                EXTRA PAGES
+            ========================= */}
+
             <Route
               path="/about"
               element={<AboutPage />}
@@ -93,7 +118,10 @@ function App() {
               element={<FAQPage />}
             />
 
-            {/* LOCAL SEO PAGES */}
+            {/* =========================
+                LOCAL SEO PAGES
+            ========================= */}
+
             <Route
               path="/hearing-aids-birmingham"
               element={<HearingAidsBirmingham />}
@@ -144,7 +172,10 @@ function App() {
               element={<HearingAidsBrierleyHill />}
             />
 
-            {/* 404 FALLBACK */}
+            {/* =========================
+                404 FALLBACK
+            ========================= */}
+
             <Route
               path="*"
               element={<HomePage />}
