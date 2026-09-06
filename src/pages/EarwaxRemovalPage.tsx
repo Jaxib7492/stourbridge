@@ -246,31 +246,6 @@ export function EarwaxRemovalPage() {
         </div>
       </section>
 
-      {/* Local SEO Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Clinical Ear Care & Audiological Treatment Services
-            </h2>
-            <p className="text-gray-300 text-lg max-w-4xl mx-auto">
-              Our independent Stourbridge audiology practice offers comprehensive diagnostic otoscopy, gentle cerumen extraction, and ear care. Serving patients across Stourbridge, Dudley, Halesowen, Brierley Hill, and Kingswinford.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {serviceKeywords.map((keyword, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-5">
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
-                  <span className="text-gray-200">{keyword}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Video Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-6xl mx-auto">
@@ -371,6 +346,31 @@ export function EarwaxRemovalPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Local SEO Services Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Clinical Ear Care & Audiological Treatment Services
+            </h2>
+            <p className="text-gray-300 text-lg max-w-4xl mx-auto">
+              Our independent Stourbridge audiology practice offers comprehensive diagnostic otoscopy, gentle cerumen extraction, and ear care. Serving patients across Stourbridge, Dudley, Halesowen, Brierley Hill, and Kingswinford.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {serviceKeywords.map((keyword, idx) => (
+              <div key={idx} className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-5">
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                  <span className="text-gray-200">{keyword}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

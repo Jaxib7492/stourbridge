@@ -321,8 +321,18 @@ export function EarplugsPage() {
               </div>
             </div>
 
-            {/* HERO VISUAL (PLACED BOX CARD HERE) */}
+            {/* HERO VISUAL */}
             <div className="relative">
+              {/* IMAGE PLACED BEFORE THE FREE QUICK LOOK BOX */}
+              <div className="mb-6 rounded-3xl overflow-hidden shadow-2xl border border-red-500/20">
+                <img
+                  src="audio_procedure.jpg"
+                  alt="Audiological ear impression procedure"
+                  className="w-full h-auto object-cover rounded-3xl"
+                />
+              </div>
+
+              {/* ORIGINAL BOX CARD */}
               <div className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 rounded-3xl p-8 sm:p-12 overflow-hidden shadow-2xl border border-red-500/20">
                 <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-2xl" />
 
@@ -682,13 +692,39 @@ export function EarplugsPage() {
                 Convenient Stourbridge town centre location.
               </p>
 
-              <div className="bg-black rounded-2xl p-5 border border-gray-800">
-                <p className="font-bold text-white">
-                  Stourbridge Hearing Centre
-                </p>
-                <p className="text-gray-400 mt-1">
-                  59 High Street, Stourbridge, DY8 1DE
-                </p>
+              <div className="bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+                {/* Embedded Google Map Container */}
+                <div className="relative w-full h-[350px]">
+                  <iframe
+                    title="Stourbridge Hearing Centre Location"
+                    src="https://www.google.com/maps?q=Stourbridge%20Hearing%20Centre&output=embed&z=16"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                  ></iframe>
+
+                  {/* Get Directions Button */}
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Stourbridge+Hearing+Centre"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-2xl font-bold shadow-2xl transition-all duration-300 hover:scale-105"
+                  >
+                    Get Directions
+                  </a>
+                </div>
+
+                {/* Address Detail Footer */}
+                <div className="p-6 bg-black/40 border-t border-gray-800">
+                  <p className="font-bold text-white text-lg">Stourbridge Hearing Centre</p>
+                  <p className="text-gray-400 mt-1">
+                    59 High Street, Stourbridge, DY8 1DE
+                  </p>
+                </div>
               </div>
             </div>
 
