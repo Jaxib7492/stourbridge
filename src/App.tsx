@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 import { HomePage } from './pages/HomePage';
 import { EarwaxRemovalPage } from './pages/EarwaxRemovalPage';
 import { HearingAidsPage } from './pages/HearingAidsPage';
+import HearingTest from './pages/HearingTest';
 import { AftercarePage } from './pages/AftercarePage';
 import { FinancingPage } from './pages/FinancingPage';
 import { HomeVisitsPage } from './pages/HomeVisitsPage';
@@ -64,6 +65,15 @@ function App() {
             <Route
               path="/hearing-aids"
               element={<HearingAidsPage />}
+            />
+
+            {/* =========================
+                HEARING TEST PAGE
+            ========================= */}
+
+            <Route
+              path="/hearing-test"
+              element={<HearingTest />}
             />
 
             <Route

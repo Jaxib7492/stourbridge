@@ -51,7 +51,9 @@ export default function HearingTest() {
 
           <div className="grid lg:grid-cols-2 min-h-[620px]">
 
-            {/* LEFT SIDE */}
+            {/* =====================================================
+                HERO LEFT
+            ===================================================== */}
             <div className="px-6 sm:px-10 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
@@ -74,18 +76,23 @@ export default function HearingTest() {
 
               </h1>
 
+
+              {/* RED LINE */}
               <div className="w-14 h-1 bg-red-600 mt-6 mb-5"></div>
 
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-5">
+
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-5 leading-tight">
                 Professional Hearing Tests
                 <br />
                 for Medical Reasons
               </h2>
 
+
               <p className="text-gray-300 text-base leading-relaxed max-w-xl mb-5">
                 At Stourbridge Hearing Centre, we provide hearing tests for
                 medical reasons with a full written report.
               </p>
+
 
               <p className="text-gray-300 text-base leading-relaxed max-w-xl mb-8">
                 Our comprehensive hearing assessment helps identify the cause
@@ -94,10 +101,14 @@ export default function HearingTest() {
               </p>
 
 
-              {/* BUTTONS */}
+              {/* =================================================
+                  HERO BUTTONS
+              ================================================= */}
               <div className="flex flex-col sm:flex-row gap-3">
 
+                {/* BOOK APPOINTMENT */}
                 <button
+                  type="button"
                   onClick={() => navigate('/contact')}
                   className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-lg font-bold text-sm transition-all duration-300 shadow-xl"
                 >
@@ -107,15 +118,18 @@ export default function HearingTest() {
                 </button>
 
 
+                {/* CALL */}
                 <a
                   href="tel:01384476306"
                   className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-red-700 px-6 py-4 rounded-lg font-bold text-sm transition-all duration-300 shadow-xl"
                 >
+
                   <Phone className="w-5 h-5" />
 
                   <span>
                     CALL TO DISCUSS
                     <br />
+
                     <span className="text-xs">
                       01384 476 306
                     </span>
@@ -128,17 +142,19 @@ export default function HearingTest() {
             </div>
 
 
-            {/* RIGHT SIDE IMAGE */}
-            <div className="relative min-h-[400px] lg:min-h-full">
+            {/* =====================================================
+                HERO IMAGE
+            ===================================================== */}
+            <div className="relative min-h-[400px] lg:min-h-full overflow-hidden">
 
               <img
-                src="/hearing-test-hero.jpg"
+                src="/HearingTestHero.jpg"
                 alt="Professional hearing test at Stourbridge Hearing Centre"
                 className="absolute inset-0 w-full h-full object-cover"
               />
 
-              {/* DARK OVERLAY */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/10"></div>
+              {/* subtle dark overlay */}
+              <div className="absolute inset-0 bg-black/10"></div>
 
             </div>
 
@@ -174,11 +190,14 @@ export default function HearingTest() {
           </div>
 
 
-          {/* SIX CARDS */}
+          {/* =====================================================
+              ASSESSMENT CARDS
+          ===================================================== */}
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
 
+
             {/* VISUAL OTOSCOPY */}
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-colors">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-all duration-300">
 
               <div className="h-14 flex items-center justify-center mb-4">
 
@@ -199,7 +218,7 @@ export default function HearingTest() {
 
 
             {/* AIR CONDUCTION */}
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-colors">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-all duration-300">
 
               <div className="h-14 flex items-center justify-center mb-4">
 
@@ -220,7 +239,7 @@ export default function HearingTest() {
 
 
             {/* BONE CONDUCTION */}
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-colors">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-all duration-300">
 
               <div className="h-14 flex items-center justify-center mb-4">
 
@@ -241,7 +260,7 @@ export default function HearingTest() {
 
 
             {/* MASKING */}
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-colors">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-all duration-300">
 
               <div className="h-14 flex items-center justify-center mb-4">
 
@@ -261,8 +280,8 @@ export default function HearingTest() {
             </div>
 
 
-            {/* PATIENT HISTORY */}
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-colors">
+            {/* FULL PATIENT HISTORY */}
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-all duration-300">
 
               <div className="h-14 flex items-center justify-center mb-4">
 
@@ -282,8 +301,8 @@ export default function HearingTest() {
             </div>
 
 
-            {/* WRITTEN REPORT */}
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-colors">
+            {/* FULL WRITTEN REPORT */}
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 text-center hover:border-red-600 transition-all duration-300">
 
               <div className="h-14 flex items-center justify-center mb-4">
 
@@ -335,32 +354,49 @@ export default function HearingTest() {
               <div className="space-y-2.5">
 
                 <div className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="text-red-500">✓</span>
+                  <span className="text-red-500 font-bold">
+                    ✓
+                  </span>
                   Hearing tests for medical reasons
                 </div>
 
+
                 <div className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="text-red-500">✓</span>
+                  <span className="text-red-500 font-bold">
+                    ✓
+                  </span>
                   Comprehensive assessment with full results
                 </div>
 
+
                 <div className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="text-red-500">✓</span>
+                  <span className="text-red-500 font-bold">
+                    ✓
+                  </span>
                   Visual otoscopy, AC, BC and masking
                 </div>
 
+
                 <div className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="text-red-500">✓</span>
+                  <span className="text-red-500 font-bold">
+                    ✓
+                  </span>
                   Full patient history taken
                 </div>
 
+
                 <div className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="text-red-500">✓</span>
+                  <span className="text-red-500 font-bold">
+                    ✓
+                  </span>
                   Detailed written report provided
                 </div>
 
+
                 <div className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="text-red-500">✓</span>
+                  <span className="text-red-500 font-bold">
+                    ✓
+                  </span>
                   Confidential and professional service
                 </div>
 
@@ -379,6 +415,7 @@ export default function HearingTest() {
                   <Clock className="w-9 h-9 text-red-500" />
 
                 </div>
+
 
                 <div>
 
@@ -407,7 +444,7 @@ export default function HearingTest() {
 
 
       {/* =========================================================
-          CALL TO DISCUSS YOUR NEEDS
+          CALL TO DISCUSS
       ========================================================= */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-950">
 
@@ -417,7 +454,10 @@ export default function HearingTest() {
 
             <div className="grid lg:grid-cols-3">
 
-              {/* LEFT CONTENT */}
+
+              {/* =================================================
+                  LEFT CONTENT
+              ================================================= */}
               <div className="p-7 sm:p-8">
 
                 <h2 className="text-xl sm:text-2xl font-bold text-white leading-tight mb-4">
@@ -426,7 +466,9 @@ export default function HearingTest() {
                   and Service Charge
                 </h2>
 
+
                 <div className="w-10 h-1 bg-red-600 mb-4"></div>
+
 
                 <p className="text-sm text-gray-400 leading-relaxed">
                   We understand that everyone’s needs are different.
@@ -437,10 +479,13 @@ export default function HearingTest() {
               </div>
 
 
-              {/* CONTACT DETAILS */}
+              {/* =================================================
+                  CONTACT DETAILS
+              ================================================= */}
               <div className="p-7 sm:p-8 border-t lg:border-t-0 lg:border-l lg:border-r border-gray-800">
 
                 <div className="space-y-5">
+
 
                   {/* PHONE */}
                   <a
@@ -453,6 +498,7 @@ export default function HearingTest() {
                       <Phone className="w-5 h-5 text-red-500" />
 
                     </div>
+
 
                     <div>
 
@@ -472,23 +518,27 @@ export default function HearingTest() {
                   {/* ADDRESS */}
                   <div className="flex items-center gap-4">
 
-                    <div className="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center">
+                    
 
-                      <MapPin className="w-5 h-5 text-red-500" />
-
-                    </div>
 
                     <div>
 
-                      <p className="text-xs text-gray-500 mb-0.5">
-                        Address
-                      </p>
+                      
 
-                      <p className="text-sm font-bold text-white">
-                        59 High Street,
-                        <br />
-                        Stourbridge, DY8 1DE
-                      </p>
+                      <div className="flex items-center gap-4">
+                        {/* Location Pin Icon Box */}
+                        <div className="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center flex-shrink-0">
+                          <MapPin className="w-6 h-6 text-red-500" />
+                        </div>
+
+                        {/* Button */}
+                        <button 
+                          onClick={() => window.open('https://www.google.com/maps?q=59+High+St,+Stourbridge+DY8+1DE', '_blank')}
+                          className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-medium rounded-xl transition-colors whitespace-nowrap shadow-sm"
+                        >
+                          View on Google Maps
+                        </button>
+                      </div>
 
                     </div>
 
@@ -503,6 +553,7 @@ export default function HearingTest() {
                       <Globe className="w-5 h-5 text-red-500" />
 
                     </div>
+
 
                     <div>
 
@@ -523,7 +574,9 @@ export default function HearingTest() {
               </div>
 
 
-              {/* RIGHT IMAGE */}
+              {/* =================================================
+                  OTOSCOPE IMAGE
+              ================================================= */}
               <div className="relative min-h-[260px] lg:min-h-[300px] bg-black">
 
                 <img
@@ -531,8 +584,6 @@ export default function HearingTest() {
                   alt="Ear examination using an otoscope"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-
-                <div className="absolute inset-0 bg-black/10"></div>
 
               </div>
 
@@ -546,13 +597,14 @@ export default function HearingTest() {
 
 
       {/* =========================================================
-          RED CTA
+          RED PRIORITY CTA
       ========================================================= */}
       <section className="bg-red-700">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="py-7 flex flex-col lg:flex-row items-center justify-between gap-6">
+
 
             {/* LEFT */}
             <div className="flex items-center gap-4">
@@ -562,6 +614,7 @@ export default function HearingTest() {
                 <Ear className="w-8 h-8 text-red-600" />
 
               </div>
+
 
               <div>
 
@@ -581,9 +634,11 @@ export default function HearingTest() {
 
             {/* BUTTON */}
             <button
+              type="button"
               onClick={() => navigate('/contact')}
               className="inline-flex items-center justify-center gap-3 border-2 border-white text-white hover:bg-white hover:text-red-700 px-7 py-3.5 rounded-lg font-bold text-sm transition-all duration-300"
             >
+
               <CalendarDays className="w-5 h-5" />
 
               BOOK YOUR APPOINTMENT TODAY
@@ -598,13 +653,14 @@ export default function HearingTest() {
 
 
       {/* =========================================================
-          BOTTOM TRUST BAR
+          TRUST BAR
       ========================================================= */}
       <section className="bg-black border-b border-gray-800">
 
         <div className="max-w-7xl mx-auto">
 
           <div className="grid md:grid-cols-3">
+
 
             {/* EXPERT AUDIOLOGISTS */}
             <div className="p-6 sm:p-7 flex items-center gap-4 border-b md:border-b-0 md:border-r border-gray-800">
@@ -614,6 +670,7 @@ export default function HearingTest() {
                 <ShieldCheck className="w-6 h-6 text-white" />
 
               </div>
+
 
               <div>
 
@@ -639,6 +696,7 @@ export default function HearingTest() {
 
               </div>
 
+
               <div>
 
                 <h3 className="text-xs font-bold text-white uppercase mb-1">
@@ -662,6 +720,7 @@ export default function HearingTest() {
                 <Users className="w-6 h-6 text-white" />
 
               </div>
+
 
               <div>
 
