@@ -344,40 +344,17 @@ export function EarplugsPage() {
                   
 
                   <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-5">
-                    A Quick Check Before We Begin
+                    Ear Check Before Your Ear Impression
                   </h3>
 
                   <p className="text-red-50 leading-relaxed mb-7">
-                    Before we get started, we’ll check your ears and ear canals to make sure they’re suitable for the procedure.
+                    Before taking an ear impression, it is important to check that your ears and ear canals are suitable for the procedure.
                   </p>
 
-                  <div className="bg-black/20 border border-white/20 rounded-2xl p-5">
-                    <div className="flex gap-4">
-                      <Check className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-                      <p className="text-white text-sm sm:text-base leading-relaxed">
-                        At Stourbridge Hearing Centre, we offer a FREE Quick Look Ear Check before your appointment.
-                      </p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
 
-              {/* FLOATING BADGE */}
-              <div className="absolute -bottom-5 -left-4 sm:-left-8 bg-gray-900 text-white rounded-2xl shadow-xl p-4 sm:p-5 border border-gray-700">
-                <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center">
-                    <Search className="w-5 h-5 text-red-500" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-red-500 uppercase tracking-wide">
-                      FREE
-                    </p>
-                    <p className="font-bold">
-                      Quick Ear Check
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
           </div>
