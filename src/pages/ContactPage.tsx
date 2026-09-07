@@ -79,7 +79,7 @@ export function ContactPage() {
               {/* Map Placeholder or Instructions */}
               <div className="mt-8">
                 <button 
-                  onClick={() => window.open('https://www.google.com/maps?q=59+High+St,+Stourbridge+DY8+1DE', '_blank')}
+                  onClick={() => window.open('https://maps.app.goo.gl/RzcMx8uqJjHfTgkRA', '_blank')}
                   className="w-full bg-gray-700 hover:bg-gray-600 text-white py-3 rounded-lg transition-colors"
                 >
                   View on Google Maps

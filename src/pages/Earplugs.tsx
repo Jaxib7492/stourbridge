@@ -341,23 +341,21 @@ export function EarplugsPage() {
                     <Search className="w-10 h-10 text-white" />
                   </div>
 
-                  <p className="text-red-100 uppercase tracking-wider font-bold text-sm mb-2">
-                    FREE QUICK LOOK
-                  </p>
+                  
 
                   <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-5">
-                    Ear Check Before Your Ear Impression
+                    A Quick Check Before We Begin
                   </h3>
 
                   <p className="text-red-50 leading-relaxed mb-7">
-                    Before taking an ear impression, it is important to check that your ears and ear canals are suitable for the procedure.
+                    Before we get started, we’ll check your ears and ear canals to make sure they’re suitable for the procedure.
                   </p>
 
                   <div className="bg-black/20 border border-white/20 rounded-2xl p-5">
                     <div className="flex gap-4">
                       <Check className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
                       <p className="text-white text-sm sm:text-base leading-relaxed">
-                        At Stourbridge Hearing Centre, we offer a FREE Quick Look Ear Check before your ear impression appointment.
+                        At Stourbridge Hearing Centre, we offer a FREE Quick Look Ear Check before your appointment.
                       </p>
                     </div>
                   </div>
@@ -375,7 +373,7 @@ export function EarplugsPage() {
                       FREE
                     </p>
                     <p className="font-bold">
-                      Quick Look Ear Check
+                      Quick Ear Check
                     </p>
                   </div>
                 </div>
