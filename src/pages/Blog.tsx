@@ -62,6 +62,27 @@ export function Blog() {
             </div>
           </div>
 
+          {/* BLOG 4 */}
+          <div
+            onClick={() => setActivePost("homevisit")}
+            className="cursor-pointer bg-black/30 rounded-2xl overflow-hidden border border-red-800/40 hover:scale-[1.02] transition"
+          >
+            <img
+              src="hearing-care-at-home.png"
+              className="w-full h-64 object-cover"
+              alt="Hearing Care at Home"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold">Hearing Care at Home</h2>
+              <p className="text-red-200 mt-2">
+                Earwax Removal and Hearing Tests for People Who Find Travelling Difficult
+              </p>
+              <p className="mt-4 flex items-center gap-2">
+                Read More <ArrowRight size={18} />
+              </p>
+            </div>
+          </div>
+
         </div>
 
       ) : (
@@ -626,6 +647,140 @@ export function Blog() {
             <p className="text-sm text-red-300">
               This article provides general information and does not replace medical advice, diagnosis,
               or treatment from a qualified healthcare professional.
+            </p>
+
+          </article>
+        )}
+
+
+        {/* ================= HOME VISIT ARTICLE ================= */}
+        {activePost === "homevisit" && (
+          <article className="bg-black/30 p-6 rounded-2xl border border-red-800/40 space-y-6">
+
+            <Helmet>
+              <title>
+                Home Visit Earwax Removal & Hearing Care | Stourbridge
+              </title>
+              <meta
+                name="description"
+                content="Professional home visit earwax removal, microsuction, hearing tests and hearing aid demonstrations in Stourbridge. Home hearing care for housebound patients and care homes."
+              />
+            </Helmet>
+
+            <h1 className="text-3xl font-bold">
+              Hearing Care at Home
+            </h1>
+
+            <img
+              src="hearing-care-at-home.png"
+              className="w-full aspect-[3/2] object-cover block"
+              alt="Hearing Care at Home"
+            />
+
+            <h2 className="text-2xl font-bold">
+              Earwax Removal and Hearing Tests for People Who Find Travelling Difficult
+            </h2>
+
+            <p>
+              Professional hearing care, brought directly to your home or care home.
+            </p>
+
+            <h2 className="text-2xl font-bold">
+              Professional Hearing Care Without Leaving Home
+            </h2>
+
+            <p>
+              For some people, travelling to a hearing clinic can be difficult. Mobility problems, illness, age, disability, anxiety, lack of transport or simply finding it challenging to leave the house can all make attending an appointment more difficult.
+            </p>
+
+            <p>
+              At Stourbridge Hearing Centre, we understand that hearing care should be accessible to everyone. That’s why we offer a home visit service for earwax removal and hearing care, bringing professional support directly to your home or care home.
+            </p>
+
+            <p>
+              Whether you are experiencing blocked ears because of earwax, struggling to hear conversations, or wondering whether you could benefit from hearing aids, our home visit service can make getting help much easier.
+            </p>
+
+            <h2 className="text-2xl font-bold">
+              Who Can Benefit From a Home Visit?
+            </h2>
+
+            <ul className="list-disc ml-6 space-y-2">
+              <li>Housebound or have difficulty leaving home</li>
+              <li>Limited mobility</li>
+              <li>Find travelling difficult</li>
+              <li>Rely on family members or carers for transport</li>
+              <li>Live in a care home</li>
+              <li>Have difficulty attending appointments independently</li>
+              <li>Prefer the comfort and convenience of being seen at home</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold">
+              Earwax Removal at Home
+            </h2>
+
+            <p>
+              A build-up of earwax can cause blocked ears, reduced hearing, discomfort, a feeling of fullness, or tinnitus.
+            </p>
+
+            <p>
+              If travelling to a clinic is difficult, our earwax removal home visit service can provide a convenient alternative. Where appropriate, professional earwax removal using microsuction can be carried out during a home visit following an assessment of the ears.
+            </p>
+
+            <h2 className="text-2xl font-bold">
+              Hearing Test at Home
+            </h2>
+
+            <p>
+              Hearing loss can develop gradually, and many people don’t realise how much their hearing has changed.
+            </p>
+
+            <p>
+              A hearing test at home can be a convenient way to have your hearing assessed without the stress of travelling to a clinic. We can discuss your hearing concerns in a familiar environment and provide professional advice about the next steps.
+            </p>
+
+            <h2 className="text-2xl font-bold">
+              Hearing Aid Demonstrations at Home
+            </h2>
+
+            <p>
+              If your hearing assessment indicates that hearing aids may be beneficial, we can provide hearing aid demonstrations at home. Trying hearing aids in a familiar environment can be particularly helpful. Family members or carers can also be involved where appropriate, and we provide guidance on using and caring for hearing aids.
+            </p>
+
+            <h2 className="text-2xl font-bold">
+              Hearing Care for Care Homes
+            </h2>
+
+            <p>
+              We also provide hearing care visits for care homes, helping residents access professional hearing and earwax services without needing to travel.
+            </p>
+
+            <p>
+              Regular hearing care can help identify problems such as earwax build-up and hearing loss, and ensure residents receive the support they need.
+            </p>
+
+            <ul className="list-disc ml-6 space-y-2">
+              <li>Ear checks and earwax removal where appropriate</li>
+              <li>Hearing assessments</li>
+              <li>Hearing aid demonstrations</li>
+              <li>Hearing aid advice and support</li>
+              <li>Support for residents and carers</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold">
+              Book a Home Visit Today
+            </h2>
+
+            <p>
+              If you or a family member is struggling with blocked ears, possible earwax build-up or hearing difficulties, contact us to discuss our home visit service.
+            </p>
+
+            <p className="font-semibold">
+              01384 476 306
+            </p>
+
+            <p>
+              www.StourbridgeHearing.co.uk
             </p>
 
           </article>
