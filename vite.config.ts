@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: './', // ✅ important for relative paths in production
+  base: '/', // ✅ important for relative paths in production
 });
