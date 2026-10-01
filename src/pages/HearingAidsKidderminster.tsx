@@ -37,7 +37,7 @@ export default function HearingTest() {
 
         <link
           rel="canonical"
-          href="https://www.stourbridgehearing.co.uk/hearing-test"
+          href="https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster"
         />
       </Helmet>
 

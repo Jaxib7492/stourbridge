@@ -138,7 +138,7 @@ export default function HearingAidsRedditch() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed space-y-6">
           <p>
-            Stourbridge Hearing Centre provides professional **earwax removal in Redditch** using safe and effective microsuction techniques. 
+            Stourbridge Hearing Centre provides professional earwax removal in Redditch using safe and effective microsuction techniques. 
             We provide a clinical alternative to GP waiting lists, ensuring you get your hearing back to normal as quickly as possible.
           </p>
           <p>
