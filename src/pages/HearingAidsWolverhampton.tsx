@@ -30,7 +30,7 @@ export default function HearingAidsWolverhampton() {
 
         <meta
           name="description"
-          content="Professional ear wax removal, microsuction, hearing tests, hearing aids, and home visit audiology services near Wolverhampton. Same day appointments available at Stourbridge Hearing Centre."
+          content="Professional ear wax removal, microsuction, hearing tests, hearing aids, and home visit audiology services for Wolverhampton patients. Same day appointments available at Stourbridge Hearing Centre."
         />
 
         <meta
@@ -40,12 +40,19 @@ export default function HearingAidsWolverhampton() {
           Microsuction Wolverhampton,
           Hearing Aids Wolverhampton,
           Hearing Tests Wolverhampton,
+          Ear Cleaning Wolverhampton,
           Audiologist Wolverhampton,
           Blocked Ears Wolverhampton,
-          Ear Cleaning Wolverhampton,
           Hearing Clinic Wolverhampton,
-          Tinnitus Wolverhampton,
-          Hearing Care Wolverhampton
+          Ear Syringing Wolverhampton,
+          Hearing Care Wolverhampton,
+          Earwax Removal Wolverhampton,
+          Private Hearing Test Wolverhampton,
+          Hearing Aid Centre Wolverhampton,
+          Tinnitus Assessment Wolverhampton,
+          Ear Wax Microsuction Wolverhampton,
+          Home Visit Audiologist Wolverhampton,
+          Home Visit Ear Wax Removal Wolverhampton
         "
         />
 
@@ -111,7 +118,8 @@ export default function HearingAidsWolverhampton() {
 
             <p className="text-gray-400 text-xl max-w-3xl mx-auto">
               Trusted hearing care, microsuction ear wax removal, hearing
-              tests, and hearing aids for Wolverhampton patients.
+              tests, hearing aids, and home visit audiology services for
+              Wolverhampton patients.
             </p>
 
           </div>
@@ -320,12 +328,12 @@ export default function HearingAidsWolverhampton() {
             </div>
 
             <div className="flex justify-center">
-  <img
-    src="wolverhampton-review.png"
-    alt="Home visit ear wax removal review"
-    className="rounded-3xl shadow-2xl object-contain"
-  />
-</div>
+              <img
+                src="wolverhampton-review.png"
+                alt="Home visit ear wax removal review"
+                className="rounded-3xl shadow-2xl object-contain"
+              />
+            </div>
 
           </div>
 
@@ -375,6 +383,7 @@ export default function HearingAidsWolverhampton() {
 
                 <div className="flex items-center gap-3 mb-4">
                   <Car className="w-6 h-6 text-red-500" />
+
                   <h3 className="text-xl font-bold text-white">
                     Parking Nearby
                   </h3>
@@ -391,6 +400,7 @@ export default function HearingAidsWolverhampton() {
 
                 <div className="flex items-center gap-3 mb-4">
                   <Bus className="w-6 h-6 text-red-500" />
+
                   <h3 className="text-xl font-bold text-white">
                     Public Transport
                   </h3>
@@ -407,6 +417,7 @@ export default function HearingAidsWolverhampton() {
 
                 <div className="flex items-center gap-3 mb-4">
                   <MapPin className="w-6 h-6 text-red-500" />
+
                   <h3 className="text-xl font-bold text-white">
                     Fast Access
                   </h3>
@@ -448,9 +459,11 @@ export default function HearingAidsWolverhampton() {
 
             <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center">
               <ShieldCheck className="w-12 h-12 text-red-500 mx-auto mb-5" />
+
               <h3 className="text-xl font-bold mb-3">
                 Professional Care
               </h3>
+
               <p className="text-gray-400">
                 Safe microsuction and expert audiology support.
               </p>
@@ -458,9 +471,11 @@ export default function HearingAidsWolverhampton() {
 
             <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center">
               <Clock className="w-12 h-12 text-red-500 mx-auto mb-5" />
+
               <h3 className="text-xl font-bold mb-3">
                 Same Day Appointments
               </h3>
+
               <p className="text-gray-400">
                 Urgent appointments available depending on availability.
               </p>
@@ -468,9 +483,11 @@ export default function HearingAidsWolverhampton() {
 
             <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center">
               <Star className="w-12 h-12 text-red-500 mx-auto mb-5" />
+
               <h3 className="text-xl font-bold mb-3">
                 Independent Advice
               </h3>
+
               <p className="text-gray-400">
                 Personalised hearing aid recommendations and support.
               </p>
@@ -478,9 +495,11 @@ export default function HearingAidsWolverhampton() {
 
             <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center">
               <Phone className="w-12 h-12 text-red-500 mx-auto mb-5" />
+
               <h3 className="text-xl font-bold mb-3">
                 Friendly Team
               </h3>
+
               <p className="text-gray-400">
                 Experienced hearing care professionals ready to help.
               </p>

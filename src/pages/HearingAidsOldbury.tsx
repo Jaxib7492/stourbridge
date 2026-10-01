@@ -1,276 +1,464 @@
 import React from 'react';
-import { Ear, Stethoscope, Star, Clock, ShieldCheck, MapPin, ChevronDown } from 'lucide-react';
+import {
+  Ear,
+  Stethoscope,
+  ChevronDown,
+  CheckCircle2,
+} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-export default function HearingAidsOldbury() {
+export default function HearingAidsDudley() {
   const navigate = useNavigate();
+
+  const symptoms = [
+    'Reduced hearing',
+    'Ear discomfort',
+    'Tinnitus',
+    'Dizziness',
+    'Earache',
+    'Pressure in the ears',
+    'Hearing aid issues',
+    'Blocked ears',
+  ];
+
+  const microsuctionBenefits = [
+    'Safe and gentle procedure',
+    'Suitable for sensitive ears',
+    'Quick treatment appointments',
+    'No messy water syringing',
+    'Recommended by healthcare professionals',
+    'Immediate hearing improvement for many patients',
+  ];
+
+  const hearingAidOptions = [
+    'Invisible hearing aids',
+    'Rechargeable hearing aids',
+    'Bluetooth hearing aids',
+    'Discreet in-ear devices',
+    'Custom hearing solutions',
+    'Free hearing aid demonstrations',
+  ];
+
+  const faqs = [
+    {
+      q: 'How much does ear wax removal cost?',
+      a: 'Please contact Stourbridge Hearing Centre directly for current pricing and appointment availability.',
+    },
+    {
+      q: 'Why is clinical microsuction preferred over traditional syringing?',
+      a: 'Microsuction is regarded as one of the safest methods of ear wax removal when performed by a trained professional.',
+    },
+    {
+      q: 'How long does an appointment take?',
+      a: 'Most ear wax removal appointments take approximately 20–30 minutes.',
+    },
+    {
+      q: 'What hearing aids do you provide?',
+      a: 'We provide invisible, rechargeable, Bluetooth-enabled, and custom digital hearing aids.',
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* SEO Metadata */}
+
+      {/* SEO */}
       <Helmet>
-        <title>Hearing Aids & Ear Wax Removal Oldbury | Stourbridge Hearing Centre</title>
-        <meta name="description" content="Expert hearing aids and microsuction ear wax removal services in Oldbury. Professional ear care, free hearing tests, and urgent appointments available for Sandwell residents." />
-        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids-oldbury" />
+        <title>
+          Ear Wax Removal & Hearing Aids Dudley | Microsuction & Hearing Tests
+        </title>
+
+        <meta
+          name="description"
+          content="Professional ear wax removal, microsuction, hearing tests, and hearing aids in Dudley. Same day appointments available at Stourbridge Hearing Centre."
+        />
+
+        <meta
+          name="keywords"
+          content="Ear Wax Removal Dudley, Microsuction Dudley, Hearing Aids Dudley, Hearing Tests Dudley, Ear Cleaning Dudley, Audiologist Dudley, Blocked Ears Dudley, Hearing Clinic Dudley, Ear Syringing Dudley, Hearing Care Dudley"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.stourbridgehearing.co.uk/hearing-aids-dudley"
+        />
       </Helmet>
 
       {/* HERO */}
-      {/* HERO */}
-<section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-center">
-  <div className="max-w-5xl mx-auto">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-black text-center">
+        <div className="max-w-6xl mx-auto">
 
-    {/* TITLE */}
-    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-      Hearing Aids & Ear Care — Oldbury
-    </h1>
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full mb-8">
+            <CheckCircle2 className="w-5 h-5 text-red-300" />
+            <span className="text-sm font-semibold">
+              Trusted By 100+ Local Patients
+            </span>
+          </div>
 
-    {/* SUBTITLE */}
-    <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
-      Providing expert hearing assessments and safe microsuction ear wax removal for the Oldbury community.
-      Expert care, precise technology, and effective results.
-    </p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-8">
+            Microsuction Earwax Removal & Private Hearing Aids in Dudley
+          </h1>
 
-    {/* BUTTON */}
-    <div className="mt-10 flex justify-center">
-      <button
-        onClick={() => navigate('/contact')}
-        className="bg-black hover:bg-gray-900 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
-      >
-        Book Your Appointment
-      </button>
-    </div>
-
-  </div>
-</section>
-
-{/* MAP SECTION */}
-<section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
-  <div className="max-w-6xl mx-auto">
-
-    {/* HEADING */}
-    <div className="text-center mb-12">
-
-      <h2 className="text-4xl font-bold text-white mb-4">
-        Visit Stourbridge Hearing Centre
-      </h2>
-
-      <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-        Clinical Cerumen Extraction & Prescription Digital Hearing Instruments
-      </p>
-
-    </div>
-
-    {/* MAP CARD */}
-    <div className="bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
-
-      {/* MAP */}
-      <div className="relative w-full h-[550px]">
-
-        <iframe
-          title="Stourbridge Hearing Centre Location"
-          src="https://www.google.com/maps?q=Stourbridge%20Hearing%20Centre&output=embed&z=16"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-full"
-        ></iframe>
-
-        {/* GET DIRECTIONS BUTTON */}
-        <a
-          href="https://www.google.com/maps/dir/?api=1&destination=Stourbridge+Hearing+Centre"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-2xl font-bold shadow-2xl transition-all duration-300 hover:scale-105"
-        >
-          Get Directions
-        </a>
-
-      </div>
-
-      {/* INFO SECTION */}
-      <div className="p-8 grid md:grid-cols-3 gap-6">
-
-        {/* LOCATION */}
-        <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
-          <h3 className="text-xl font-semibold text-red-500 mb-3">
-            Clinic Location
-          </h3>
-          <p className="text-gray-400 leading-relaxed">
-            Stourbridge Hearing Centre provides professional hearing care,
-            hearing aids, and microsuction ear wax removal services.
+          <p className="text-xl text-red-50 max-w-4xl mx-auto leading-relaxed">
+            HCPC-Registered Clinical Audiology Care, Water-Free Ear Cleaning &
+            Video Otoscopy. At Stourbridge Hearing Centre, our qualified
+            clinical audiologists deliver safe, water-free microsuction
+            earwax extraction and full diagnostic hearing evaluations for
+            patients across Dudley.
           </p>
-        </div>
 
-        {/* HOME VISITS */}
-        <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
-          <h3 className="text-xl font-semibold text-red-500 mb-3">
-            Home Visits Available
-          </h3>
-          <p className="text-gray-400 leading-relaxed">
-            Comfortable at-home appointments available for patients
-            unable to travel to the clinic.
+          <p className="text-xl text-red-50 max-w-4xl mx-auto leading-relaxed mt-4">
+            Whether you are experiencing sudden conductive hearing loss,
+            ear fullness, tinnitus, or cerumen impaction, our High Street
+            clinic provides rapid, expert relief without wet ear syringing.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+
+            <button
+              type="button"
+              onClick={() => navigate('/contact')}
+              className="bg-white text-red-700 hover:bg-gray-100 px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
+            >
+              Book Appointment
+            </button>
+
+            <a
+              href="tel:01384476330"
+              className="border-2 border-white text-white hover:bg-white hover:text-red-700 px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+            >
+              Call 01384 476330
+            </a>
+
+          </div>
         </div>
-
-        {/* FAST BOOKINGS */}
-        <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
-          <h3 className="text-xl font-semibold text-red-500 mb-3">
-            Fast Appointments
-          </h3>
-          <p className="text-gray-400 leading-relaxed">
-            Same-day and next-day bookings available depending on availability.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* INTRO */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
-        <div className="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed space-y-6">
-          <p>
-            Stourbridge Hearing Centre provides professional **earwax removal in Oldbury** using the safe, clinical microsuction method. 
-            We understand that blocked ears can be isolating and uncomfortable, which is why we offer a fast-access alternative to GP waiting lists.
-          </p>
-          <p>
-            Our independent clinic is led by expert audiologists who specialize in restoring clarity to your hearing. 
-            From comprehensive diagnostic testing to the fitting of discreet digital hearing aids, we provide the highest level of care in the West Midlands.
-          </p>
-          <div className="flex items-center gap-2 text-red-500 font-semibold pt-4">
-            <MapPin className="w-5 h-5" />
-            <span>Serving Oldbury, Langley, Warley, and Blackheath.</span>
+        <div className="max-w-5xl mx-auto text-gray-300 text-lg leading-relaxed space-y-8">
+
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Water-Free Clinical Microsuction & Otoscopic Examinations in Dudley
+            </h2>
+
+            <p className="text-gray-400 text-xl max-w-3xl mx-auto">
+              Precision Cerumen Extraction Performed Under High-Magnification Inspection
+            </p>
           </div>
+
+          <p>
+            Our independent audiology clinic serves patients from Dudley,
+            Sedgley, Tipton, Kingswinford, and surrounding Black Country
+            communities with clinical-grade ear care.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            {symptoms.map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 bg-gray-900 border border-gray-800 rounded-xl p-4"
+              >
+                <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            Our microsuction treatment uses specialist equipment to gently
+            remove ear wax without the need for water irrigation.
+          </p>
+
         </div>
       </section>
 
       {/* SERVICES */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          {/* Microsuction */}
-          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="bg-red-500/10 p-3 rounded-lg group-hover:bg-red-500/20 transition-colors">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8">
+
+          {/* EAR WAX REMOVAL */}
+          <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-red-500 transition-all duration-300">
+
+            <div className="flex items-center gap-4 mb-8">
+              <div className="bg-red-500/10 p-4 rounded-2xl">
                 <Ear className="w-10 h-10 text-red-500" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Clinical Microsuction Cerumen Extraction</h2>
+
+              <h2 className="text-3xl font-bold">
+                Ear Wax Removal Dudley
+              </h2>
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              We use gentle, medical-grade suction to clear earwax blockages. It is widely considered 
-              the safest method available and is ideal for Oldbury residents with sensitive ears or narrow canals.
-            </p>
+
+            <div className="space-y-5 text-gray-400 leading-relaxed">
+
+              <p>
+                Our quick look ear check service allows our audiology team to
+                examine your ears and advise whether ear wax removal or further
+                hearing assessment may be required.
+              </p>
+
+              <h3 className="text-xl font-semibold text-white">
+                Why Choose Microsuction?
+              </h3>
+
+              <ul className="space-y-3">
+                {microsuctionBenefits.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+            </div>
           </div>
 
-          {/* Hearing Aids */}
-          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="bg-red-500/10 p-3 rounded-lg group-hover:bg-red-500/20 transition-colors">
+          {/* HEARING AIDS */}
+          <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-red-500 transition-all duration-300">
+
+            <div className="flex items-center gap-4 mb-8">
+              <div className="bg-red-500/10 p-4 rounded-2xl">
                 <Stethoscope className="w-10 h-10 text-red-500" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Advanced Hearing Tests</h2>
+
+              <h2 className="text-3xl font-bold">
+                Hearing Tests & Hearing Aids Dudley
+              </h2>
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              Our free hearing assessments provide a detailed view of your auditory health. We offer 
-              the latest rechargeable and Bluetooth-ready hearing aids from the world's leading manufacturers.
-            </p>
+
+            <div className="space-y-5 text-gray-400 leading-relaxed">
+
+              <p>
+                We provide professional hearing tests for adults experiencing
+                hearing difficulties, tinnitus, or hearing changes.
+              </p>
+
+              <h3 className="text-xl font-semibold text-white">
+                Modern Hearing Aid Solutions
+              </h3>
+
+              <ul className="space-y-3">
+                {hearingAidOptions.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+            </div>
           </div>
+
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* GOOGLE REVIEW */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Why Oldbury Residents Choose Us</h2>
-          
-          <div className="grid sm:grid-cols-2 gap-10 text-gray-300">
-            <div className="flex gap-4">
-              <ShieldCheck className="w-10 h-10 text-red-500 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Independent Expertise</h3>
-                <p>We are not owned by a manufacturer. Our advice is 100% unbiased and tailored to your specific hearing needs.</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <Clock className="w-10 h-10 text-red-500 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Swift Appointments</h3>
-                <p>We know how urgent a blocked ear can feel. We offer quick turnarounds and emergency slots for microsuction.</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <Star className="w-10 h-10 text-red-500 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Award-Winning Care</h3>
-                <p>Our clinic is known for its patient-focused approach, ensuring you never feel rushed during your consultation.</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <MapPin className="w-10 h-10 text-red-500 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Oldbury Home Visits</h3>
-                <p>Can't make it to the clinic? We provide a professional home-visit service for residents across the Oldbury area.</p>
-              </div>
+
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-6">
+              Trusted Local Reputation
+            </h2>
+
+            <p className="text-gray-400 text-lg">
+              Over 100 positive Google reviews from happy patients across
+              Dudley and surrounding areas.
+            </p>
+          </div>
+
+          <div className="w-full max-w-xl mx-auto bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src="/dudley-review.png"
+              alt="Google review from Dudley patient"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* SAME DAY APPOINTMENTS */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-5xl mx-auto">
+
+          <div className="bg-red-600 rounded-3xl p-10 shadow-2xl">
+
+            <h2 className="text-4xl font-bold mb-6 text-center">
+              Same Day Emergency Ear Wax Removal Appointments
+            </h2>
+
+            <div className="space-y-6 text-red-50 text-lg leading-relaxed">
+
+              <p>
+                We understand that blocked ears and sudden hearing loss can be
+                extremely uncomfortable and distressing.
+              </p>
+
+              <p>
+                Recently, a patient travelled from Dudley after experiencing
+                severe blockage in both ears caused by impacted ear wax.
+              </p>
+
+              <p>
+                Our team arranged a same day emergency appointment to assess
+                and safely remove the ear wax using microsuction treatment.
+              </p>
+
+              <p>
+                Following treatment, the patient experienced immediate relief
+                and significant improvement in hearing clarity and comfort.
+              </p>
+
             </div>
           </div>
+
+        </div>
+      </section>
+
+      {/* MAP */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-6xl mx-auto">
+
+          <div className="text-center mb-12">
+
+            <h2 className="text-4xl font-bold mb-5">
+              Visit Stourbridge Hearing Centre
+            </h2>
+
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+              Conveniently located for patients travelling from Dudley,
+              Brierley Hill, Halesowen, Kingswinford, Sedgley, Tipton,
+              and surrounding areas.
+            </p>
+
+          </div>
+
+          <div className="bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+
+            <div className="w-full h-[550px]">
+              <iframe
+                title="Stourbridge Hearing Centre Map"
+                src="https://www.google.com/maps?q=Stourbridge%20Hearing%20Centre&output=embed&z=15"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              />
+            </div>
+
+            <div className="p-8 grid md:grid-cols-3 gap-6">
+
+              <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-red-500 mb-4">
+                  Nearby Parking
+                </h3>
+
+                <p className="text-gray-400">
+                  Tesco Extra parking with 1 hour free parking available plus
+                  additional parking spaces behind B&amp;M.
+                </p>
+              </div>
+
+              <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-red-500 mb-4">
+                  Local Access
+                </h3>
+
+                <p className="text-gray-400">
+                  Easily accessible from Dudley town centre with nearby bus
+                  routes and convenient transport links.
+                </p>
+              </div>
+
+              <div className="bg-black/40 border border-gray-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-red-500 mb-4">
+                  Fast Appointments
+                </h3>
+
+                <p className="text-gray-400">
+                  Same day and urgent appointments available depending on
+                  availability.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
       {/* FAQ */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Service FAQs</h2>
-          <div className="space-y-4">
-            <details className="group bg-black/50 border border-gray-800 rounded-xl overflow-hidden shadow-sm cursor-pointer">
-              <summary className="p-6 text-lg font-semibold list-none flex justify-between items-center group-hover:text-red-500 transition-colors">
-                Is ear wax removal covered by the NHS?
-                <ChevronDown className="w-5 h-5 transition-transform group-open:rotate-180" />
-              </summary>
-              <div className="px-6 pb-6 text-gray-400">
-                Many local GP surgeries in Oldbury and Sandwell no longer provide ear syringing. We offer a clinical, private alternative with no long waiting times.
-              </div>
-            </details>
 
-            <details className="group bg-black/50 border border-gray-800 rounded-xl overflow-hidden shadow-sm cursor-pointer">
-              <summary className="p-6 text-lg font-semibold list-none flex justify-between items-center group-hover:text-red-500 transition-colors">
-                How long is a hearing aid consultation?
-                <ChevronDown className="w-5 h-5 transition-transform group-open:rotate-180" />
-              </summary>
-              <div className="px-6 pb-6 text-gray-400">
-                We usually allow 60 to 90 minutes for a full hearing assessment to ensure we have time to understand your lifestyle and test your hearing thoroughly.
-              </div>
-            </details>
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-4">
+
+            {faqs.map((faq) => (
+              <details
+                key={faq.q}
+                className="group bg-black/50 border border-gray-800 rounded-2xl overflow-hidden"
+              >
+                <summary className="p-6 list-none flex justify-between items-center cursor-pointer text-lg font-semibold hover:text-red-500 transition-colors">
+                  <span>{faq.q}</span>
+
+                  <ChevronDown className="w-5 h-5 flex-shrink-0 ml-4 transition-transform group-open:rotate-180" />
+                </summary>
+
+                <div className="px-6 pb-6 text-gray-400 leading-relaxed">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
+
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-red-700 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Take the First Step to Better Hearing</h2>
-          <p className="text-xl mb-10 opacity-90 text-red-50">Join the many Oldbury residents who have rediscovered their hearing with our expert care.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-red-700 text-center">
+        <div className="max-w-4xl mx-auto">
+
+          <h2 className="text-5xl font-black mb-6">
+            Book Your Dudley Appointment Today
+          </h2>
+
+          <p className="text-xl text-red-50 mb-10 leading-relaxed">
+            Professional ear wax removal, hearing tests, and hearing aids with
+            friendly expert care from Stourbridge Hearing Centre.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
             <button
+              type="button"
               onClick={() => navigate('/contact')}
-              className="w-full sm:w-auto bg-white text-red-700 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all hover:-translate-y-1"
+              className="bg-white text-red-700 px-10 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-2xl"
             >
-              Book My Appointment
+              Book Appointment
             </button>
-            <button
-              onClick={() => navigate('/contact')}
-              className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-700 transition-all"
+
+            <a
+              href="tel:01384476330"
+              className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-red-700 transition-all duration-300"
             >
-              Call Our Clinic
-            </button>
+              Call 01384 476330
+            </a>
+
           </div>
         </div>
       </section>
+
     </div>
   );
 }

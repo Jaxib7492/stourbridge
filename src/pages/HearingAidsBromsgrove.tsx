@@ -10,9 +10,48 @@ export default function HearingAidsBromsgrove() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Hearing Aids & Ear Wax Removal Bromsgrove | Expert Care</title>
-        <meta name="description" content="HCPC-registered microsuction earwax removal & 0% APR private hearing aids in Bromsgrove. Water-free clinical ear care, video otoscopy & home visits available." />
-        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids-bromsgrove" />
+        <title>
+          Ear Wax Removal & Hearing Aids Bromsgrove | Microsuction & Hearing Tests
+        </title>
+
+        <meta
+          name="description"
+          content="Professional ear wax removal, microsuction, hearing tests and hearing aids in Bromsgrove. HCPC-registered audiologists, private hearing care, video otoscopy and home visits available."
+        />
+
+        <meta
+          name="keywords"
+          content="
+          Ear Wax Removal Bromsgrove,
+          Microsuction Bromsgrove,
+          Hearing Aids Bromsgrove,
+          Hearing Tests Bromsgrove,
+          Ear Cleaning Bromsgrove,
+          Audiologist Bromsgrove,
+          Blocked Ears Bromsgrove,
+          Hearing Clinic Bromsgrove,
+          Ear Syringing Bromsgrove,
+          Hearing Care Bromsgrove,
+          Private Audiologist Bromsgrove,
+          Earwax Removal Bromsgrove,
+          Microsuction Ear Wax Removal Bromsgrove,
+          Hearing Aid Specialist Bromsgrove,
+          Ear Wax Removal Aston Fields,
+          Microsuction Aston Fields,
+          Hearing Aids Aston Fields,
+          Ear Wax Removal Catshill,
+          Microsuction Catshill,
+          Hearing Aids Catshill,
+          Ear Wax Removal Barnt Green,
+          Microsuction Barnt Green,
+          Hearing Aids Barnt Green
+          "
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.stourbridgehearing.co.uk/hearing-aids-bromsgrove"
+        />
       </Helmet>
 
       {/* HERO */}

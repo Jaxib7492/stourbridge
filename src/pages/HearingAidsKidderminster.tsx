@@ -10,9 +10,193 @@ export default function HearingAidsKidderminster() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Hearing Aids & Ear Wax Removal Kidderminster | Expert Audiology</title>
-        <meta name="description" content="Professional hearing aids and clinical microsuction ear wax removal in Kidderminster. Independent care, free hearing tests, and local home visits available." />
-        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster" />
+        <title>
+          Hearing Aids & Ear Wax Removal Kidderminster | Microsuction Audiologist
+        </title>
+
+        <meta
+          name="description"
+          content="Professional earwax removal, microsuction, hearing tests and hearing aids in Kidderminster. Independent audiologist care, free hearing checks, same-day appointments and home visits."
+        />
+
+        <meta
+          name="keywords"
+          content="
+            Ear Wax Removal Kidderminster,
+            Earwax Removal Kidderminster,
+            Microsuction Kidderminster,
+            Hearing Aids Kidderminster,
+            Hearing Test Kidderminster,
+            Hearing Tests Kidderminster,
+            Audiologist Kidderminster,
+            Hearing Clinic Kidderminster,
+            Hearing Care Kidderminster,
+            Free Hearing Check Kidderminster,
+            Tinnitus Assessment Kidderminster,
+            Tinnitus Support Kidderminster,
+            Blocked Ears Kidderminster,
+            Ear Cleaning Kidderminster,
+            Ear Syringing Kidderminster,
+            Same Day Ear Wax Removal Kidderminster,
+            Same Day Microsuction Kidderminster,
+            Home Visit Audiologist Kidderminster,
+            Hearing Aid Fitting Kidderminster,
+            Hearing Aid Repairs Kidderminster,
+            Rechargeable Hearing Aids Kidderminster,
+            Bluetooth Hearing Aids Kidderminster,
+            Invisible Hearing Aids Kidderminster,
+            Hearing Aids Near Kidderminster,
+            Ear Wax Removal Near Kidderminster,
+            Hearing Clinic Near Kidderminster,
+            Stourbridge Hearing Centre
+          "
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <meta
+          name="googlebot"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster"
+        />
+
+        {/* Open Graph SEO */}
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:title"
+          content="Hearing Aids & Ear Wax Removal Kidderminster | Microsuction Audiologist"
+        />
+
+        <meta
+          property="og:description"
+          content="Professional earwax removal, microsuction, hearing tests and hearing aids in Kidderminster. Independent audiologist care with same-day appointments and home visits available."
+        />
+
+        <meta
+          property="og:url"
+          content="https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Stourbridge Hearing Centre"
+        />
+
+        <meta
+          property="og:locale"
+          content="en_GB"
+        />
+
+        {/* Twitter SEO */}
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Hearing Aids & Ear Wax Removal Kidderminster | Microsuction"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Professional microsuction earwax removal, hearing tests, hearing aids and tinnitus support for patients in Kidderminster and surrounding Worcestershire areas."
+        />
+
+        {/* Local Business / Medical Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "@id": "https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster#medicalbusiness",
+            "name": "Stourbridge Hearing Centre",
+            "url": "https://www.stourbridgehearing.co.uk/hearing-aids-kidderminster",
+            "description": "Independent audiology clinic providing earwax removal, clinical microsuction, hearing tests, hearing aids, tinnitus support and home visit hearing services for patients in Kidderminster and surrounding Worcestershire areas.",
+            "telephone": "01384 476330",
+            "medicalSpecialty": "Audiology",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Kidderminster"
+              },
+              {
+                "@type": "City",
+                "name": "Stourport-on-Severn"
+              },
+              {
+                "@type": "City",
+                "name": "Bewdley"
+              },
+              {
+                "@type": "Place",
+                "name": "Worcestershire"
+              },
+              {
+                "@type": "Place",
+                "name": "Wyre Forest"
+              }
+            ],
+            "serviceType": [
+              "Ear Wax Removal",
+              "Microsuction Ear Wax Removal",
+              "Hearing Tests",
+              "Hearing Aids",
+              "Free Hearing Checks",
+              "Tinnitus Assessment",
+              "Hearing Aid Fitting",
+              "Home Visit Audiology"
+            ],
+            "availableService": [
+              {
+                "@type": "MedicalProcedure",
+                "name": "Microsuction Ear Wax Removal",
+                "description": "Professional water-free microsuction earwax removal performed by an audiology professional."
+              },
+              {
+                "@type": "MedicalTest",
+                "name": "Hearing Test",
+                "description": "Professional hearing assessment for adults experiencing hearing difficulties or changes."
+              }
+            ]
+          })}
+        </script>
+
+        {/* FAQ Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How often should I have my hearing tested?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We recommend a hearing check every two years if you are over 50, or annually if you already wear hearing aids."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is wax removal painful?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Microsuction is a gentle procedure. Most patients describe it as a cool breeze or a slight whistling sound in the ear."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* HERO */}

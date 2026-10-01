@@ -10,9 +10,128 @@ export default function HearingAidsKingswinford() {
     <div className="min-h-screen bg-black text-white">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Hearing Aids & Ear Wax Removal Kingswinford | Expert Audiology</title>
-        <meta name="description" content="Professional hearing aids and clinical microsuction ear wax removal in Kingswinford. Benefit from free hearing tests, independent advice, and local home visits." />
-        <link rel="canonical" href="https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford" />
+        <title>Hearing Aids & Ear Wax Removal Kingswinford | Audiologist</title>
+
+        <meta
+          name="description"
+          content="Hearing aids, free hearing tests and clinical microsuction ear wax removal in Kingswinford. Independent audiology care, expert advice and home visits."
+        />
+
+        <meta
+          name="keywords"
+          content="hearing aids Kingswinford, ear wax removal Kingswinford, microsuction Kingswinford, hearing test Kingswinford, audiologist Kingswinford, hearing care Kingswinford, tinnitus support Kingswinford, home visit audiologist Kingswinford"
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <meta name="author" content="Stourbridge Hearing Centre" />
+
+        <meta
+          property="og:title"
+          content="Hearing Aids & Ear Wax Removal Kingswinford | Stourbridge Hearing Centre"
+        />
+
+        <meta
+          property="og:description"
+          content="Professional hearing care in Kingswinford including hearing tests, hearing aids and clinical microsuction ear wax removal. Independent advice and home visits available."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Stourbridge Hearing Centre"
+        />
+
+        <meta property="og:locale" content="en_GB" />
+
+        <meta
+          name="twitter:card"
+          content="summary"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Hearing Aids & Ear Wax Removal Kingswinford | Audiologist"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Expert hearing care in Kingswinford with hearing tests, hearing aids, microsuction ear wax removal and local home visits."
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford"
+        />
+
+        {/* Local Business Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "@id": "https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford#medicalbusiness",
+            "name": "Stourbridge Hearing Centre",
+            "url": "https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford",
+            "description": "Professional hearing care in Kingswinford including hearing aids, hearing assessments and clinical microsuction ear wax removal.",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Kingswinford"
+              },
+              {
+                "@type": "Place",
+                "name": "Wall Heath"
+              },
+              {
+                "@type": "Place",
+                "name": "Wordsley"
+              },
+              {
+                "@type": "Place",
+                "name": "Himley"
+              }
+            ],
+            "serviceType": [
+              "Hearing Aids",
+              "Hearing Tests",
+              "Hearing Assessments",
+              "Microsuction Ear Wax Removal",
+              "Ear Wax Removal",
+              "Home Visit Hearing Care"
+            ]
+          })}
+        </script>
+
+        {/* Breadcrumb Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.stourbridgehearing.co.uk/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Hearing Aids Kingswinford",
+                "item": "https://www.stourbridgehearing.co.uk/hearing-aids-kingswinford"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* HERO */}
