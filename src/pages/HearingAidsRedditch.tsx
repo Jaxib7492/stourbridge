@@ -45,7 +45,8 @@ export default function HearingAidsRedditch() {
           Private Hearing Test Redditch,
           Hearing Aid Centre Redditch,
           Tinnitus Assessment Redditch,
-          Ear Wax Microsuction Redditch
+          Ear Wax Microsuction Redditch,
+          Hearing Test Redditch
         "
         />
 
