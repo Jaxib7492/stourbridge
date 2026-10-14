@@ -200,31 +200,74 @@ export default function HearingAidsKidderminster() {
       </Helmet>
 
       {/* HERO */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-center">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-900 via-red-800 to-red-900">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          <div className="text-center lg:text-left">
+            {/* TITLE */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Hearing Aids, Earwax Removal & Free Hearing Checks for Kidderminster Patients
+            </h1>
 
-          {/* TITLE */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Hearing Aids, Earwax Removal & Free Hearing Checks for Kidderminster Patients
-          </h1>
+            {/* SUBTITLE */}
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto lg:mx-0 leading-relaxed">
+              Trusted Audiologist Serving Kidderminster with Same-Day Appointments. Providing expert hearing assessments and safe microsuction ear wax removal for the Kidderminster community.
+            </p>
 
-          {/* SUBTITLE */}
-          <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
-            Trusted Audiologist Serving Kidderminster with Same-Day Appointments. Providing expert hearing assessments and safe microsuction ear wax removal for the Kidderminster community.
-          </p>
-
-          {/* BUTTON */}
-          <div className="mt-10 flex justify-center">
-            <button
-              onClick={() => navigate('/contact')}
-              className="bg-black hover:bg-gray-900 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
-            >
-              Book Your Appointment
-            </button>
+            {/* BUTTON */}
+            <div className="mt-10 flex justify-center lg:justify-start">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-black hover:bg-gray-900 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
+              >
+                Book Your Appointment
+              </button>
+            </div>
           </div>
 
+          <div className="w-full">
+            <img
+              src="/kidderminster_customer.jpeg"
+              alt="Hearing care professional assisting an older patient"
+              className="w-full h-64 sm:h-80 lg:h-[460px] object-cover rounded-2xl shadow-2xl"
+            />
+          </div>
         </div>
       </section>
+
+      {/* PATIENT REVIEWS & IMAGE SECTION */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4">Trusted by Patients Across Worcestershire</h2>
+          <p className="text-lg text-gray-300 leading-relaxed mb-4">
+            Our commitment to exceptional patient care has earned us more than 100 five-star Google reviews from patients across Kidderminster, Stourbridge, Bromsgrove, Dudley, Halesowen, and the wider Worcestershire area.
+          </p>
+
+          {/* Integrated Review Image */}
+          <div className="my-8 flex justify-center">
+            <img 
+              src="Kidderminster.png" 
+              alt="Kidderminster Patient Reviews and Ratings" 
+              className="max-w-full h-auto rounded-2xl shadow-xl border border-gray-800 md:max-w-xl"
+            />
+          </div>
+
+          <h4 className="text-red-500 font-semibold mb-3">Patients regularly recommend us for:</h4>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-gray-300 text-sm max-w-2xl mx-auto mb-6">
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Earwax removal</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Hearing aids</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Free hearing checks</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Tinnitus support</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Friendly service</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Professional care</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Honest advice</div>
+            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Excellent aftercare</div>
+          </div>
+          <p className="text-gray-400 max-w-xl mx-auto italic text-sm">
+            Patient satisfaction remains at the heart of everything we do.
+          </p>
+        </div>
+      </section>
+
 
       {/* OVERVIEW SECTION */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black border-b border-gray-900">
@@ -602,40 +645,6 @@ export default function HearingAidsKidderminster() {
               </ul>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* PATIENT REVIEWS & IMAGE SECTION */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-4">Trusted by Patients Across Worcestershire</h2>
-          <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            Our commitment to exceptional patient care has earned us more than 100 five-star Google reviews from patients across Kidderminster, Stourbridge, Bromsgrove, Dudley, Halesowen, and the wider Worcestershire area.
-          </p>
-
-          {/* Integrated Review Image */}
-          <div className="my-8 flex justify-center">
-            <img 
-              src="Kidderminster.png" 
-              alt="Kidderminster Patient Reviews and Ratings" 
-              className="max-w-full h-auto rounded-2xl shadow-xl border border-gray-800 md:max-w-xl"
-            />
-          </div>
-
-          <h4 className="text-red-500 font-semibold mb-3">Patients regularly recommend us for:</h4>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-gray-300 text-sm max-w-2xl mx-auto mb-6">
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Earwax removal</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Hearing aids</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Free hearing checks</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Tinnitus support</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Friendly service</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Professional care</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Honest advice</div>
-            <div className="bg-gray-900/50 p-2 border border-gray-800 rounded">Excellent aftercare</div>
-          </div>
-          <p className="text-gray-400 max-w-xl mx-auto italic text-sm">
-            Patient satisfaction remains at the heart of everything we do.
-          </p>
         </div>
       </section>
 
